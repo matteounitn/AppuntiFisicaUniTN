@@ -52,7 +52,7 @@ Posso assumere una unità di misura nella retta orientata (tipo centimetri).
 
 
 
-![1550510794776](/home/matteo/.config/Typora/typora-user-images/1550510794776.png)
+![1550510794776](1550510794776.png)
 
 
 
@@ -68,7 +68,7 @@ La legge oraria posso esprimerla con una **tabella**:
 
 E disegno un **GRAFICO**:
 
-![1550510934763](/home/matteo/.config/Typora/typora-user-images/1550510934763.png)
+![1550510934763](1550510934763.png)
 
 
 
@@ -98,9 +98,9 @@ s=$A \cos(Bt)$
 
 #### Velocità media
 
-Velocità positiva![1550510163049](/home/matteo/.config/Typora/typora-user-images/1550510163049.png) 
+Velocità positiva![1550510163049](1550510163049.png) 
 
-Velocità negativa![1550511250810](/home/matteo/.config/Typora/typora-user-images/1550511250810.png)
+Velocità negativa![1550511250810](1550511250810.png)
 
 > **Equazione:** $V_m={\Delta x\over\Delta t}$
 
@@ -182,7 +182,7 @@ Avendo la **legge oraria della velocità**, posso ottenere la **legge oraria del
 
 
 
-![1550511395367](/home/matteo/.config/Typora/typora-user-images/1550511395367.png)
+![1550511395367](1550511395367.png)
 
 > $s(t)-s_0=\int^t_{t_0} d\tau v(\tau) \Longrightarrow s(t)=s_0+\int_{t_0}^t d\tau v(\tau)$
 
@@ -218,7 +218,7 @@ $s(t_0)=s_0+\bar{v}(t_0-t_0)=s_0$
 >
 > $g=9,8055{m\over s^2}$
 
-![1550511703222](/home/matteo/.config/Typora/typora-user-images/1550511703222.png)
+![1550511703222](1550511703222.png)
 
 > **Punti estremanti**: Punti di massimo e di minimo, punti nei quali  l'accelerazione vale ZERO, cioè la velocità è costante.
 
@@ -244,7 +244,7 @@ $s(t_0)=s_0+\bar{v}(t_0-t_0)=s_0$
 
 **Derivando ancora** ottengo **l'accelerazione**.
 
-![1550511505456](/home/matteo/.config/Typora/typora-user-images/1550511505456.png)
+![1550511505456](1550511505456.png)
 
 > **Protip**:
 >
