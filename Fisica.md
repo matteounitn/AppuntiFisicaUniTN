@@ -3198,3 +3198,165 @@ Se mi allontano tanto vedo una carica puntiforme, quindi la tratto come tale!
 se $x=0 \Rightarrow {Q\over 4\pi\epsilon_0 R}$
 
 se ${R\over x}<<1 \Rightarrow {Q\over 4\pi\epsilon_0 |x|}$
+
+## 03/05/2019
+
+$V_A-V_B=\int ^B_A \overrightarrow{E}\cdot d\overrightarrow{s}$
+
+Abbiamo un **gradiente**
+
+*Che cosa è un gradiente?*
+
+$\overrightarrow{E}=-\overrightarrow{\nabla}V=-\begin{bmatrix} {\delta V\over \delta x}\\{\delta V\over \delta y}\\{\delta V\over \delta z}\end{bmatrix}$
+ 
+con  $\overrightarrow{\nabla}$ è il gradiente, composto da derivate parziali(?)
+
+Dove ho le derivate parziali:
+
+$E_x= -{\delta\over \delta x}V=2V_0xy(1-z)$
+
+$E_y= -{\delta\over \delta y}V=V_0x^2(1-z)$
+
+$E_z= -{\delta\over \delta z}V=-V_0x^2y$
+
+Da queste tre ho:
+
+$\overrightarrow{E}=-\hat{r} {dV\over dr}$
+
+#### Circuitazione 
+
+>**Circuitazione**: $\oint q\overrightarrow{E}\cdot d\overrightarrow{s}=0$
+>
+>dove $q\overrightarrow{E}=\overrightarrow{F}$, ma possiamo togliere la carica $q$ perchè costante, ottenendo:
+>
+>$\oint \overrightarrow{E}\cdot d\overrightarrow{s}=0​$ che viene più semplicemente scritto come
+>
+>$\Gamma \overrightarrow{E}=0$
+
+
+>**Tutti i campi conservativi hanno circuitazione zero.**
+>
+
+Coinvolgo un integrale chiuso su un dominio chiuso ma è **lineare, unidimensionale!**
+
+#### Flusso
+
+Immagino di avere un campo, vettoriale, che è la velocità delle particelle in un fluido.
+
+Immagino di avere un flusso laminare controllato e che possa analizzare il vettore velocità( il campo è composto da un insieme di vettori velocità!).
+
+Avendo un "setaccio" con il quale passiamo il nostro flusso, se è abbastanza piccolo, posso avere una ottima approssimazione di una superficie piana.
+
+Oltretutto ho un vettore **normale** che non è necessariamente perpendicolare al nostro.
+
+Otteniamo la **definizione di flusso**:
+
+> $d\Phi _{d\Sigma}(\overrightarrow{v})=^{def}\overrightarrow{v}\cdot \hat{n} d\Sigma$
+> 
+> Quantità matematica di un campo vettoriale
+
+Allargando la superficie il flusso aumenta.
+
+Il segno del flusso è **arbitrario** in base al vettore **normale**.
+
+
+disegno coso superfice 
+
+$=\overrightarrow{E}\cdot\hat{n}\ d\Sigma={1\over 4\pi\epsilon_0}{q\over r^2}{\hat{r}\cdot\hat{n}}\ d\Sigma={q\over 4\pi\epsilon_0}\cos\theta {d\Sigma\over r^2}$
+
+con $\cos\theta {d\Sigma}$ scrivibile come $d\Sigma_r$
+
+diventando
+
+${q\over 4\pi\epsilon_0}{d\Sigma_r\over r^2}$
+
+Prendiamo la superficie ortogonale al vettore che stiamo valutando($\cos\theta=0$)
+
+#### Angolo solido
+
+Angolo portato alle tre dimensioni
+
+Avendo un arco di circonferenza, portato ad un cilindro abbiamo
+
+${\overparen{a}\over R}=\alpha$
+
+cioè
+
+${\overparen{e}\over R}={2\pi\cancel{R}\over\cancel{R} } $
+
+ottenendo
+
+
+$\Omega_{TOT}={S\over R^2}={4\pi R^2\over R^2}=4\pi$
+
+#### Teorema delle superfici di Gauss
+
+![1556876898769](assets/1556876898769.png)
+
+>$\Phi_{\Sigma}(\overrightarrow{E})=\int d\Phi={q\over 4\pi \epsilon_0}=\int d\omega={q\over \cancel{4\pi} \epsilon_0}\cdot \cancel{4\pi}={q\over \epsilon_0}$
+>
+>cioè 
+>
+>$\Phi(\overrightarrow{E})={\sum_i q_i\over \epsilon_0}$
+
+Si basa sulla definizione di interno ed esterno.
+
+>Vale ciò solamente sulle **superfici chiuse** .
+
+Osservazioni:
+1. Il teorema non parla della superficie, posso prendere qualsiasi tipo!
+2. **Non devo specificare il raggio della sfera!** (il Flusso rimane lo stesso)
+3. Il teorema non dipende dalla posizione della carica.
+4. I campi sono sommabili, se avessi più cariche prendo la somma delle singole cariche!
+
+>**Il flusso del campo elettrico dipende solo dall'angolo solido!**
+
+##### Esempio
+
+![1556876869456](assets/1556876869456.png)
+
+>I singoli contributi non saranno zero, il campo non è zero sulla superficie! 
+
+##### Esercizio
+
+Quanto vale il campo elettrico in funzione della posizione?
+
+![1556877786492](assets/1556877786492.png)
+
+$\overrightarrow{E}(\overrightarrow{r})=\overrightarrow{?}$
+
+Noto che il problema è puramente radiale.
+
+Prendo un punto P a caso, sarà a distanza $r_P$
+
+otteniamo con il teorema di gauss
+
+La fisica mi dice che
+
+$\Phi_{S_D}(\overrightarrow{e})=^{phys} {q\over \epsilon_0}$
+
+La matematica mi dice che
+
+$\Phi(\overrightarrow{e})=E4\pi r_p^2$
+
+ed ottengo
+
+$E={q\over 4\pi\epsilon_0}{1\over r^2_p}$
+
+>Ma è uguale alla carica puntiforme! Però questo non vale in un caso generico. Infatti se assumo di avere una circonferenza dentro , abbiamo tutte le cariche all'esterno. Quindi la nostra A avrà $E=0$. In specifico:
+
+![1556878157912](assets/1556878157912.png)
+
+La fisica mi dice che
+
+$\Phi_{S_A}(\overrightarrow{e})=^{phys} 0$
+
+La matematica mi dice che
+
+$\Phi(\overrightarrow{e})=E4\pi r_A^2$
+
+ed ottengo
+
+$E=0$
+
+![1556878506142](assets/1556878506142.png)
