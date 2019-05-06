@@ -3208,7 +3208,7 @@ Abbiamo un **gradiente**
 *Che cosa è un gradiente?*
 
 $\overrightarrow{E}=-\overrightarrow{\nabla}V=-\begin{bmatrix} {\delta V\over \delta x}\\{\delta V\over \delta y}\\{\delta V\over \delta z}\end{bmatrix}$
- 
+
 con  $\overrightarrow{\nabla}$ è il gradiente, composto da derivate parziali(?)
 
 Dove ho le derivate parziali:
@@ -3360,3 +3360,196 @@ ed ottengo
 $E=0$
 
 ![1556878506142](assets/1556878506142.png)
+
+## 06/05/2019
+
+#### Esempio uno
+
+![1557151157410](assets/1557151157410.png)
+
+ 
+
+$\Gamma (\overrightarrow{E})=0$
+
+$\Phi(\overrightarrow{E})={q_{int}\over \epsilon_0}$
+
+Come varia il campo elettrico al variare della superficie?
+
+ho $\sigma(x,y,z)$ e $\overrightarrow{r}=(x,y,z)$
+
+Ho che 
+$\bar{AB}=\bar{CD}$
+
+$\bar{BC}=\bar{DA}<<\bar{AB}$
+
+$\bar{BC}=o(\bar{AB})$
+
+
+come sappiamo il campo elettrico che è in un punto è la somma dei campi che esercitano in quel punto.
+
+ottengo la circuitazione
+
+$\Gamma_{\square} (\overrightarrow{E})=\oint_\square \overrightarrow{E}\cdot d\overrightarrow{l}= \overrightarrow{E}_2\cdot \overrightarrow{AB}+\xcancel{(\overrightarrow{E}_2 ? \overrightarrow{E}_1)\cdot \overrightarrow{BC}}+\\\overrightarrow{E}_1\cdot \overrightarrow{CD}+\xcancel{(\overrightarrow{E}_1?\overrightarrow{E}_2)\cdot \overrightarrow{DA}}$
+
+Li cancello perchè sono infinitesimali!
+
+ottengo
+
+> $\Gamma (\overrightarrow{E})=0\oint \overrightarrow{E}\cdot d\overrightarrow{l}=E_{2t}-E_{1t}=0 \Rightarrow E_{2t}=E_{1t}$
+
+cioè il campo elettrico non varia, è conservativo
+
+#### Esempio due
+
+Abbiamo un cilindro 
+
+![1557152249037](assets/1557152249037.png)
+
+
+
+$\Phi_{cyl}\overrightarrow{E}=^{math} \overrightarrow{E}_2\cdot \hat{n}_2 S+\xcancel{(\overrightarrow{E}_1?\overrightarrow{E}_2)\cdot \hat{n}_2 S_2}+\\+\overrightarrow{E}_1\hat{n}_1S=(E_{2n}-E_{1n})S$
+
+Posso rimuovere anche qui perchè è infinitesimale.
+
+Ottengo dunque che 
+
+>$\Phi_{}\overrightarrow{E}={q_{int}\over \epsilon_0}\Rightarrow E_{2n}-E_{1n}={\sigma\over\epsilon_0}$
+>
+
+
+Campo elettrico varia di $\sigma\over\epsilon_0​$
+
+> Unendo questi due otteniamo
+>
+> $\begin{cases}\Gamma (\overrightarrow{E})=0\oint \overrightarrow{E}\cdot d\overrightarrow{l}=E_{2t}-E_{1t}=0 \Rightarrow E_{2t}=E_{1t}\\ \Phi_{}\overrightarrow{E}={q_{int}\over \epsilon_0} \Rightarrow E_{2n}-E_{1n}={\sigma\over\epsilon_0}\end{cases}\Rightarrow  \ \ \ \ \ \overrightarrow{E}_2-\overrightarrow{E}_1={\sigma\over \epsilon_0}$ 
+>
+> con $n>\epsilon_0$
+
+*correzione esercizio per casa che mi sono perso*
+
+#### Campo elettrico di un piano indefinito di carica
+
+Come fa il campo elettrico nello spazio?
+
+$\overrightarrow{E}(\overrightarrow{r})=?$
+
+---
+
+**Q: Posso assumere di avere distanza infinita ?**
+
+A: $L_P\over d$ quindi ogni punto sarebbe uguale all'altro se avessi distanza infinita.
+
+---
+
+Avendo una piana di carica positiva, il campo elettrico infinito sarà così
+
+![1557153093108](assets/1557153093108.png)
+
+> $\overrightarrow{E}_2-\overrightarrow{E}_1={\sigma\over\epsilon_0}\hat{n}_2\\ \overrightarrow{E}_2-(-\overrightarrow{E}_2)={\sigma\over\epsilon_0}\hat{n}_2\Rightarrow\overrightarrow{E}={\sigma\over2\epsilon_0}\hat{n}$
+
+Dato che il piano è infinito, non si ha una dipendenza dalla distazna, infatti ${\infty\over d=1m}=\infty$
+
+come ${\infty\over d=1GPa}=\infty$
+
+#### Conduttori
+
+>**Conduttore**: Materiale sul quale un certo tipo di  elettrone può muoversi liberamente.
+>
+
+1. Se un conduttore è neutro la somma delle cariche fa zero.
+2. Se ho un conduttore all'equilibrio allora ho le cariche ferme
+3. Se le cariche sono ferme, nessuna di loro subisce forze, di nessun tipo, nemmeno elettriche.
+
+Se ho o meno le cariche all'interno non mi interessa perchè influiscono solo quelle esterne.
+
+$\overrightarrow{E}_{int}=\overrightarrow{0}$
+
+##### Induzione
+
+Se ho una barra conduttore, dentro è zero e tutte le cariche sono negative all'esterno. Se una carica si depositasse all'interno, dovrebbe agire in base al campo elettrico sul bordo.
+
+
+Se ho una penna bic, la carico sfregandola su una maglietta, non essendo conduttore (plastica) si piazzano tutte all'esterno!
+
+>Appena lo avvicino alla mia barra conduttore  **induco un moto di cariche**.
+>
+L'**induzione** è dunque l'indurre un moto di cariche tra qualcosa a qualcos'altro.
+
+*Le cariche negative vanno al contrario della freccia che creiamo*
+
+##### Induzione Completa
+
+Supponiamo di avere due conduttori
+
+una sfera ed una sfera che la "abbraccia".
+
+La sfera interna è carica positivamente, la sfera esterna si caricherà negativamente.
+
+( Vedi immagine: condensatore sferico)
+
+![File:Spherical Capacitor.svg - Wikimedia Commons](assets/download-1557154874087.png)
+
+>Ho dunque un caso di induzione **completa** tra i conduttori, perchè TUTTE le linee di un conduttore vengono intercettate dall'altro. Tutte le linee di campo che escono da uno dei due conduttori viene intercettato dall'altro.
+
+Se avvicinassi la sfera carica positivamente ad un conduttore, **avrò un ammasso di cariche negative dalla parte più vicina alla sfera,** perchè le linee di campo della sfera caricata positivamente.
+
+Se avessi due linee di campo , una positiva ed una negativa, quella negativa intercetterebbe quasi tutte le linee di campo delle positive.
+
+*Questo perchè si annullano a vicenda*.(vedi immagine: condensatore piano)
+
+![img](assets/download.jpg)
+
+*Non ci soffermiamo sugli effetti di bordo.*
+
+
+>La superficie di un conduttore è **equipotenziale** cioè sempre costante.
+>
+$E=0=-{dV\over dr}\Rightarrow V=costante$
+
+Più carica verso e più il potenziale della sfera **aumenta**.
+Per il principio di **sovrapposizione** posso calcolare ogni punto di carica della sfera.
+
+##### Capacità
+> $C={Q\over V}$
+> 
+
+$udm[C]={1C\over 1V}=1F$ un farad.
+
+Un farad è grandissimo. Infatti si utilizza spesso pico/nano/femto/micro-Farad.
+
+>Se abbiamo un sistema in induzione completa, la capacità è data da due conduttori
+>
+>$C={Q\over V_2-V_1}$
+>
+
+##### Esempio
+
+Due armature quadrate 
+
+$S=1m^2$
+
+$d=1mm$
+
+$E={10KV\over m}$
+
+$C=8,85\cdot 10^{-9} F$
+
+Calcolare la carica delle armature.
+
+(Si trovano in vuoto/aria).
+
+Calcolo Q
+
+$Q=C\Delta V$
+
+$C$ ce lo fornisce il problema, calcolo $\Delta V=E\cdot d$
+
+$Q=CEd=8,85\cdot 10^{-9}F\cdot 10^4\cdot 10^{-3}\mathcal{c}$
+
+Ottenendo $Q=C\Delta V=8,9\cdot 10^{-8}\mathcal{c}$
+
+**Osservazioni:**
+
+1. Un condensatore mi serve per portarmi in giro energia.
+2. Per caricarlo devo fare del lavoro, per colpa della differenza di potenziale.
+
