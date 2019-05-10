@@ -3553,3 +3553,179 @@ Ottenendo $Q=C\Delta V=8,9\cdot 10^{-8}\mathcal{c}$
 1. Un condensatore mi serve per portarmi in giro energia.
 2. Per caricarlo devo fare del lavoro, per colpa della differenza di potenziale.
 
+## 10/05/2019
+#### Corollari
+
+
+$\overrightarrow{E}=\overrightarrow{O}$ all'interno
+
+Posso immaginare che tutte le cariche siano appoggiate all'esterno.
+
+Non è vero che dentro il campo è nullo, però stiamo guardando macroscopicamente.
+
+
+
+*la materia è vuota, abbiamo molta distanza(relativamente alla grandezza usata) tra nucleo ed elettroni*
+
+**Corollario**(del fatto che il campo è zero all'interno, macroscopicamente parlando)
+
+1. >Il campo è zero perchè alla fine consideriamo statico.
+   
+   $\Phi_{\Sigma}(\overrightarrow{E})=^{MATH} \oint_{\Sigma} \overrightarrow{E}\cdot \hat{n}d\Sigma=0$ perchè $\overrightarrow{E}=0$ mentre $=^{PHYS}{q_{int}\over \epsilon_0}$
+
+2. >Le superfici dei conduttori sono equipotenziali: 
+
+    $P_1,P_2\in \text{conduttore}$
+
+    $V(P_1)-V(P_2)=-\oint_{P_1}^{P_2}\overrightarrow{E}_{int}\cdot d \overrightarrow{l}=0$ sempre perchè $\overrightarrow{E}_{int}=0$
+
+    $\Rightarrow V(P_1)=V(P_2)​$
+    
+3. >Ho più carica concentrata sui punti di curvatura minore che su un'area più vasta.(effetto punta)
+   
+   $\overrightarrow{E}_{ext}\ne\overrightarrow{O}$
+   
+   $\overrightarrow{E}_{int}=\overrightarrow{O}$
+   
+   $\overrightarrow{E}_{ext}-\xcancel{\overrightarrow{E}_{int}}={\sigma\over \epsilon_0}\hat{u}_n$
+   
+   Tutta la carica va a distribuirsi nei carichi di curvatura minore perchè devono avere la stessa differenza di potenziale.
+   
+>Vale solo se i punti sono interni
+
+#### Osservazioni sulla capacità
+
+$C={q\over V}$
+
+![1557479947331](assets/1557479947331.png)
+
+Calcoliamo la capacità della sfera
+
+$V(P)-V(+\infty_{=0})=-\int^{r_p=R}_{+\infty}\overrightarrow{E}\cdot d\overrightarrow{r}=+{q\over 4\pi\epsilon_0}\int_R^{+\infty} {1\over r^2}dr={q\over 4\pi\epsilon_0}\cdot{1\over R}$
+
+Ottengo
+
+$V={q\over 4\pi\epsilon_0}{1\over R} \Rightarrow C={q\over V}=4\pi\epsilon_0 R$
+
+1. La capacità non dipende dalla carica che mettiamo
+2. Dipende dal corpo, dalla sua geometria(quanto è grande)
+3. DIpende dal materiale(dato da $\epsilon$)
+
+#### Conduttore cavo
+
+immagino che il mio conduttore sia cavo
+
+![File:Emptycavity.png](assets/799px-Emptycavity.png)
+
+
+
+Ho un campo elettrico, dalle cariche $+$ alle cariche $-$, con la circuitazione del campo elettrico ($=0$ perchè il campo è conservativo)
+
+Avendo due tratti, $I$ non nel campo, mentre $II$ nel campo.
+
+$\xcancel{\int_I \overrightarrow{E}\cdot d\overrightarrow{l}}+\int_{II} \overrightarrow{E}\cdot d\overrightarrow{l}\ne 0$
+
+>Se sulla superficie interna  di un conduttore ci fosse carica violerebbe la circuitazione! quindi anche se faccio una cavità non posso avere cariche nella cavità interna!
+>
+
+#### Schermatura e induzione completa(cavo dentro cavo)
+
+![1557480279547](assets/1557480279547.png)
+
+$\Phi_{\Sigma}(\overrightarrow{E})=^{MATH} \oint_{\Sigma} \overrightarrow{E}\cdot \hat{n}d\Sigma=0$ perchè $\overrightarrow{E}=0$ mentre $=^{PHYS}{q_{int}(\Sigma)\over \epsilon_0}$
+
+Ma ho un problema, perchè ho un campo dentro. 
+
+La carica si dispone in base alla curvatura.
+
+>Ma posso affermare che la carica negativa è nella parte interna del $C_2$! 
+>
+Ottengo una **induzione completa!**
+
+Quindi ho un campo anche interno del conduttore cavo, se ho un altro conduttore dentro.
+
+![1557481081306](assets/1557481081306.png)
+
+>Qualsiasi cosa io faccia sul conduttore dentro, non è percepibile da fuori.
+>
+
+
+
+**Q:Cosa succede se tolgo/metto carica all'esterno?**
+
+A: Niente. 
+
+> Creo uno **schermo elettromagnetico** o **gabbia di faraday** 
+>
+>Non è possibile far penetrare informazioni dall'interno all'esterno.
+
+**Q:Cosa succede se sposto il tutto in una zona con una fortissima carica?**
+
+A: Viene variato solo il campo del conduttore esterno.. 
+
+*Non è possibile far penetrare informazioni dall'interno all'esterno.*
+
+**Q:Cosa succede se li faccio toccare?**
+
+A: All'interno cambia il campo, all'esterno non succede niente. 
+
+
+#### Protezione dagli sbalzi 
+
+Immagino di avere un pezzo molto importante di un circuito. Se ho uno sbalzo di tensione, dovrei essere capace di proteggermi per evitare che si fulmini.
+
+Ad esempio ho due chip collegati con differenza di potenziale rispettivamente $8v$ e $5v$
+
+il primo va da $0-8$ il secondo va da $0-5$
+
+Ma non è detto che lo veda alla stessa potenza, perchè lo zero del primo potrebbe essere un $40v$ del secondo!
+
+> Collegando a massa("a terra"), cioè ad un conduttore comune, ho lo stesso **zero** per tutti.
+> 
+
+**Q: E se il conduttore che ci attacco è più grande?**
+
+A: la carica si sposta su quello più grande!
+
+**Q: E se il conduttore che ci attacco è la terra?**
+
+A: In quel caso la carica esterna sul mio primo conduttore è quasi nulla!
+
+>Questa è la famosa **messa a terra**, fa in modo che il riferimento di potenziale sia **stabile** e non cambia.
+>
+
+**Q: Ma se la carica esterna va tutta sulla terra, la carica interna cosa fa?**
+
+A: niente. La carica interna è schermata da quella esterna.
+
+
+#### Condensatore piano
+
+$C={q\over V_2 -V_1}={q\over \Delta V}$
+
+$C_{piano}={q\over \Delta V}=\epsilon_0{\Sigma\over h}$
+
+$E={\sigma\over \epsilon_0}$
+
+$\Delta V=Eh={\sigma h\over \epsilon_0={\cancel{q_\Sigma} h\over\epsilon_0}}$
+
+Cresce al diminuire della distanza
+Dipende dal materiale
+
+#### Condensatore sferico
+
+$\Delta V= {q\over 4\pi\epsilon_0}[{1\over R_1}-{1\over R_2}]$ cioè $[V_1-V_2]$
+
+$C={4\pi\epsilon_0\over {1\over R_1}-{1\over R_2}}$
+
+$\lim_{R_2-R_1\to 0} C_{sphere}=C_{piano}|_{\Sigma=4\pi R^2 r\ \  h=\epsilon} $
+
+#### Condensatore cilindrico
+
+$\overrightarrow{E}={\lambda\over {2\pi\epsilon_0 r}}\hat{u}_r$
+
+$\Delta V={\lambda\over 2\pi\epsilon_0}\ln({R_2\over R_1})$
+
+cioè 
+
+$C={2\pi\epsilon_0 d\over \ln{R_2\over R_1}}$
