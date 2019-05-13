@@ -3729,3 +3729,166 @@ $\Delta V={\lambda\over 2\pi\epsilon_0}\ln({R_2\over R_1})$
 cioè 
 
 $C={2\pi\epsilon_0 d\over \ln{R_2\over R_1}}$
+
+## 13/05/2019
+
+#### Energia immagazzinata in un condensatore
+
+Per muovere una carica all'interno di un campo elettrico
+
+$dW=q\overrightarrow{E}\cdot d\overrightarrow{l}$
+
+Ho un consensatore inizialmente scarico, un interruttore che sta tra il condensatore e la batteria.
+
+![1557756808463](assets/1557756808463.png)
+
+La capacità del condensatore ricordiamo che è
+
+$C={Q\over \Delta V}$
+
+$Q=C\cdot \Delta V$
+
+Appena clicchiamo sull'interruttore, la prima carica si muove.
+
+Quando parte il secondo elettrone, va ad agire in un sistema **non più privo di cariche**.
+
+Essendocene già una, incontra un campo. Per spostare la seconda, devo effettuare del **lavoro**.
+
+Per la terza ancora più lavoro della seconda.
+
+Dobbiamo agire contro il campo elettrico formatosi.
+
+Provo a calcolarmelo
+
+$\Delta V=E\cdot h$
+
+$dW=\xcancel{q\cdot E dl}=dq E\cdot h=dq \Delta V= dq{q\over C}$
+
+$W|^Q_0=\int^Q_0 qdq={1\over2}{Q^2\over C}=_{(1)}{1\over2}C(\Delta V)^2={1\over2}Q\Delta V$
+
+Questa è la carica nel mio condensatore.
+
+Ora taglio il cavo agli estremi del condensatore.
+
+> Il condensatore **conterrà energia** sotto forma di lavoro utilizzato per caricarlo.
+>
+>$U=W={1\over2}{Q^2\over C}$
+
+Se ci aggiungo **un led, il led si accende**.
+
+$U={1\over2}C(\Delta V)^2={1\over2}C \cdot E^2\cdot h^2={1\over2}\epsilon_0{\Sigma\over \cancel{h}}E^2h^{\cancel{2}}$
+
+Sappiamo che $\Sigma\cdot h=V$ volume
+
+otteniamo, come risultato generale
+
+$U={1\over2}\epsilon_0 E^2 V\Rightarrow u={1\over 2}\epsilon_0 E^2$
+
+Sottolineo:
+
+>$u={1\over 2}\epsilon_0 E^2$
+
+In quel punto ho una densità di energia proporzionale al quadrato di $E$
+
+Abbiamo energia ovunque!
+
+>Questa energia è immagazzinata dallo spazio tempo. È ovunque. La luce e tutti i vari tipi, è energia, quindi anche le onde elettromagnetiche. Portano energia.
+>
+Solo per il fatto che ci sia luce, ho un campo elettrico, quindi ho energia.
+
+
+#### Esercizio
+
+Le cariche sono sulla superficie 
+
+$R=10^{-15}m$
+
+$q=1e=1,6\cdot10^{-19}C$
+
+$E={1\over 4\pi\epsilon_0}{q\over r^2}$
+
+$r\ge R$
+
+questa è la quantità di energia che un protone immette nell'universo.
+
+$u={1\over 2} \epsilon_0 E^2={1\over 2} \epsilon_0({1\over 4\pi\epsilon_0} {q\over r^2})^2={1\over 32\pi^2 \epsilon_0}$ $e^2\over r^4$
+
+$U=\int^{+\infty}_R d\tau u=\int^{+\infty}_R 4\pi r^2 dr {1\over 32\pi^2 \epsilon_0} {e^2\over r^4}= {e^2\over 8\pi\epsilon_0}\int^{+\infty}_R dr{1\over r^2}={e^2\over 8\pi\epsilon_0}\\big[{1\over2}\big]^{+\infty}_R={e^2\over 8\pi\epsilon_0 R}$
+
+>**Osservazioni:**
+>
+>L'elettromagnetismo non funziona per le cariche puntiformi, avrei energia infinita su un punto!
+>
+La carica positiva e la carica negativa **forniscono lo stesso contributo**, avendo il quadrato.
+
+#### Esercizio generico
+##### 1
+Condensatore piano
+
+$F=-{dU\over dx}$
+
+condensatore collegato ad un generatore $U=_{\Delta V=costante} {1\over2}C(\Delta V)^2={1\over 2}\epsilon_0 {\Sigma\over x}(\Delta V)^2\Rightarrow F=-{dU\over dx}={1\over2}\epsilon_0{\Sigma\over x^2}(\Delta V)^2$
+
+Condensatore Isolato $U=_{q=costante} {1\over2} {Q^2\over 2={1\over 2}{Q^2\over \epsilon_0 \Sigma}}x\Rightarrow F={-dU\over dx}=-{1\over 2}{Q^2\over \epsilon_0\Sigma}$
+
+
+##### 2
+Un condensatore piano è composto da due armature
+
+All'interno del condensatore ho un materiale dielettrico con costante 2 che lo riempie completamente
+
+$C=1pF$
+
+$\Sigma= 1mm^2$
+
+$h=?$
+
+$\epsilon_r=2$
+
+Calcola $h$.
+
+
+$C=\epsilon_0 {\Sigma\over h}$ è generale, nel nostro esempio con il materiale scelto:
+
+$C=\epsilon {\Sigma\over h}$ con $\epsilon=\epsilon_r\epsilon_0$(definizione)
+
+$C=\epsilon {\Sigma\over h}\Rightarrow h={\epsilon \Sigma\over C}={2\cdot 8,85\cancel{\cdot 10^{-12}}\cdot 10^{-6}\over 10^{-12}}m=17,7\mu m$
+
+##### 3
+
+Sull'oggetto precedente, viene immagazzinata una carica $Q=10\mu C$
+
+Calcolare $u=?$ e $U=?$
+
+
+
+$u={1\over2}\epsilon E^2$
+
+mi calcolo $E={\Delta V\over h}=$ so che $\Delta V$ lo ottengo da $C={Q\over \Delta V}$
+
+quindi
+
+$E={\Delta V\over h}={Q\over C h}={Q\over \epsilon{\Sigma\over \cancel{h}}\cancel{h}}={Q\over \epsilon\Sigma}$
+
+Non dipende da $h$ .
+
+Tornando a $u$
+
+$u={1\over2}\epsilon E^2={1\over 2}\epsilon({Q\over \epsilon \Sigma})^2= {1\over 2}{Q^2\over \epsilon \Sigma^2}={10^{-10}\cdot C^2\over 2\cdot 2\cdot 8,85\cdot 10^{-12}\cdot 10^{-12} C^2} {J\over m^3}= 3{10^{-12}\over 10^{-12}\cdot 10^{-12}}{J\over m^3}\simeq 3\cdot 10^{12} {J\over m^3}$
+
+
+Ho una distanza molto piccola, per quello ho così tanta energia!
+
+**ATTENZIONE A NON USARE LA FORMULA DEL PUNTIFORME**, non vale qui.
+
+quindi abbiamo
+
+$u=3\cdot 10^{12}{J\over m^3}$
+
+$U=\dots=53J$(*non ho fatto in tempo a copiarla , ma basta applicare la definizione di $U$*)
+
+##### 4
+
+Sull'es precedente, calcolare il campo
+
+$E={\Delta V\over h}={{Q\over C}\over h}= {10\cancel{\mu} C\over 1pF 17,7 \cancel{\mu}m}=6\cdot 10^{11} {V\over m}$
