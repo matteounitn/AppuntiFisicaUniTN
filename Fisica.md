@@ -3892,3 +3892,177 @@ $U=\dots=53J$(*non ho fatto in tempo a copiarla , ma basta applicare la definizi
 Sull'es precedente, calcolare il campo
 
 $E={\Delta V\over h}={{Q\over C}\over h}= {10\cancel{\mu} C\over 1pF 17,7 \cancel{\mu}m}=6\cdot 10^{11} {V\over m}$
+
+## 17/05/2019
+
+### Corrente Elettrica
+
+Avendo il rame, il cui simbolo è $Cu$, ha un portatore libero.
+
+Ci calcoliamo la densità di elettroni di conduzione
+
+$n={N_A\rho\over A}$ dove $\rho$ è la densità di massa.
+
+ricordiamo che il numero di avogadro è $N=6,022\cdot 10^{23}$
+
+Proseguiamo con i conti:
+
+$n={N_A\rho\over A}={6,022\cdot 10^{23}\cdot 8,96\cdot 10^6\over 63,55}{e\over m^3}=8,5\cdot 10^28 {e\over m^3}$
+
+abbiamo dunque in un micron di rame un numero di elettroni pari a $\tau=1\mu m^3\Rightarrow 10^{11} e^-$
+
+abbiamo una **temperatura**. Usiamo **boltzman**
+
+${1\over2}m\bar{v}^2={3\over 2}K_B T$
+
+Ora proseguiamo
+
+$\sqrt{\bar{v}^2}=\sqrt{{3K_B T\over m}}=1,16\cdot 10^5 m/s$
+
+$T=293K$ e $m=0,9\cdot 10^{-30} Kg$
+
+questo non è totalmente corretto, perchè bisognerebbe sconfinare nel quantistico, ottenendo 
+
+$v_F=\sqrt{{3E_F\over m}}=1,6\cdot 10^6 m/s$ dove $E_F$ è energia di Fermi.
+
+*Notiamo che è sbagliato di un fattore 10, non troppo per i nostri specifici.*
+
+ricordiamo che **velocità della luce** $c\simeq3\cdot 10^8 m/s$
+
+Abbiamo un **moto browniano** perchè continuano ad essere urtati, viaggiando ad un centesimo della velocità della luce.
+
+Se ho un campo elettrico $\overrightarrow{E}\ne\overrightarrow{0}$ cosa succede?
+
+Il loro movimento non è più determinato solo dall'urto, ma anche da un campo che ne devia la traiettoria.
+
+A che **velocità**? calcoliamocela.
+
+>**Intensità di corrente** $i=^{def} \lim_{\Delta t\to 0} {\Delta q\over \Delta t}={dq\over dt}$
+>
+> avendo $u.d.m.[i]={1C\over 1s}=1A$ Ampere.
+
+> **Corrente elettrica**: Quantità di carica elettrica che attraversa una determinata superficie nell'unità di tempo.
+> 
+
+Posso definire la corrente anche così:
+
+> $\overrightarrow{j}=ne\overrightarrow{v}_d$ dove $\overrightarrow{v}_d$ è la velocità di drift.
+
+Cioè il **flusso di corrente che passa in quella superficie.**
+
+>$i=\int _{\Sigma} \overrightarrow{j}\cdot \hat{u}_n d\Sigma$ 
+
+Qui possiamo definire anche $j\Sigma=\int _{\Sigma} \overrightarrow{j}\cdot \hat{u}_n d\Sigma$ se ho esempi *non patologici(?)*
+
+#### Esercizio
+
+$\Sigma=4mm^2$
+
+$i=8A$
+
+$V_D=?$
+
+Possiamo dire che $i=j\Sigma=nev_D\Sigma$
+
+ottenendo la velocità di drift
+
+$v_D={i\over ne\Sigma}=\dots=1,47\cdot 10^{-4}m/s$
+
+confrontandola con la velocità di Fermi
+
+$V_F=1,6\cdot 10^6 m/s$
+
+*(il conto è stato fatto con il rame)*
+
+
+confrontandolo con un autoscontro è come se ci fosse una macchina che si muove *un nanometro al secondo*. La cosa positiva è che ci sono **tante** macchine. 
+
+#### Legge della conservazione della carica
+
+>La corrente $i=\oint \overrightarrow{j}\cdot\hat{u}_n d\Sigma=-{{\rho}q_{int}\over \rho t} $
+
+Questo ci dice che **tanto entra tanto esce**.
+
+*Come in un tubo, se entra 1 litro di acqua e non ho **ne perdite ne affluenti** (cioè variazioni), avrò in uscita lo stesso litro di acqua.*
+
+#### Regime stazionario
+
+>$i_{chiusa}=0$
+
+cioè
+
+$-j_1\Sigma_1+j_2\Sigma_2=0$ allora vuol dire che $j_1\Sigma_1=j_2\Sigma_2$
+
+#### Legge di ohm
+
+Avendo un protone e neutrone
+
+$\overrightarrow{j}=n_+e\overrightarrow{v}_+-n_e\overrightarrow{v}_-$
+
+otteniamo che
+
+>Legge di Ohm(definizione potenziale): $\overrightarrow{j}={1\over \rho} \overrightarrow{E}$
+>
+
+che mi porta a 
+
+$i={1\over \rho}\cdot \overrightarrow{E}\cdot \hat{n}\Sigma$
+
+dove integrando otteniamo
+
+$\int^B_A \overrightarrow{E}\cdot d\overrightarrow{l}=\int^B_A\overrightarrow{E}\cdot \hat{n}\ d\overrightarrow{l}= Eh$
+
+$=^{def} V_A-V_B=\Delta V$
+
+unendo queste due precedenti otteniamo
+
+$E={\Delta V\over h}$
+
+> **Resistenza elettrica:** ${1\over \rho}{\Delta V\over h}\Sigma\Rightarrow \Delta V=\rho{h\over \Sigma} i$ dove $R=\rho{h\over \Sigma}$
+> 
+> $udm[R]=1\Omega$
+
+infine
+
+> Legge di ohm(elettronica): $\Delta V= R\cdot i$
+> 
+
+$R$ può anche essere scritto come $\int {q\ dl\over \Sigma}$
+
+#### Altro esercizio
+
+$R={1\over \sqrt{\pi}}$
+
+$l=1m$
+
+$\rho_{Au}=2,35\cdot 10^{-8}\Omega m$
+
+La resistenza sarà
+
+$R=2,35\cdot 10^{-2}\Omega$
+
+#### Potenza
+
+>Potenza del singolo elettrone
+>
+$P=\overrightarrow{F}\cdot\overrightarrow{v}=e\overrightarrow{E}\cdot\overrightarrow{v}_D$
+
+Se voglio calcolarla per il volume/densità di elettroni
+
+$P_{\tau}=nP=ne\overrightarrow{E}\cdot\overrightarrow{V}_D=ne\overrightarrow{v}_D\cdot \overrightarrow{E}=\overrightarrow{j} \overrightarrow{E}=_{(\overrightarrow{j}{{1\over\rho}\overrightarrow{E}})} {1\over \rho}{E}^2$
+
+ma equivale anche $\rho j^2$
+
+Ora
+
+$dP=P_{\tau}\Sigma dh=\rho j^2\Sigma dh=_{(j={i\over \Sigma})} \rho({i\over \Sigma})^2\Sigma dh=\rho {dh\over \Sigma}\cdot i^2\to P=\int^l_{lunghezza 0} dP=\rho {l\over\Sigma}i^2$
+
+ottenendo 
+
+>$P=R\cdot i^2$
+>
+>o equivalentemente con la legge di Ohm
+>
+$P={\Delta V^2\over R}$
+
+Questa potenza viene dissipata in **calore!**(**Effetto Joule**)
