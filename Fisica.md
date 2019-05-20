@@ -4066,3 +4066,219 @@ ottenendo
 $P={\Delta V^2\over R}$
 
 Questa potenza viene dissipata in **calore!**(**Effetto Joule**)
+
+## 20/05/2019
+
+#### Resistenze in serie e in parallelo
+Cosa succede se attacco una resistenza $R_1$ in serie a resistenza $R_2$?
+
+ ![Corrente elettrica](assets/download.gif)
+
+e se fossero in parallelo?
+
+![img](assets/download-1558360694896.jpg)
+
+##### Resistenza in serie
+
+$\Delta V_1$ sarà il delta calcolato su $V$ prima e dopo $R_1$
+
+$\Delta V_2$ sarà il delta calcolato su $V$ prima e dopo $R_2$
+
+$i_1=i_2$
+
+${\Delta V_1\over R_1}={\Delta V_2\over R_2}$
+
+Per la regola della conservazione della carica:
+
+$Req|\Delta V=Req \cancel{i}$
+
+dove $\Delta V=\Delta V_1+\Delta V_2$ ottenendo $=R_1\cancel{i_1}+R_2\cancel{i_2}$
+
+Quindi
+
+> $R_eq=R_1 (serie) R_2=R_1+R_2$
+> 
+
+##### Resistenza in parallelo
+
+Uso la conservazione dei $\Delta V$
+
+$\Delta V= V_B-V_A=\\\Delta V_1=R_1 i_1\\\Delta V_2=R_2 i_2\\\Delta V_{eq}=R_{eq} (i_1+i_2)$
+
+questo perchè $\Delta V_1=\Delta V_2= \Delta V_{eq}$
+
+Quindi
+
+>${1\over R_{eq}}={1\over R_1(parall)R_2}={1\over R_1}+{1\over R_2}$
+
+#### Campo non conservativo e forza elettromotrice
+Ho un campo elettrico 
+
+$V_A-V_B=\int^B_A\overrightarrow{E}\cdot d\overrightarrow{s}=R i$
+
+dove $\overrightarrow{E}$ è il generatore.
+
+Avendo un circuito chiuso
+
+> $\oint \overrightarrow{E}\cdot d\overrightarrow{s}=R_Ti$
+
+con $R=\rho {h\over \Sigma}$ 
+
+Per le forze conservative, la circuitazione valeva zero. Ma abbiamo detto che (per la circuitazione) $\oint \overrightarrow{E}\cdot d\overrightarrow{s}=0$
+
+Beh possiamo dire che questo campo **non è un campo conservativo**.
+
+In dettaglio, provando sul **campo elettrostatico**
+
+
+$\oint \overrightarrow{E}_{el}\cdot d\overrightarrow{s}=\int_A^B \overrightarrow{E}_{el}\cdot d\overrightarrow{s}+\int^A_B\overrightarrow{E}_el\cdot d\overrightarrow{s}=0$
+
+dove $\int_A^B \overrightarrow{E}_{el}\cdot d\overrightarrow{s}=$ *ext generatore*
+
+$\int^A_B\overrightarrow{E}_el\cdot d\overrightarrow{s}=$ *int generatore*
+
+
+
+Possiamo dunque definire $\overrightarrow{E}^*$ <u>non conservativo</u>
+
+- **all'interno del generatore** ho $\overrightarrow{E}_{el}+\overrightarrow{E}^*$
+- **all'esterno** $\overrightarrow{E}_{el}$
+
+cioè 
+
+$\int ^A_B \overrightarrow{E}\cdot d\overrightarrow{s}=\int^A_B(\overrightarrow{E}_{el}+\overrightarrow{E}^*)\cdot d\overrightarrow{s}$
+
+
+Definiamo dunque **f.e.m.**: Forza elettromotrice ($udm$ volt)
+
+>$f.e.m.=^{def}\int^A_B\overrightarrow{E}^*\cdot d\overrightarrow{s}$
+>
+> con $|\overrightarrow{E}^*|>|\overrightarrow{E}|$
+
+
+#### Resistenza interna
+
+>$\int_A^B(\overrightarrow{E}_{el}+\overrightarrow{E}^*)\cdot d\overrightarrow{s}=r i$ cioè **resistenza interna**.
+
+Se ho una resistenza interna, dissipa calore! Un buon generatore ha resistenza interna **bassa**.
+
+#### Considerazioni
+
+Sapendo
+
+$\oint (\overrightarrow{E}_{el}+\overrightarrow{E}^*)\cdot d\overrightarrow{s}=R_T i$
+
+abbiamo che
+
+$\int^B_A(\overrightarrow{E}_{el}+\xcancel{\overrightarrow{E}^*})\cdot d\overrightarrow{s}+{\int^A_B (\overrightarrow{E}_{el}+\overrightarrow{E}^*)\cdot d\overrightarrow{s}}=$
+
+
+$\xcancel{\overrightarrow{E}^*}$ perchè all'esterno vale **zero**.
+
+Questi due integrali sono rispettivamente
+
+$V_A-V_B=R_i$ e $r\cdot i$
+
+
+>Ricordiamo che $\mathcal{E}=V_A-V_B=\int^B_A \overrightarrow{E}\cdot d\overrightarrow{s}$
+
+quindi
+
+$\oint (\overrightarrow{E}_{el}+\overrightarrow{E}^*)\cdot d\overrightarrow{s}=R_T i=R_i+ri=(R+r)i=fem$
+
+e sappiamo che $R_T=R+r$
+
+uniti assieme
+
+$\begin{cases} fem\\R_T=R+r\end{cases}$
+
+$P=R_i^2+ri^2$
+
+Se non ci fosse resistenza interna non possiamo avere corrente! Ce ne possiamo dimenticare quando è piccola
+
+Concludo che
+
+>$\mathcal{E}=fam-ri$
+>
+>Dove $fam$ è quello che mi **vendono**, mentre $\mathcal{E}$ è quello che **abbiamo** perchè dobbiamo considerare anche la **resistenza interna**
+
+#### Esercizio per casa
+
+![1558364289644](assets/1558364289644.png)
+
+$fem=100V$
+
+$r=10\Omega$
+
+$R_1=40\Omega$
+
+$R_2=50\Omega$
+
+$R_3=100\Omega$
+
+**Calcolare**
+
+$\Delta V_1=?=V_D-V_B$
+
+$\Delta V_2=?=V_C-V_D$
+
+$\Delta V_3=?=V_A-V_C$
+
+$\Delta V_{generatore}=?=V_B-V_A$
+
+#### Leggi di Kirchhoff
+
+##### Legge del nodo
+
+![Leggi e principi fondamentali](assets/download-1558365582029.gif)
+
+Ho un nodo, con correnti che possono sia entrare che uscire.
+
+**NB: per un nodo servono almeno 3 conduttori**
+
+>La somma di tutte le correnti deve essere zero
+>
+>$\sum_K i_k=0$
+
+##### Legge alla maglia
+
+![1558364953762](assets/1558364953762.png)
+
+*è una maglia anche se non incontra la differenza di potenziale*
+
+Una maglia è un percorso/cammino che passa su un numero di nodi e archi senza ripassare tra essi, tornando all'inizio.
+
+>La somma algebrica delle differenze di potenziale che si incontrano percorrendo una maglia sono uguali a zero.
+>
+>Il voltaggio totale di una maglia è la somma di tutte le differenze di potenziale nella stessa maglia.(*?*)
+>
+>Quando non incontro alcun generatore è $=0$.
+>
+>$\sum_K R_Ki_K=\sum_l \mathcal{E}_l$
+
+#### Legge ai capi del condensatore
+
+![1558365701894](assets/1558365701894.png)
+
+La differenza di potenziale ai capi del condensatore+resistenza è uguale ai capi della batteria.
+
+>$\mathcal{E}=V_R+V_C=R_i+{q\over C}=R{dq\over dt}+{q\over C}$
+
+$R{dq\over dt}+{q\over c}=\mathcal{E}$
+
+${dq\over q-C\mathcal{E}}=-{dt\over RC}$
+
+$\ln {q-C\mathcal{E}\over -C\mathcal{E}}=-{t\over RC}$
+
+$q(t)=C\mathcal{E}(1-e^{-t/\tau})$
+
+$i(t)={dq\over dt}={\mathcal{E}\over R}e^{-t/ \tau}$
+
+>Otteniamo che il **tempo tipico di carico/scarico condensatore è pari a**
+>$\tau=RC$
+
+
+>La corrente che passa si carica nel condensatore e si scarica **nel tempo**.
+
+
+
