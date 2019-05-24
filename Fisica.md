@@ -4282,3 +4282,155 @@ $i(t)={dq\over dt}={\mathcal{E}\over R}e^{-t/ \tau}$
 
 
 
+## 24/05/2019
+
+Avendo dei magneti, sappiamo che 
+
+* polo positivo con polo positivo si respingeranno;
+* polo negativo con polo negativo si respingeranno;
+* polo positivo e polo negativo si attrarranno.
+
+So che $F\propto{1\over r^2}$
+
+esiste dunque una quantità che **descrive l'interazione della materia ad accettare una forza di tipo magnetica.**
+
+> $F_m=K_m{q_{1m}q_{2m}\over r^2}$
+> 
+
+noto che, se inizio a **dividere il magnete** in piccoli parti, avrò sempre due poli.
+
+![Aula di tecnica: ENERGIA ELETTRICA E MAGNETISMO](assets/download-1558688208456.jpg)
+
+*Non abbiamo ancora certezza dell'esistenza di un monopolo magnetico!*
+
+
+#### Esperienza di Orsted
+
+Un ago magnetico, passando attorno ad un cavo con corrente passante, si muove.
+
+[Video](https://upload.wikimedia.org/wikipedia/commons/2/28/17._%D0%95%D1%81%D1%82%D0%B5%D1%80%D0%B4%D0%BE%D0%B2_%D0%B5%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82.ogv)
+
+![img](assets/220px-Oersted's_experiment.JPG)
+
+
+#### Esperienza di Ampere
+
+Se due correnti vanno nello stesso verso, si attirano i due fili, mentre se vanno in senso opposto, si allontanano.
+
+![Esperienza di Ampere - LAB2GO-WIKI](assets/download-1558688968573.jpg)
+
+> Otteniamo che se abbiamo una carica nel movimento, abbiamo del magnetismo.
+> 
+> Nella materia magnetica, sta avvenendo un moto di carica, ho delle correnti **amperiane** molecolari che fanno da sorgente di campo magnetico e permettono all'oggetto di accoppiarsi ai campi magnetico.
+> 
+
+##### Nomenclatura
+
+Induzione magnetica $\overrightarrow{B}$ (molti fisici lo chiamano campo magnetico anche se non è così.)
+
+Campo magnetico $\overrightarrow{H}$
+
+#### Teorema di Gauss
+
+Visualmente, un magnete ha questo campo magnetico:
+
+![Magnet – Wikipedia](assets/download-1558689037586.png)
+
+Avendo il flusso.
+
+Se prendo una zona escludendo il magnete, noto che le linee di campo entranti, saranno sempre uscenti. 
+
+Quindi il flusso è zero(somma entranti e uscenti).
+
+Se prendo una zona includendo il magnete, accade la stessa cosa! Tutte le linee di flusso sono sempre entranti/uscenti. Quindi ho sempre un flusso $=0$
+
+
+>$\oint_{\Sigma} \overrightarrow{B}\cdot \hat{n}d\Sigma=\Phi_{\Sigma}(\overrightarrow{B})=0$
+>
+Questo flusso vale zero indipendentemente dalla superficie in analisi.
+
+#### Unità di misura alternative
+
+Prendendo un dipolo magnetico(tipo asse terrestre, che non è dipolo al $100%$ ma ci arriva)
+
+$udm[B]=1 T= 1 tesla [S.I.]$
+
+$=1G=1 gauss= 10^4 T$
+
+>Il campo magnetico è **solenoidale**.
+
+#### Forza di Lorentz
+Quando ho una $+q$ che entra in un campo magnetico, la sua direzione viene deviata.
+
+![lorentz](assets/295px-Lorentz_force.svg-1558690392722.png)
+
+> La forza di **lorentz** viene data da
+> 
+>$\overrightarrow{F}_L=\rho\overrightarrow{v}\text{ x } \overrightarrow{B}$
+
+cioè prodotto vettoriale.
+
+Uso la **regola della mano destra.**
+
+![img](assets/download-1558690767277.jpg)
+
+Ricordiamo che **questo prodotto non è commutativo**.
+
+La forza di lorentz è sempre ortogonale alla velocità? Sì. Per la definizione.
+
+Questo ci porta
+
+Lavoro della forza di lorentz
+
+$W_L=\int \overrightarrow{F}_L\cdot d\overrightarrow{s}$
+
+derviandola nel tempo
+
+>${dW_L\over dt}=\int \overrightarrow{F}_L\cdot {d\overrightarrow{s}\over dt}$ varrà $0$.
+>
+La forza di lorentz non compie lavoro.
+
+$|\overrightarrow{F}_L|=q v B\sin \theta_{vB}$
+
+#### Caso del ciclotrone
+
+Sappiamo che la forza è costante e sempre perpendicolare alla traiettoria
+
+$\theta _{VB}={\pi\\over 2}$  $F_L=qvB\Rightarrow$ Moto circolare uniforme!
+
+Riprendendo la formula del MCU
+
+$F=m\cdot a$
+
+ottengo
+
+$q \cancel{v} B=m{v^2\over R}\Rightarrow$
+
+>$R={mv\over qB}$
+
+detto raggio del ciclotrone.
+
+>**Il periodo di ciclotrone** è $V={2\pi R\over T}\Rightarrow T={2\pi R\over v}={{2\pi}{mv\over qB}\over v}={2\pi m\over qB}$
+
+La frequenza è $1\over T$.
+
+*Una curvatura della particella non dipende dalla velocità? strano. Ma vediamo che il raggio è dipendente dalla velocità, quindi lo è indirettamente.*
+
+*per casa:calcolare la frequenza di ciclotrone in una particella di elio.*
+
+
+#### Seconda legge fondamentale di laplace
+
+La forza di lorentz vale sul singolo. 
+Sul filo?
+
+$\overrightarrow{F}_L=-e\overrightarrow{v}_d\text{ x }\overrightarrow{B}$
+
+$d\overrightarrow{F}= n\Sigma ds\overrightarrow{F}_L=-e\Sigma ds\overrightarrow{v}_D\text{ x }\overrightarrow{B}=\Sigma ds\overrightarrow{j}\text{ x }\overrightarrow{B}$
+
+ottenendo 
+
+>$d\overrightarrow{F}=id\overrightarrow{s}\text{ x }\overrightarrow{B}$
+>
+
+
