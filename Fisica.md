@@ -4434,3 +4434,146 @@ ottenendo
 >
 
 
+
+## 21/05/2019
+
+### Principio di equivalenza di ampere
+
+Avendo una spira, con la quale gira corrente ed un magnete
+
+![1558965331427](assets/1558965331427.png)
+
+>$\overrightarrow{m}=i\sum \hat{u}_n$
+
+$\hat{u}_n$ è dettato da come scorre $i$
+
+Quando un magnete interagisce con il campo magnetico di fondo, sono due campi magnetici che interagiscono tra loro.
+
+$\overrightarrow{m}$ è il campo magnetico generato dal magnete.
+
+Si vede facendo la regola della mano destra, ma il campo magnetico si avvolge attorno.
+
+Avendo un magnete tra due cavi con corrente passante entrambi nello stesso senso, ho una situazione di equilibrio quando il magnete è parallelo, solo che in un modo sarà stabile, in quello opposto instabile.
+
+
+![1558965868886](assets/1558965868886.png)
+
+Avremmo una situazione che va da $mB$ a $-mB$, quindi mettiamo un $-$ davanti alla $m$ per cambiare.
+
+Definiamo **l'energia potenziale magnetica** con
+
+>$U_m=-\overrightarrow{m}\cdot \overrightarrow{B}$
+
+ora
+
+$U\to F=-\nabla U= -{dU\over dr}$
+
+
+Se ho un campo magnetico $\overrightarrow{B}$, con un magnete posizionato sul campo magnetico, il magnete **vibra**.
+
+>$\begin{cases} U_0=-\overrightarrow{m}\cdot \overrightarrow{B}\\E_{K0}=0\\E=+\overrightarrow{m}\cdot\overrightarrow{B}\end{cases}$
+
+![1558966490823](assets/1558966490823.png)
+
+#### Prima legge elementare di laplace
+
+Ora otteniamo la prima legge elementare di laplace
+
+![img](assets/300px-Laplace_magnetic.png)
+
+>$d\overrightarrow{B}=k_m {id\overrightarrow{s}\text{ x }\hat{u}_r\over r^2}$
+
+dove $k_m=10^{-7} {T\cdot m\over A}=10^{-7}{H\over m}={\mu_0\over 4\pi}$
+
+con
+
+$\mu_0=4\pi\text{ x }10 ^{-7} {T\cdot m\over A}$
+
+La prima legge di laplace è **solo uno strumento matematico**, non esiste **dB**.
+
+#### Legge di ampere
+
+>$\overrightarrow{B}=\int_{\Gamma}{d\overrightarrow{B}}=\oint K_m {id\overrightarrow{s}\text{ x } u_r\over r^2}$
+
+continuando 
+
+$\overrightarrow{B}(\overrightarrow{p})={\mu_0i\over 4\pi}\oint {d\overrightarrow{s}\cdot \hat{u}_r\over r^2}$
+
+$\overrightarrow{B}={\mu_0i\over 4\pi}\hat{u}_{edL}\int^{2\pi}_0 {Rd\phi\over R^2}={\mu_0 i\over \cancel{4\pi} R}\cancel{2\pi} \hat{u}_{EDL}={\mu_0 i\hat 2R}\hat{u}_{EDL}$
+
+*con questo posso calcolare il campo magnetico al centro di una spira con un magnete*
+
+*La legge di ampere si applica in un circuito finito*
+
+
+#### Collegamento tra velocità della luce e elettromagnetismo
+
+$d\overrightarrow{B}={\mu_0\over 4\pi}{\overrightarrow{j}d\tau\text{ x }\hat{u}_r\over r^2}$
+
+con $\overrightarrow{j}d\tau=id\overrightarrow{s}$
+
+continuando
+
+${\mu_2\over 4\pi} {q\overrightarrow{v}\text{ x } \hat{u}_r\over r^2}nd\tau$
+
+se $nd\tau$ è $1$?
+
+$\overrightarrow{B}={\mu_0\over 4\pi}{q\overrightarrow{v}\text{ x }\hat{u}_r\over r^2}$ e $\overrightarrow{E}={1\over 4\pi \epsilon_0}{q\over r^2}\hat{u]_r$
+
+unendo queste due ottengo
+
+$\overrightarrow{B}=\epsilon_0\mu_0\overrightarrow{v}\text{ x }\overrightarrow{E}$
+
+ma se faccio un po' di calcoli
+
+$\epsilon_0=8,85\cdot 10^{-12}$
+
+$\mu_0=4\pi\cdot10^{-7}=12,6\cdot 10^{-7}$
+
+ora noto che $\epsilon_0\mu_0=111,51\cdot 10^{-19}=11,15\cdot 10^{-18}$
+
+$\sqrt{\epsilon_0\mu_0}=3,339\cdot 10^{-9}$
+
+noto che
+
+${1\over \sqrt{\epsilon_0\mu_0}}=2,998\cdot 10^8 {m\over s}$
+
+che è la **velocità della luce!**
+
+quindi possiamo concludere che 
+
+>$\overrightarrow{B}={1\over c^2}\overrightarrow{v}\text{ x }\overrightarrow{E}$ dove $c^2$ è la velocità della luce.
+
+
+#### Legge di ampere (circuitazione)
+
+Avendo un circuito chiuso
+
+$\oint d\overrightarrow{s}\cdot \overrightarrow{v}=\sum^\infty_{i=1} d\overrightarrow{s}_1\cdot \overrightarrow{v}_1+d\overrightarrow{s}_2\cdot \overrightarrow{v}_2\dots$
+
+ricordiamo che
+
+$\oint \overrightarrow{E}\cdot d\overrightarrow{s}=0$
+
+e 
+$\oint \overrightarrow{B}\cdot d\overrightarrow{s}=?$
+
+avendo un filo indefinito su cui passa corrente $i$, il campo gli gira attorno *(regola della mano destra)*.
+
+$\overrightarrow{B}={\mu_0 i\over 2\pi R}\hat{u}\phi$
+
+Più mi allontano più è debole il campo.
+
+$\overrightarrow{B}$ sarà sempre **parallelo** a $d\overrightarrow{s}$
+
+>$\oint \overrightarrow{B}\cdot d\overrightarrow{s}=\int_{2\pi R} B\ ds={\mu_0 i\over 2\pi R}\int_{2\pi R} ds=\mu_0 i$
+>
+>Ho ottenuto un valore non dipendente dal raggio della circonferenza! è generico.
+
+![1558969621929](assets/1558969621929.png)
+
+|              |                 $\overrightarrow{E}_{stat}$                  |                  $\overrightarrow{E}_{ST}$                   |
+| ------------ | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| $S_{divise}$ | $\Phi(\overrightarrow{E}={q_{int}\over \epsilon_0})$ (teorema gauss campo elettrico) | $\Phi(\overrightarrow{E}=0$(solenoidalità campo linee sempre chiuse ) |
+| $L_{divise}$ | $\Gamma(\overrightarrow{E})=0$ (conservatività campo elettrico) | $\Gamma(\overrightarrow{B})=\mu_0 i_{concatenate(interne)}$    (teorema di ampere) |
+
