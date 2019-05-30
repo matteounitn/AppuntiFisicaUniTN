@@ -4577,3 +4577,91 @@ $\overrightarrow{B}$ sarà sempre **parallelo** a $d\overrightarrow{s}$
 | $S_{divise}$ | $\Phi(\overrightarrow{E}={q_{int}\over \epsilon_0})$ (teorema gauss campo elettrico) | $\Phi(\overrightarrow{E}=0$(solenoidalità campo linee sempre chiuse ) |
 | $L_{divise}$ | $\Gamma(\overrightarrow{E})=0$ (conservatività campo elettrico) | $\Gamma(\overrightarrow{B})=\mu_0 i_{concatenate(interne)}$    (teorema di ampere) |
 
+## 30/05/2019
+
+#### Esercizi
+##### Deformazione delle spire
+
+![1559201308943](assets/1559201308943.png)
+
+$U_i=-\overrightarrow{m}\cdot \overrightarrow{B}=-i\sum \hat{u}_n\cdot \overrightarrow{B}$
+
+$U_f=-\overrightarrow{m}\cdot \overrightarrow{B}$ (riferente al verde)
+
+Otteniamo che la spira deformata è
+
+$U_i<U_f$
+
+Devo dunque compiere lavoro per passare da una situazione bianca ad una situazione verde.
+
+##### Esercizio più dimostrazione teorema lezione precedente
+
+![1559203906470](assets/1559203906470.png)
+
+(il cerchio è una linea di campo)
+
+Il vettore risultato avrà la stessa direzione, perchè abbiamo i vettori paralleli.($d\overrightarrow{B}$)
+
+*Il filo, essendo infinito, mi rende possibile avere lo stesso punto per tutta la $x$ passante per il punto di partenza di $d\overrightarrow{B}$(?)*
+
+$d_B=K_m{id\overrightarrow{s}\text{ x } \hat{u}_r\over r^2}$
+
+$dB=K_m{ids\sin\theta\over r^2}$ con $K_m={\mu_0\over 4\pi}$
+
+ora trigonometricamente
+
+$r\sin(\pi-\theta)=r\sin{\theta}=R$
+
+$s\tan(\pi-\theta)=s\tan\theta=R$
+
+perchè {R\over s}=\tan(\pi-\theta)$
+
+Attraverso calcoli(*che non ho copiato perchè stavo facendo il disegno con il legnosissimo geogebra*) ottengo che
+
+$r={R\over \sin\theta}$
+
+$ds=R{d\theta\over \sin^2 \theta}$
+
+proseguendo con $dB=K_m i{\cancel{R}{d\theta\over \cancel{\sin^2\theta}}\sin\theta\over {R^{\cancel{2}}\over\cancel{\sin^2\theta}}}={K_m i\over R}d\theta\sin\theta$
+
+$B=\int^{\theta=\pi}_{\theta=0} dB={K_m i\over R}\int^\pi_0 d\theta \sin \theta={K_m i\over R}[-\cos\theta]^\pi_0={2K_m i\over R}=\cancel{2}{\mu_0\over \cancel{4}\pi R}i={\mu_0 i\over 2\pi R}$
+
+ottenendo $\overrightarrow{B}={\mu_0 i\over 2\pi R}\hat{u}_{\rho}$
+
+#### Recap
+
+1. Principio di inerzia
+2. ${d\overrightarrow{p}\over dt}=\overrightarrow{F}_{ext}$
+3. $\overrightarrow{F}_{1\to 2}=-\overrightarrow{F}_{2\to 1}$
+4. newton(con formula solita)
+5. forze conservative:
+  1. $ W=-\Delta U| \Delta U=-\int^B_A\overrightarrow{F}\cdot d\overrightarrow{s}​$
+  2. $E_{mec}=E_c+U=costante(\Delta E_{mec}=0)$
+6. $W=\int^B_A \overrightarrow{F}\cdot d \overrightarrow{s}\big| E_c={1\over 2}m\cdot v^2 $
+7. $W_{attr}=-\Delta E_{mec}$
+8. $U_{int/gdl}={1\over 2}K_B T\Rightarrow U_{int}={l\over 2}K_B T$
+9. $pV=nRT\iff pV=NK_B T$
+10. isobare/isocore/isotermiche/adiabatiche$[pV^{\gamma}=costante]$ con $\gamma =C_v,C_p$
+11. $Q$ exp. Joule
+12. $\Delta U= Q-W$
+13. Cicli
+    1. Teorici 
+    2. Frigoriferi
+    3. $\eta_{any}=1-{Q_1\over Q_2}$ ($1-{T_1\over T_2}$)
+14. 2 principio della termodinamica 
+    1. kelvin $\eta_{any}\le \eta_{rev}$
+    2. clausus $\Delta S_{AB}=\int^B_A {dQ\over T}$
+15. $\mathcal{C}=k{Q_C\over r^2}​$
+16. $\overrightarrow{F}={1\over 4\pi \epsilon_0}{q_1 q_2\over r^2_{12}}\hat{r}_{12}$
+17. $\overrightarrow{E}=k_e {q\over r^2} \hat{r}$ principio di sovrapposizione(?)
+18. $E$ conservativo ($\Gamma(\overrightarrow{E}=0)$)  $U,V|\Delta V_{AB}=\int^A_B\overrightarrow{E}\cdot d\overrightarrow{s}$
+19. $\Phi(\overrightarrow{E})={q_{int}\over \epsilon_0}$ 
+20. conduttori
+21. schermo elettrostatico, messa a terra $|C={Q\over V}$
+22. $C_sys={Q\over \Delta V}|i,\overrightarrow{j}|$ continuità$|\Delta V=Ri$
+23. $P=Ri^2$
+24. generatori, $r_{int}$
+25. $f.e.m.$ **non conservativa**
+26. $\overrightarrow{B},\overrightarrow{m}$
+	1. Laplace $\Phi(\overrightarrow{B})=\overrightarrow{0}$ 
+	2. Laplace $\Gamma(\overrightarrow{B})=\mu_0 i$
