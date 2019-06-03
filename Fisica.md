@@ -4658,7 +4658,7 @@ ottenendo $\overrightarrow{B}={\mu_0 i\over 2\pi R}\hat{u}_{\rho}$
 19. $\Phi(\overrightarrow{E})={q_{int}\over \epsilon_0}$ 
 20. conduttori
 21. schermo elettrostatico, messa a terra $|C={Q\over V}$
-22. $C_sys={Q\over \Delta V}|i,\overrightarrow{j}|$ continuità$|\Delta V=Ri$
+22. $C_{sys}={Q\over \Delta V}|i,\overrightarrow{j}|$ continuità$|\Delta V=Ri$
 23. $P=Ri^2$
 24. generatori, $r_{int}$
 25. $f.e.m.$ **non conservativa**
