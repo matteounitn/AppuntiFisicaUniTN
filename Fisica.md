@@ -4518,7 +4518,7 @@ ${\mu_2\over 4\pi} {q\overrightarrow{v}\text{ x } \hat{u}_r\over r^2}nd\tau$
 
 se $nd\tau$ è $1$?
 
-$\overrightarrow{B}={\mu_0\over 4\pi}{q\overrightarrow{v}\text{ x }\hat{u}_r\over r^2}$ e $\overrightarrow{E}={1\over 4\pi \epsilon_0}{q\over r^2}\hat{u]_r$
+$\overrightarrow{B}={\mu_0\over 4\pi}{q\overrightarrow{v}\text{ x }\hat{u}_r\over r^2}$ e $\overrightarrow{E}={1\over 4\pi \epsilon_0}{q\over r^2}\hat{u}_r$
 
 unendo queste due ottengo
 
@@ -4614,7 +4614,7 @@ $r\sin(\pi-\theta)=r\sin{\theta}=R$
 
 $s\tan(\pi-\theta)=s\tan\theta=R$
 
-perchè {R\over s}=\tan(\pi-\theta)$
+perchè ${R\over s}=\tan(\pi-\theta)$
 
 Attraverso calcoli(*che non ho copiato perchè stavo facendo il disegno con il legnosissimo geogebra*) ottengo che
 
