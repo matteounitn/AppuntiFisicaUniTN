@@ -3813,7 +3813,7 @@ questa è la quantità di energia che un protone immette nell'universo.
 
 $u={1\over 2} \epsilon_0 E^2={1\over 2} \epsilon_0({1\over 4\pi\epsilon_0} {q\over r^2})^2={1\over 32\pi^2 \epsilon_0}$ $e^2\over r^4$
 
-$U=\int^{+\infty}_R d\tau u=\int^{+\infty}_R 4\pi r^2 dr {1\over 32\pi^2 \epsilon_0} {e^2\over r^4}= {e^2\over 8\pi\epsilon_0}\int^{+\infty}_R dr{1\over r^2}={e^2\over 8\pi\epsilon_0}\\big[{1\over2}\big]^{+\infty}_R={e^2\over 8\pi\epsilon_0 R}$
+$U=\int^{+\infty}_R d\tau u=\int^{+\infty}_R 4\pi r^2 dr {1\over 32\pi^2 \epsilon_0} {e^2\over r^4}={e^2\over 8\pi\epsilon_0}\int^{+\infty}_R dr{1\over r^2}={e^2\over 8\pi\epsilon_0}\big[{1\over2}\big]^{+\infty}_R={e^2\over 8\pi\epsilon_0 R}$
 
 >**Osservazioni:**
 >
