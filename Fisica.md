@@ -8,7 +8,7 @@
 
 > Fenomeno di interesse e sua idealizzazione, ho grandezze fisiche per descriverlo (**unità**), osservazione e misura (**incertezze**), formulazione di ipotesi, passando dal **modello alla legge fisica**.
 >
-> Attraverso quest'ultima (legge fisica) per descrivere e prevedere ed in caso **falsificare l'ipotesi.**
+> Attraverso quest'ultima (legge fisica) è possibile descrivere e prevedere ed in caso **falsificare l'ipotesi.**
 
 ---
 
@@ -90,7 +90,7 @@ s=$A \cos(Bt)$
 >
 > **NON** posso rimuovere la costante A, mentre posso rimuovere la costante B(se ad esempio la B vale 1), ma è consigliato tenerla in ogni caso. Senza A non posso dire di che cosa si tratta, di lunghezza, di tempo etc etc, quindi A deve essere **DEFINITA** ed avere una unità di misura.
 
-> **Pulsazione**: nella **formula** **precedente** la pulsazione è $\omega=B$.
+> **Pulsazione**: la **formula** **precedente** è la legge oraria che descrive un moto armonico (ad esempio: una molla, un pendolo). Il pendolo oscilla attorno alla condizione di riposo con pulsazione $\omega=B$.
 
 
 
@@ -108,7 +108,7 @@ Ovviamente ha una unità di misura
 
 $[v]={[s]\over[t]}$
 
-Le parentesi quadre indicano una equazione dimensionale, stiamo considerando l'uguaglianza del punto di vista delle **dimensioni**.
+Le parentesi quadre indicano una equazione dimensionale, stiamo considerando l'uguaglianza dal punto di vista delle **dimensioni**.
 
 
 
@@ -152,13 +152,13 @@ $3{m\over s}$
 
 
 
-> Velocità nel tempo che dipende dall'istante $t$.
+> La velocità istantanea è la velocità media relativa a un tempo infinitesimo.
 
-$\lim_{\Delta t\longrightarrow0}{\Delta x\over \Delta t}=v$
+$\lim_\limits{\Delta t \to 0}{\Delta x\over \Delta t}=v$
 
 anche detta
 
-> $\lim_{\Delta t\longrightarrow0}{\ x(t)-x_0\over t-t_0}=v(t)$ 
+> $\lim_\limits{\Delta t\longrightarrow0}{\ x(t)-x_0\over t-t_0}=v(t)$ 
 >
 > Rapporto incrementale, quindi è la **derivata** nel grafico **spazio tempo.**
 
@@ -178,7 +178,7 @@ In questo caso A è **Spazio**.
 
 
 
-Avendo la **legge oraria della velocità**, posso ottenere la **legge oraria del moto** integrando $v(t)​$
+Avendo la **legge oraria della velocità**, posso ottenere la **legge oraria del moto** integrando $v(t)$
 
 
 
@@ -200,9 +200,9 @@ $s(t_0)=s_0+\bar{v}(t_0-t_0)=s_0$
 
 
 
-> **Variazione** della velocità nel tempo o **Derivata** della velocità nel tempo
+> **Derivata** della velocità nel tempo
 >
-> $\lim_{\Delta t\longrightarrow0}{\ v(t)-v(t_0)\over t-t_0}=a(t_0)$ 
+> $\lim_\limits{\Delta t \to 0}{\ v(t)-v(t_0)\over t-t_0}=a(t_0)$ 
 
 > **Protip**: Controllo di avere consistenza dimensionale
 >
@@ -216,11 +216,11 @@ $s(t_0)=s_0+\bar{v}(t_0-t_0)=s_0$
 
 > L**'accelerazione gravitazionale** è pari a
 >
-> $g=9,8055{m\over s^2}$
+> $g=9,80665{m\over s^2}$
 
 ![1550511703222](./assets/1550511703222.png)
 
-> **Punti estremanti**: Punti di massimo e di minimo, punti nei quali  l'accelerazione vale ZERO, cioè la velocità è costante.
+> **Punti estremali** (o punti stazionari): Punti di massimo e di minimo di un grafico (punti in cui la derivata della funzione è zero). In un grafico velocità - tempo, nei punti di massimo e di minimo il corpo non subisce nessuna accelerazione (derivata della velocità in funzione del tempo = accelerazione). Analogamente, in un grafico spazio - tempo nei punti stazionari la velocità del corpo è zero (derivata dello spazio in funzione del tempo = velocità).
 
 
 
@@ -250,7 +250,7 @@ $s(t_0)=s_0+\bar{v}(t_0-t_0)=s_0$
 >
 > $F={-G\cdot m\cdot M\over r^2}={-m\cdot g\cdot r}$
 >
-> l'accelerazione gravitazionale è **diversa** in base a dove mi trovo nella terra, ma di poco, quindi la **assumo** come **definita prima**.
+> L'accelerazione gravitazionale è **diversa** in base a dove mi trovo sulla Terra, ma di poco, quindi la **assumo** come **costante**.
 
 #### Esercizio
 
@@ -282,7 +282,7 @@ $s(t)=s_0+\int_{t0}^t d\tau v(\tau)=\int_0^t d\tau (v_0+g\tau)=v_0t+g{t^2\over2}
 
 ## 22/02/2019
 
-Ricordiamo che **l'accelerazione** è un **differenziale** della velocità
+Ricordiamo che **l'accelerazione** è la **derivata** della velocità rispetto al tempo
 
 ${dv\over dt}=a$
 
@@ -312,7 +312,7 @@ Vengono lanciati due sassi
 >
 > $v_0=8,0 m/s$
 >
-> $a=g=-9,8055m/s^2$
+> $a=g=-9,81m/s^2$
 >
 > $s_0=0m$
 >
@@ -355,7 +355,7 @@ $a\longrightarrow\overrightarrow{a}$
 
 
 
-Ci sono diversi tipi di **assi**
+Ci sono diversi tipi di **sistemi di coordinate**
 
 1. **Cartesiano**
    ![Le ASSONOMETRIE – educazionetecnica.dantect.it](./assets/cartesiano.gif)
@@ -370,13 +370,15 @@ Ci sono diversi tipi di **assi**
 
 
 
-Formule (le quali non ho idea a cosa si riferiscano)
+Una grandezza vettoriale nello spazio è descritta quindi da un vettore con tre entrate, corrispondenti (nel caso di un sistema di coordinate cartesiano) all'intensità della grandezza lungo ciascuno degli assi:
 
 
 
-$ s\longrightarrow \Delta\overrightarrow{s}=\Delta\overrightarrow{r}=\bigg(\begin{smallmatrix}\Delta x\\\Delta y\\\Delta z\end{smallmatrix}\bigg)=\Delta x \ \hat x + \Delta y \ \hat y + \Delta z \ \hat z$
+$ s\longrightarrow \Delta\overrightarrow{s}=\bigg(\begin{smallmatrix}\Delta s_x\\\Delta s_y\\\Delta s_z\end{smallmatrix}\bigg)=\Delta s_x \ \hat x + \Delta s_y \ \hat y + \Delta s_z \ \hat z$
 
+Dove con $\hat x$ si intende il versore relativo all'asse $x$, cioè il vettore $x = \bigg(\begin{smallmatrix}1\\ 0 \\ 0\end{smallmatrix}\bigg)$.
 
+Analogamente per il vettore velocità media:
 
 $\overrightarrow{v}_M={\Delta\overrightarrow{s}\over\Delta t}=\Bigg(\begin{smallmatrix}{\Delta x\over\Delta t}\\{\Delta y\over\Delta t}\\{\Delta z\over\Delta t}\end{smallmatrix}\Bigg)=\bigg(\begin{smallmatrix}{v_x}\\{v_y}\\{v_z}\end{smallmatrix}\bigg)= v_x \ \hat x + v_y \ \hat y + v_z \ \hat z$
 
@@ -386,26 +388,24 @@ $\overrightarrow{v}_M={\Delta\overrightarrow{s}\over\Delta t}=\Bigg(\begin{small
 
 #### Velocità istantanea in più dimensioni
 
-> $\overrightarrow{v}(t)=\lim_{t'\longrightarrow t} {\overrightarrow{s}(t')-\overrightarrow{s}(t)\over t'-t}$
+> $\overrightarrow{v}(t)=\lim_\limits{t'\to t} {\overrightarrow{s}(t')-\overrightarrow{s}(t)\over t'-t}$
 
-Al cambio di dimensioni posso avere valori in più.
-
-La velocità, in ogni caso, **è sempre tangenziale alla direzione**.
+Si vede, per come è definito il vettore $\vec v$, che **la sua direzione è uguale a quella dello spostamento $\vec s$**.
 
 #### Accelerazione in più dimensioni
 
-> $\overrightarrow{a}(t)=\lim_{t'\longrightarrow t} {\overrightarrow{v}(t')-\overrightarrow{v}(t)\over t'-t}$
+> $\overrightarrow{a}(t)=\lim_\limits{t'\to t} {\overrightarrow{v}(t')-\overrightarrow{v}(t)\over t'-t}$
 
-Prima avevo solo una variazione di velocità, qui invece ci dice che l'accelerazione c'è se la velocità in un certo istante è **diversa** dalla velocità in un altro istante. Ciò **non implica** che i vue valori siano diversi. In **matematichese**:
+Una grandezza vettoriale è caratterizzata da una **intensità** (lunghezza del vettore), da una **direzione** (retta sulla quale giace il vettore) e da un **verso** (uno dei due possibili sulla retta direzione). Può quindi esserci, ad esempio, una variazione di velocità (accelerazione) sia se cambia l'intensità della velocità, sia se cambia la sua direzione. Ad esempio: se un corpo viaggia inizialmente con velocità $v_1 = 5 \hat x \frac{m}{s}$ (5 metri al secondo lungo la direzione dell'asse x) e poi modifica la sua velocità in $v_2 = 5 \hat y \frac{m}{s}$ c'è stata una accelerazione (l'intensità del vettore velocità non è cambiato, ma la direzione sì).
 
-$\overrightarrow{a}=\overrightarrow{0} \Rightarrow \overrightarrow{v}(t')\ne\overrightarrow{v}(t)\nRightarrow v(t')\ne v(t)$
+
 
 Possiamo avere
 
-1. Moto rettilineo uniforme **(MRV)**
+1. Moto rettilineo uniforme **(MRU)**
 2. Moto rettilineo uniforme vario **(MRVA)**
-3. Moto non rettilineo uniforme **(MNRV)**
-4. Moto non rettilineo non uniforme **(MNRNV)**
+3. Moto non rettilineo uniforme **(MNRU)**
+4. Moto non rettilineo non uniforme **(MNRNU)**
 
 ![1550832890549](./assets/1550832890549.png)
 
@@ -413,37 +413,31 @@ Possiamo avere
 
 ### Moto circolare uniforme
 
-> Ha **velocità costante**, con traiettoria **circonferenza**.
+> Un corpo in moto circolare uniforme percorre una traiettoria circolare, con velocità **scalare** (intensità) costante.
+
+Per una circonferenza di raggio $r$, le coordinate sul piano cartesiano in funzione dell'angolo $\phi$ possono essere calcolate tramite la relazione
 
 $\begin{cases}x=r\cos\phi \\y=r\sin\phi\end{cases}$
 
-per trovare le coordinate.
 
 
+*In ogni istante, il vettore spostamento e il vettore velocità hanno direzione tangente alla circonferenza.*
 
-> $r(t)=\cos t=R \Rightarrow s=R\phi$
-
-*Perchè R=s_phi.... ?* boh(dubbio)
-
-
-
-*Ogni punto della velocità è tangente alla circonferenza*(incerto)
-
-
-
-La velocità è il prodotto della **velocità angolare per il raggio**.
+In un MCU si può definire la velocità angolare come l'angolo di circonferenza percorso per unità di tempo (se il moto è uniforme, la velocità angolare è costante). La velocità scalare è il prodotto della **velocità angolare per il raggio**.
 
 > **Velocità:** 
 >
-> $v={ds\over dt}={d(R\phi)\over dt}=R\ {dy\over dt}= \omega R$
+> $v={ds\over dt}={d(R\phi)\over dt}=R\ {d\phi\over dt}= \omega R$
 
-$\omega$ è la **pulsazione**, cioè la **velocità angolare.**
+$\omega$ è la  **velocità angolare.**
+
+Allo stesso modo è possibile definire l'accelerazione angolare $$\alpha$$
 
 > **L'accelerazione**:
 >
 > $a={dv\over dt}=R\ {d\omega\over dt}=\alpha R$
 
-L'accelerazione è **diretta verso il centro**, cioè **accelerazione** **centripeta.**
+L'accelerazione è **diretta verso il centro**, cioè **accelerazione** **centripeta**; in un moto circolare uniforme il suo valore scalare è costante.
 
 Accelerazione centripeta in un moto non circolare = **accelerazione normale**.
 
@@ -453,7 +447,7 @@ Accelerazione centripeta in un moto non circolare = **accelerazione normale**.
 
 **Nota che**:
 
-Se non ho una circonferenza, posso dire che **l'accelerazione ORTOGONALE** ci porta ad avere un'accelerazione centripeta verso una ipotetica circonferenza per la nostra curva:
+Se non ho una circonferenza, posso dire che **l'accelerazione normale** ci porta ad avere un'accelerazione centripeta verso una ipotetica circonferenza per la nostra curva:
 
 ![https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww2.unipr.it%2F~basgio93%2F2004%2FXI%2Findex_files%2Fimage055.jpg&f=1](./assets/accortogonale.jpg)
 
@@ -473,31 +467,36 @@ $v_y={dy\over dt}=R{d\sin \phi\over dt}=R\cos \phi {d\phi\over dt}$
 
 con le **accelerazioni** 
 
-$a_x={dv_x\over dt}=-R[{\cos \phi({d\phi\over dt})^2}+\sin \phi \xcancel{({d^2\phi\over dt^2})}]$
+$a_x={dv_x\over dt}=-R[{\cos \phi({d\phi\over dt})^2}+\sin \phi \xcancel{({d^2\phi\over dt^2})}] = -R \cos \phi \cdot \alpha$ 
 
-$a_y={dv_y\over dt}=R[{-\sin \phi({d\phi\over dt})^2}+\cos \phi \xcancel{({d^2\phi\over dt^2})}]$
+$a_y={dv_y\over dt}=R[{-\sin \phi({d\phi\over dt})^2}+\cos \phi \xcancel{({d^2\phi\over dt^2})}] = -R sin \phi \cdot \alpha$
+
+$$a = \Vert (a_x, a_y) \Vert = \sqrt{a_x^2 + a_y^2} = \sqrt{R^2\alpha^2(cos^2 \phi + sin^2 \phi)} = \alpha R$$
 
 > **Nota bene**: ${d^2\phi\over dt^2}={d\over dt}[{d\phi\over dt}]$
 >
-> dove $[{dy\over dt}]$=$\omega$ è costante, quindi la derivata di una costante è **zero**.
+> dove $[{d \phi\over dt}]$=$\omega$ è costante, quindi la derivata di una costante è **zero**.
 
 
 
 ## 25/02/2019
 
-$\omega=\cos t$
-
 > **Velocità angolare:** $v=\omega r$
 
 
 
-#### esercizio palla di cannone
+#### Esercizio palla di cannone
 
-Calcolo della traiettoria di un oggetto sparato con un cannone.
+Calcolo della traiettoria di un oggetto sparato con un cannone *(o di qualunque altro corpo con una velocità iniziale soggetto alla forza di gravità).*
 
+Il cannone è posizionato su $(0,0)$ e ha un certo alzo $$\phi$$ (angolo rispetto al terreno). Il cannone imprime sul corpo una velocità iniziale.
 
+Questi esercizi si risolvono nel seguente modo:
 
-Il cannone è posizionato su $(0,0)$.
+1. si scompone il moto nella componente orizzontale (lungo $$x$$ ) e verticale (lungo $$y$$);
+2. lungo la componente orizzontale il corpo non subisce accelerazione (si ignora l'attrito dell'aria) e quindi prosegue con un moto rettilineo uniforme
+3. lungo la componente verticale il corpo subisce accelerazione $$\vec g = - 9.81 \hat y \frac{m}{s} $$ e quindi prosegue con un moto rettilineo uniformemente accelerato
+4. si mettono a sistema le due leggi orarie (quella del moto lungo $x$ e lungo $y$): si usa la legge oraria lungo $y$ per calcolare quando il corpo toccherà terra ($y = 0$) e si inserirà il tempo trovato nella legge oraria lungo $x$ per calcolare la distanza percorsa dal corpo.
 
 $x_0=0$ 	$v_{0x}=v_0\cos\phi$
 
@@ -513,43 +512,29 @@ $x=-{b\over a}= \tan\phi {2v_{0x}^2\over g}={2v_{0x}v_{0y}\over g}$
 
 Sottolineo che ho sostituito $y=\tan\phi x -{g\over 2V_{0x}^2}x^2=bx+ax^2$
 
+### Principi della dinamica
 
-
-
-
-La componente **perpendicolare** cambia la direzione del moto.
-
-**Nota**
-
-Non posso dopo un po' continuare a derivare perchè ottengo
-
-$\overrightarrow{F}=c\cdot \overrightarrow{a}$
-
-derivando rimarrebbe solo $c$.
-
-
-
-### Inzerzia
-
-#### Primo principio di inerzia:
+#### Primo principio (principio di inerzia):
 
 $\overrightarrow{v}=\overrightarrow{0}$
 
 $\overrightarrow{v}=\overrightarrow{costante}$
 
-> Un corpo rimane in moto rettilineo uniforme fino a quando una forza esterna ne cambia e ferma la quiete del moto.
+> Un corpo rimane nello stato di quiete o di moto rettilineo uniforme fintanto che una forza non agisce su di esso.
 
-**Sistema di riferimento inerziale**: Sistema di sistemi di riferimento tra i quali, per passare tra di essi attraverso una **velocità costante**.
+**Sistema di riferimento inerziale**: un sistema di riferimento in cui è valido il primo principio della dinamica. Sistemi inerziali fra di loro diversi differiscono (al più) per una differenza **costante di velocità**.
 
-> **Molto importante:** Se sono sopra un oggetto movente non posso affermare se si sta muovendo, perchè mi sto muovendo con esso.
+Se un sistema di riferimento accelera rispetto ad un sistema di riferimento inerziale, quel sistema di riferimento è detto **non inerziale**.
 
-#### Secondo principio di inerzia:
+> **Molto importante:** Se sono sopra un oggetto movente non posso affermare se si sta muovendo, perché mi sto muovendo con esso.
+
+#### Secondo principio (principio di Newton):
 
 ##### Esperimenti carrelli
 
 *IMMAGINE che non trovo*
 
-avendo due carrelli che si tirano tra loro con una molla di mezzo cosa succede?
+Avendo due carrelli che si tirano tra loro con una molla di mezzo cosa succede?
 
 Beh se i carrelli sono uguali, ho i $\Delta v1=\Delta v2$
 
@@ -557,21 +542,19 @@ altrimenti, se carrello 2 è 2 volte la **massa** del carrello 1 ottengo $\Delta
 
 idem se vale 3 ottengo $\Delta v1=3\Delta v2$
 
-da qui otteniamo che 
+Misuriamo quindi la seguente relazione fra massa e accelerazione, a cui diamo il nome di "forza":
 
 > $\overrightarrow{F}=m\cdot \overrightarrow{a}$
 
-Sull'es di prima ottengo
+
+
+Per una definizione più precisa del concetto di forza, definiamo $\vec p$ **quantità di moto**:
 
 $\overrightarrow{p}=m\cdot \overrightarrow{v}$
 
-
-
 Forza è la variazione della quantità di moto per l'unità di tempo.
 
-La forza è l'interazione.
-
-per l'esercizio di prima, con$ v1$ con stessa massa di $v2$ abbiamo
+Per l'esercizio di prima, con$ v1$ con stessa massa di $v2$ abbiamo
 
 ${d\overrightarrow{p}_1\over dt}=-{d\overrightarrow{p}_2\over dt}$
 
@@ -589,15 +572,15 @@ Noi sappiamo che $a= {d\overrightarrow{v}\over dt}$
 
 
 
-quindi abbiamo la **seconda legge della termodinamica**
-
 >$\overrightarrow{F}={d\overrightarrow{p}\over dt}$ 
 >
 >cioè $\overrightarrow{F}= m\cdot \overrightarrow{a}+ {dm\over dt}\overrightarrow{v}$
 >
->**LA MAGGIOR PARTE DELLE VOLTE** ${dm\over dt}\overrightarrow{v}$ SI PUÒ **IGNORARE** PERCHÈ È NULLO, vale se abbiamo tipo un razzo mandato nello spazio.
+>Spesso nei problemi ${dm\over dt}\overrightarrow{v}$ si può ignorare, perché i corpi di cui vogliamo calcolare l'accelerazione o la forza ai quali sono soggetti non hanno una variazione di massa.
+>
+>Un esempio di corpo che riceve accelerazione da una variazione di massa sono i razzi spaziali.
 
-Unità di misura: **NEWTON** =km/h
+Unità di misura: **Newton**. $[N] = \frac{[kg] \cdot [m]}{[s^2]}$ =km/h
 
 $\overrightarrow{F}={d\overrightarrow{p}\over dt}$ 
 
@@ -619,7 +602,9 @@ Avendo poi
 
 #### Esercizio pallina da tennis
 
-Ho una pallina da tennis, la tiro contro il muro che succede?
+Ho una pallina da tennis, la tiro contro il muro. La pallina rimbalza e torna indietro: la velocità è variata, quindi il moto ha avuto una accelerazione, quindi il corpo ha subito una forza.
+
+Quanta forza è stata impressa dal muro sulla pallina?
 
 $m=150g$ di pallina
 
@@ -627,27 +612,25 @@ $v=36 km/h=10m/s$
 
 otteniamo
 
-$\xcancel{\overrightarrow{p}_i=1,5kg\ {m\over s}}$ è sbagliato!
+$\xcancel{\overrightarrow{p}_i=1,5kg\ {m\over s}}$ è sbagliato: la quantità di moto è una grandezza vettoriale
 
 
 
-**Non ho un vettore dall'altra parte!** devo mettere $\hat{x}$
+Indichiamo la direzione della quantità di moto moltiplicando il prodotto massa per velocità scalare della pallina per il versore $\hat x$:
 
 $\overrightarrow{p}_i=1,5kg\ {m\over s}\cdot \hat{x}$
 
-ottenendo
+supponiamo un impatto perfettamente elastico: dopo l'impatto con il muro, la pallina ha la stessa velocità scalare, la stessa direzione ma il verso opposto.
 
-$\begin{cases} \overrightarrow{p}_i=1,5kg\ {m\over s}\cdot \hat{x} \\ \overrightarrow{p}_i=-1,5kg\ {m\over s}\cdot \hat{x} \end{cases}$
+$\begin{cases} \overrightarrow{p}_i=1,5kg\ {m\over s}\cdot \hat{x} \\ \overrightarrow{p}_f=-1,5kg\ {m\over s}\cdot \hat{x} \end{cases}$
 
-
-
-il professore dovrà fornirmi in quanto tempo si stretcha. ($\Delta t$)
+La pallina è rimasta "attaccata" al muro per un certo intervallo di tempo $\Delta t$, durante il quale il muro ha impresso una forza sulla pallina. La variazione di quantità di moto è $\Delta \vec p = \vec p_f - \vec p_i = 2 \vec p_f$. La forza applicata dal muro sulla pallina è quindi $\vec F = \frac{\Delta \vec p}{\Delta t} $.
 
 
 
 > **Principio di sovrapposizione:**
 >
-> Gli effetti delle forze sono equivalenti alla sovrapposizione degli effetti delle forze (_somma_)
+> Se più forze agiscono su un corpo, l'effetto complessivo delle forze è equivalente alla sovrapposizione degli effetti delle forze (_somma vettoriale delle forze_)
 >
 > $\overrightarrow{F}_{tot}=m \overrightarrow{a}_{tot}$
 
@@ -659,7 +642,7 @@ $\overrightarrow{s}(t)=\overrightarrow{s}_0+\int^t_{t_0} d\tau \overrightarrow{v
 
 
 
-**in ordine di forza crescente:**
+**Vi sono quattro tipi di "forze fondamentali". In ordine di intensità crescente:**
 
 1. Forza di gravità
 
@@ -679,17 +662,15 @@ $\overrightarrow{s}(t)=\overrightarrow{s}_0+\int^t_{t_0} d\tau \overrightarrow{v
 
 ![1551434665292](./assets/1551434665292.png)
 
-La massa descrive **quanto intensamente** sento la gravità.
+La massa descrive **quanto intensamente** sento la gravità:
 
 > **Forza che 1 esercita su 2:** $\overrightarrow{F}_{1\rightarrow2}=-G{m_1m_2\over r^2_{12}}\hat{r}_{12}$
-
-
 
 dove G è la costante di **gravitazione universale**
 
 $G=6,67\cdot 10^{-11} {N\cdot m^2\over kg^2}$
 
-La massa $m_1 $ è influenzata dalla massa $m_2$ e viceversa. 
+La massa $m_1 $ subisce una forza gravitazionale dalla massa $m_2$ e viceversa. 
 
 La gravità si propaga alla velocità della luce, ma non è istantanea, però per noi abbiamo velocità infinita.
 
@@ -707,7 +688,7 @@ Forza con la quale descrivo il fenomeno della caduta dei gravi sulla superfice t
 
 $\overrightarrow{F}=-G{Mm\over r^2}\hat{r}$ dove $M$ è la massa della terra, $m$ è la massa del sasso.($\overrightarrow{P}=-m\overrightarrow{g}$)
 
-> **Teorema della forza centrale:** Posso assumere che la massa sia concentrata al centro dell'oggetto, poichè le forze applicate vanno al centro.
+> **Teorema della forza centrale:** in un corpo, fintanto che la massa è distribuita uniformemente all'interno del suo volume, al fine di calcolare la forza gravitazionale posso assumere che la massa sia concentrata al centro dell'oggetto.
 
 $\overrightarrow{F}=-G{M_Tm\over (R_t+h)^2}=-{GM_T\over R_T^2(1+{h\over R_T})}m$
 
@@ -723,19 +704,13 @@ So che
 
 $-{GM_T\over R_T^2}(1+2{h\over R_T})m=-{GM_T\over R_T^2}$ perchè $(1+2{h\over R_T})$ è dell'ordine di $10^{-5}$
 
-$\overrightarrow{g}=G{M_T\over R_T^2}\hat{R_T}$
-
-
+$\overrightarrow{F}=G{M_T\over R_T^2}\hat{R_T}$, con una buona approssimazione possiamo quindi ignorare la variazione di forza peso del sasso quando si trova sul terreno rispetto a quando si trova in cima al palazzo (e quindi, tutti i corpi sulla superficie della Terra subiscono accelerazione $\vec g = -G \frac{M_T}{R_T^2} \hat R_T$).
 
 
 
 **La gravità della luna è un sesto della gravità della terra**
 
-la massa è collegata in qualche modo a ciò?
-
-**NO**.
-
-
+Dunque, la forza peso di un corpo sulla luna è un sesto della forza peso che lo stesso corpo avrebbe sulla terra. La massa è invece una proprietà del corpo, e rimane uguale sia sulla Terra, sia sulla Luna, ovunque. 
 
 
 
@@ -993,11 +968,11 @@ Quindi la vera definizione di lavoro è:
 
 ##### Potenza istantanea
 
-Lavoro che compie nel tempo: $dw\over dt$
+Lavoro che compie nel tempo: $dP = {dw\over dt}$
 
 ##### Potenza media
 
-Totale del lavoro nell'intervallo di tempo: $w_{tot}\over\Delta t$
+Totale del lavoro nell'intervallo di tempo: $\bar P = {w_{tot}\over\Delta t}$
 
 ----
 
@@ -1124,7 +1099,7 @@ Alla fine gli integrali li devo usare solo con forze non conservative.
 
    $(E_p^f-E_p^i)+(E_k^f-E_k^i)=0$
 
-   $(E_p^f+E_k^f)+(E_k^i+E_p^i)=0​$
+   $(E_p^f+E_k^f)+(E_k^i+E_p^i)=0$
 
    Quindi abbiamo
 
@@ -1181,7 +1156,7 @@ $\theta<<1$
 1. Analisi delle forze
 2. $\theta=\theta(t)$
 3. scegliere $c_1,c_2$(Sistema di coordinate a piacere)
-   1. $c_1=c_1(t),  {d_{c_1}\over d_t(t)}, v_1, a_1​$
+   1. $c_1=c_1(t),  {d_{c_1}\over d_t(t)}, v_1, a_1$
    2. $c_2=c_2(t) , {d_{c_2}\over d_t(t)}, v_2, a_2$
 
 -----
@@ -1914,7 +1889,7 @@ $dQ\over dT$
 >($\mathfrak{c} = {dQ\over dT}$ )
 >
 
-Come **unità di misura** ha  $\mathfrak{c} ={1J \over 1K}​$
+Come **unità di misura** ha  $\mathfrak{c} ={1J \over 1K}$
 
 *Un buon piumino ha una **alta capacità termica**, mentre un fondo di pentola ha una **bassa capacità termica***.
 
@@ -2060,33 +2035,33 @@ $T_f={\mathfrak{c}_1T_1+\mathfrak{c}_2T_2\over\mathfrak{c}_1+\mathfrak{c}_2}$
 
 
 #### Esercizio
-$m_1=30g​$
+$m_1=30g$
 
-$t_1=-15^{\circ}\mathrm{c}​$
+$t_1=-15^{\circ}\mathrm{c}$
 
-$m_2=50g​$
+$m_2=50g$
 
-$t_2=60 ^{\circ}\mathrm{c}​$
+$t_2=60 ^{\circ}\mathrm{c}$
 
-$T_e=?​$
+$T_e=?$
 
 traduciamo i dati in una forma utilizzabile
 
-$t_{1_k}=T_1=258K​$
+$t_{1_k}=T_1=258K$
 
-$t_{2_k}=T_2=333K​$
+$t_{2_k}=T_2=333K$
 
-$\lambda_{H_2O}=3,3\cdot10^5 J/Kg​$
+$\lambda_{H_2O}=3,3\cdot10^5 J/Kg$
 
 $c_{H_2O}={1kcal\over Kg\cdot K}=4,19 KJ/Kg\cdot K$
 
-$Q_1=m_1c_1\cdot(T_f-T_1) \\ Q_2=m_2c_2\cdot(T_f-T_2)​$
+$Q_1=m_1c_1\cdot(T_f-T_1) \\ Q_2=m_2c_2\cdot(T_f-T_2)$
 
 sommandoli
 
-$Q_1+Q_2=(m_1\cdot c_1+m_2\cdot c_2)\cdot T_f-(m_1\cdot c_1\cdot T_1 + m_2\cdot c_2\cdot T_2)​$
+$Q_1+Q_2=(m_1\cdot c_1+m_2\cdot c_2)\cdot T_f-(m_1\cdot c_1\cdot T_1 + m_2\cdot c_2\cdot T_2)$
 
-$T_f={m_1c_1T_1+m_2c_2T_2\over m_1c_1+m_2c_2}​$
+$T_f={m_1c_1T_1+m_2c_2T_2\over m_1c_1+m_2c_2}$
 
 
 
@@ -2142,7 +2117,7 @@ $m_s=2\cdot 10^{30}Kg$
 
 $m_T=6\cdot 10^{24}Kg$
 
-$d=1,5\cdot 10^{11}m​$ cioè la distanza tra la terra e il sole.
+$d=1,5\cdot 10^{11}m$ cioè la distanza tra la terra e il sole.
 
 Calcolo $r$:
 
@@ -2233,7 +2208,7 @@ $m_1 \overrightarrow{v}_1+m_2\overrightarrow{v}_2=\overrightarrow{0}$
 Ora derivo in base al tempo
 
 $m_1\overrightarrow{v}_1+m_2\overrightarrow{v}_2=\overrightarrow{0}$
-cioè $\overrightarrow{P}_1+\overrightarrow{P}_2=\overrightarrow{0}​$
+cioè $\overrightarrow{P}_1+\overrightarrow{P}_2=\overrightarrow{0}$
 
 Ottengo
 
@@ -2372,7 +2347,7 @@ $p_AV_A=nRT_A$ dove $R \text{ e } T_A$ sono costanti.
 
 $\Delta U= U_C-U_A=?$
 
-Riprendo il calore specifico molare: $c={1\over n}{dQ\over dT}​$, 
+Riprendo il calore specifico molare: $c={1\over n}{dQ\over dT}$, 
 >ho un calore specifico che dipende dal processo considerato: $c_{proc}={1\over n}[{dq\over dT}]_{proc}$
 
 Ciò significa che una espansione **isoterma** crea un differente $c_{proc}$ di una espansione **isocora.**
@@ -2520,7 +2495,7 @@ $W_{superiore}+W_{inferiore}=W$
 
 Affermiamo che 
 $|W_{superiore}|>|W_{Inferiore}|$ 
-$\begin{cases}W_{superiore}>0\\W_{inferiore}<0 \end{cases}$ allora $W>0​$, senso **orario**.
+$\begin{cases}W_{superiore}>0\\W_{inferiore}<0 \end{cases}$ allora $W>0$, senso **orario**.
 
 ![1555013282548](assets/1555013282548.png)
 
@@ -2568,7 +2543,7 @@ Uno stato di equilibrio di esempio, per un gas ideale: $pVnRT$ per ogni punto.
 
 ![1555015836193](assets/1555015836193.png)
 $AB=T_2>T_1$
-$W>0​$ perchè **orario**.
+$W>0$ perchè **orario**.
 
 Avendo il seguente ciclo possiamo affermare che:
 * $AB$ è una **espansione reversibile isoterma**;
@@ -2616,7 +2591,7 @@ $T_1 V_D^{\gamma-1}=T_2 V_A^{\gamma-1}$
 
 $W_{II}=-\Delta U_{DA}=nc_V(T_1-T_2)$
 
-$T_1 V_D^{\gamma-1} $ è associabile a $D$ mentre $T_2 V_A^{\gamma-1}$ è associabile a $A​$
+$T_1 V_D^{\gamma-1} $ è associabile a $D$ mentre $T_2 V_A^{\gamma-1}$ è associabile a $A$
 
 Mi calcolo il rendimento
 $\eta=1-{|Q_C|\over Q_A}=1-{Q_1\over Q_2}=1-{nRT_1\ln({V_D\over V_C})\over nRT_2\ln({V_B\over V_A})}$
@@ -3229,7 +3204,7 @@ $\overrightarrow{E}=-\hat{r} {dV\over dr}$
 >
 >dove $q\overrightarrow{E}=\overrightarrow{F}$, ma possiamo togliere la carica $q$ perchè costante, ottenendo:
 >
->$\oint \overrightarrow{E}\cdot d\overrightarrow{s}=0​$ che viene più semplicemente scritto come
+>$\oint \overrightarrow{E}\cdot d\overrightarrow{s}=0$ che viene più semplicemente scritto come
 >
 >$\Gamma \overrightarrow{E}=0$
 
@@ -3417,7 +3392,7 @@ Ottengo dunque che
 >
 
 
-Campo elettrico varia di $\sigma\over\epsilon_0​$
+Campo elettrico varia di $\sigma\over\epsilon_0$
 
 > Unendo questi due otteniamo
 >
@@ -3579,7 +3554,7 @@ Non è vero che dentro il campo è nullo, però stiamo guardando macroscopicamen
 
     $V(P_1)-V(P_2)=-\oint_{P_1}^{P_2}\overrightarrow{E}_{int}\cdot d \overrightarrow{l}=0$ sempre perchè $\overrightarrow{E}_{int}=0$
 
-    $\Rightarrow V(P_1)=V(P_2)​$
+    $\Rightarrow V(P_1)=V(P_2)$
     
 3. >Ho più carica concentrata sui punti di curvatura minore che su un'area più vasta.(effetto punta)
    
@@ -4635,7 +4610,7 @@ ottenendo $\overrightarrow{B}={\mu_0 i\over 2\pi R}\hat{u}_{\rho}$
 3. $\overrightarrow{F}_{1\to 2}=-\overrightarrow{F}_{2\to 1}$
 4. newton(con formula solita)
 5. forze conservative:
-  1. $ W=-\Delta U| \Delta U=-\int^B_A\overrightarrow{F}\cdot d\overrightarrow{s}​$
+  1. $ W=-\Delta U| \Delta U=-\int^B_A\overrightarrow{F}\cdot d\overrightarrow{s}$
   2. $E_{mec}=E_c+U=costante(\Delta E_{mec}=0)$
 6. $W=\int^B_A \overrightarrow{F}\cdot d \overrightarrow{s}\big| E_c={1\over 2}m\cdot v^2 $
 7. $W_{attr}=-\Delta E_{mec}$
@@ -4651,7 +4626,7 @@ ottenendo $\overrightarrow{B}={\mu_0 i\over 2\pi R}\hat{u}_{\rho}$
 14. 2 principio della termodinamica 
     1. kelvin $\eta_{any}\le \eta_{rev}$
     2. clausus $\Delta S_{AB}=\int^B_A {dQ\over T}$
-15. $\mathcal{C}=k{Q_C\over r^2}​$
+15. $\mathcal{C}=k{Q_C\over r^2}$
 16. $\overrightarrow{F}={1\over 4\pi \epsilon_0}{q_1 q_2\over r^2_{12}}\hat{r}_{12}$
 17. $\overrightarrow{E}=k_e {q\over r^2} \hat{r}$ principio di sovrapposizione(?)
 18. $E$ conservativo ($\Gamma(\overrightarrow{E}=0)$)  $U,V|\Delta V_{AB}=\int^A_B\overrightarrow{E}\cdot d\overrightarrow{s}$
