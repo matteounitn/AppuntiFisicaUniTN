@@ -1009,7 +1009,7 @@ Dunque il lavoro svolto dalla forza conservativa sulla curva $I$ è uguale a que
 
  $\blacksquare$
 
-### Forza Non conservativa
+### Forza non conservativa
 
 > Una forza non conservativa è la **forza di attrito.**
 
@@ -1049,7 +1049,7 @@ Ma allora facendo così ottengo che
 
 > Il concetto di **energia** descrive la possibilità di un corpo di compiere un lavoro.
 
-$\int_O^B\vec{F}d\vec{s}=W_{A\to B}\stackrel{^{\overleftarrow{def}}}{=}-(E_p(\vec{B})-E_p(\vec{A}))$
+$\int_O^B\vec{F}d\vec{s}=W_{A\to B} \stackrel{^{\overleftarrow{def}}}{=}-(E_p(\vec{B})-E_p(\vec{A}))$
 
 dove $(E_p(\vec{B})-E_p(\vec{A}))=\Delta E_p\stackrel{def}{=} -W$
 
@@ -1061,26 +1061,21 @@ Tutto questo è possibile solo perché per quanto visto prima il $\Delta$ **non*
 
 ### Energia Cinetica
 
-$W_{(W>0)}=\int^B_A\vec{F}\cdot d\vec{s}=\int^B_A m{d\vec{v}\over d\vec{t}}\cdot d\vec{s}=\int^B_A md\vec{v}\cdot \vec{v}=$ caso speciale= $\int^B_Amv\ dv$
+Consideriamo un corpo di massa $m$ che acquista una velocità $v$. Sfruttiamo il secondo principio della dinamica per descrivere l'energia posseduta dal corpo:
+
+$W_{(W>0)}=\int^B_A\vec{F}\cdot d\vec{s}=\int^B_A m{d\vec{v}\over d\vec{t}}\cdot d\vec{s}=\int^B_A md\vec{v}\cdot \vec{v}$ 
 
 Per fare questa cosa ho dovuto fare un trick brutalmente poco matematico: passare il $dt$ sotto al $ds$
 
 $=[m{v^2\over2}]^B_A={1\over2}mv^2_B-{1\over2}mv_A^2$
 
-Ottengo dunque che energia cinetica
-
-*  non richiede lavoro;
-* non dipende da forze esterne;
-* $W=\Delta E_K$ vale sempre;
-* se c'è energia cinetica, qualcosa , una forza ci ha lavorato su.
-
-> **Energia Cinetica**: $E_k={1\over2}uv^2$
+> **Energia Cinetica**: $E_k={1\over2}mv^2$
 
 ### Bilancio energetico
 
-Avendo
+Un corpo si muove da $A$ a $B$
 
-$A\to B$
+$A \to B$
 
 $\vec{F}_{TOT}=\sum_i \vec{F}_i=\sum_i \vec{F}_i^{(Con)}+\sum_k\vec{F}_k^{{(n.c.)}}$
 
@@ -1129,6 +1124,10 @@ Alla fine gli integrali li devo usare solo con forze non conservative.
 ### Esercizi:
 
 #### Lancio massa m in aria, a che altezza arriva?
+
+1. Quando l'altezza è massima, la velocità è zero (dunque l'energia cinetica è zero) e l'energia potenziale è massima
+2. Quando la massa raggiunge la terra, la velocità è massima e l'energia potenziale zero
+3. In assenza di forze non conservative (p.es. attriti) l'energia potenziale del punto (1) è uguale all'energia cinetica del punto (2), e in generale, ad ogni istante, la somma di energia potenziale e cinetica rimane costante.
 
 ![1552043047804](./assets/1552043047804.png)
 
@@ -1212,7 +1211,7 @@ Ora divido per $l$ e sposto tutto a sinistra
 
 $\begin{cases} \cos\theta{d^2\theta\over dt^2}-\sin\theta({d\theta\over dt})^2+{g\over l}\sin\theta\cos\theta=0 \\\\sin\theta{d^2\theta\over dt^2}+\cos\theta({d\theta\over dt})^2+{g\over l}\sin^2\theta=0\end{cases}$
 
-Ricordando le *serie di taylor mcLaureen*
+Ricordando l'espansione in serie di Taylor
 
 > $\sin\epsilon\simeq\epsilon \ \ \ \ \epsilon\longrightarrow0$
 >
@@ -1220,7 +1219,7 @@ Ricordando le *serie di taylor mcLaureen*
 >
 > $(1+\epsilon)^\alpha \simeq 1+\alpha\epsilon  \ \ \ \ \epsilon\longrightarrow0$
 
-Continiuamo con
+Sfrutto la prima espansione e sostituisco $sin \theta$ con $\theta$. Questa sostituzione è valida fintanto che le oscillazioni sono piccole.
 
 $\begin{cases}\theta''-\theta(\theta')^2+{g\over l}\theta=0\\\theta\theta''+(\theta')^2+{g\over l}\theta^2=0\end{cases}$ ora moltiplico la seconda equazione per $\theta$ e ottengo $\begin{cases}\theta''-\theta(\theta')^2+{g\over l}\theta=0\\\theta^2\theta''+(\theta')^2\theta+{g\over l}\theta^3=0\end{cases}$
 
@@ -1228,7 +1227,7 @@ Effettuo una somma della prima equazione con la seconda ottenendo:
 
 $(1+\theta^2)\theta''(1+\theta^2){g\over l}\theta=0$
 
-$\theta"+{g\over l}\theta=0$ ma questa è una **differenziale!**
+$\theta"+{g\over l}\theta=0$  Si tratta di risolvere un'equazione differenziale.
 
 #### Equazione differenziale armonica
 
@@ -1238,21 +1237,23 @@ dove a è la **pulsazione al quadrato** del moto armonico. Ottengo la
 
 > **Pulsazione:** $\omega=\sqrt{c}$
 
-Come soluzioni abbiamo 
+Come soluzioni generali per un'equazione di questa forma abbiamo sempre 
 
-$\begin{cases}\theta(t)=A\sin(\sqrt{(c)}t+B)\\\theta''=-A\sin(\sqrt{(c)}t+B)c\end{cases}$
-
-
+$\begin{cases}\theta(t)=A\sin(\sqrt{c}t+B)\\ \theta'(t) = A \cos (\sqrt {c} t + B) \sqrt c \\ \theta''=-A\sin(\sqrt{c}t+B)c\end{cases}$
 
 nell'esempio di prima otteniamo
 
 $\begin{cases}\theta(t)=A\sin\sqrt{({g\over l})}t+B)\\\theta''=-A\sin(\sqrt{({g\over l})}t+B){g\over l}\end{cases}$
 
-Ora **trovo A e B:**
+Dove A e B possono essere risolte imponendo le condizioni al contorno (problema di Cauchy):
 
-$\begin{cases}\theta(o)=\theta_0\ (angolo\ iniziale)\\B={\pi\over2}\end{cases}$ 
+$\begin{cases}\theta(0)=\theta_0\ (angolo\ iniziale)\\\theta'(0) = 0\ (velocità\ iniziale) \end{cases}$ 
 
-quindi la soluzone è $\theta(t)=\theta_0\sin(\sqrt{{g\over l}}+{\pi\over2})=\theta_0\cos(\sqrt{g\over l}t)$.
+Risolvendo il sistema risulta
+
+$$\begin{cases}A = \theta_0 \\B={\pi\over2} \end{cases}$$
+
+quindi la soluzione è $\theta(t)=\theta_0\sin(\sqrt{{g\over l}}+{\pi\over2})=\theta_0\cos(\sqrt{g\over l}t)$.
 
 $\blacksquare$
 
@@ -1270,13 +1271,17 @@ Avendo che
 >
 > Tempo tra due riproposizioni nello stesso atto di moto, cioè stesso spazio con la stessa velocità.
 >
-> più pulsazioni ho più il periodo è **corto.**
+> Maggiore è la pulsazione più il periodo è **corto.**
 
-Da notare che nell'esercizio del pendolo precedente **non ho considerato l'attrito, quindi ho continue oscillazioni**. Cioè il pendolo non si ferma.
+Da notare che nell'esercizio del pendolo precedente **non ho considerato l'attrito, quindi ho continue oscillazioni**. Cioè il pendolo non si ferma e continua a oscillare fra l'angolo $\theta_0$ e l'angolo $-\theta_0$.
+
+Da notare inoltre che la pulsazione dipende unicamente dalla lunghezza del filo del pendolo (oltre che dall'accelerazione di gravità).
 
 > **Isocronia delle piccole oscillazioni:** Per angoli piccoli, maggiore spostamento **non significa** maggiore periodo.
 
 ### Forza Elastica
+
+Una molla (ideale) se compressa o espansa rispetto alla posizione di riposo produce una forza "di richiamo" (che tende a farla tornare alla posizione di riposo) di intensità direttamente proporzionale alla lunghezza della compressione (o espansione). La costante di proporzionalità è detta _costante elastica della molla_.
 
 > **Forza di richiamo(o Elastica):** $\vec{F}=-k\vec{x}$
 
@@ -1312,11 +1317,11 @@ Noto che questo integrale è $\int^B_A\vec{F}\cdot d\vec{s}=\int^x_0 kxdx={1\ove
 
 #### Esercizio: Ciclista
 
-Un ciclista va a 25 km/h
+Un ciclista va a 25 km/h (la velocità  costante)
 
-La potenza che produce è $ P=150w$
+La potenza che produce è $ P=150W$
 
-Attrito $=?$ (Calcola l'attrito che colpisce il ciclista)
+Attrito $=?$ 
 
 $v=25km/h={25\over3,6}m/s=6,9m/s$
 
@@ -1338,7 +1343,7 @@ $A={P_c\over v}=21,6 N\simeq 2Kg$ cioè è come se spingesse circa $2kg$
 
 ## 12/03/2019
 
-#### Esercizio:Massa puntiforme che fa un cerchio
+#### Esercizio: Pendolo conico (massa puntiforme appesa a un filo che traccia una circonferenza sul piano)
 
 
 $m=50g=50\cdot10^{-3}kg$
@@ -1391,62 +1396,58 @@ Ho la terra, con un raggio $R$ , una forza gravitazionale e $\theta$ è l'angolo
 
 
 
-
+---
 
 ### Termodinamica
 
-> **Atomi**: Costituenti minimi della materia che conosciamo, sistemi aggregati composti da un nucleo e sistemi orbitali(elettroni) che gravitano attorno questo nucleo.
+> **Atomi**: Costituenti minimi della materia, sistemi aggregati composti da un nucleo e sistemi orbitali(elettroni).
 
 
-Gli atomi sono a **carica neutra**, quindi se gli elettroni hanno carica **negativa**, i protoni la hanno **positiva** e contraria agli elettroni(somma =0).
+Gli atomi sono a **carica neutra**, quindi gli elettroni hanno carica **negativa**, i protoni la hanno **positiva** e contraria agli elettroni(somma =0).
 
 **Raggio** **nucleo** è dell'ordine alla $10^{-15}m$
 
-**atomo**= $10^{-10}m$
+**Raggio atomo**= $10^{-10}m$
 
-**molecole**= $10^{-8}m$
+**Raggio molecole**= $10^{-8}m$
 
-**Nucleo**= Composto di nucleoni
+**Nucleo**= Composto di nucleoni, cioè protoni e neutroni (particelle con carica neutra)
 
 **Elettroni**: non riusciamo a calcolarne il raggio, troppo piccolo.
 
->**Costante di avogadro:**  $N_a=6,022 \cdot 10^{23}$
+>**Numero di avogadro:**  $N_a=6,022 \cdot 10^{23}$
 
-Quanti atomi ho?
-
->**MOLE**: Quantità di sostanza che contiene esattamente un numero di avogadro di componenti. misuratasi in $mol$.
+>**MOLE**: Quantità di sostanza che contiene esattamente un numero di Avogadro di componenti. misurata in $mol$.
 
 > $1 mol=$ quantità di sostanza contenuta in $m=A$ grammi dell'elemento, dove $A$ è il **peso atomico**.
 
 **Esempio**:
-Avendo un Idrogeno, ho una A=1, cioè una mole di $^1H$ è la quantità di quanta sostanza in 1g di H
+L'idrogeno ha peso atomico A=1, quindi una mole di $^1H$ è la quantità di sostanza contenuta in 1 grammo di idrogeno.
 
 mentre
 
-Avendo un Carbonio, ho una A=12, cioè una mole di $^{12}C$ è la quantità di quanta sostanza in 12g di C
+Il carbonio ha peso atomico A=12, quindi una mole di $^{12}C$ ha massa 12 grammi.
 
-Avendo $H_2O$, ho una $A_{effettiva}=18$ cioè $1mol$ di $H_20$ è la quantità di sostanza in 18g di $H_20$
+Avendo $H_2O$, ho una $A_{effettiva}=18$ cioè $1mol$ di $H_2O$ è la quantità di sostanza contenuta in 18g di $H_20$
 
 Stati della materia:
 
-* **Solido**: Conservo volume e massa;
-* **Liquido**: Ho un volume proprio ma non ho forma, assume quella del recipiente;
-* **Gassoso**: Non ho un volume, non ho una forma, si espande prendendo tutto lo spazio disponibile.
+* **Solido**: Un corpo solido ha una forma e un volume proprio.
+* **Liquido**: Un liquido ha un volume proprio ma non ha forma: assume quella del recipiente.
+* **Gassoso**: Un gas non ha né un volume né una forma propria, assume volume e forma del recipiente, si espande in tutto lo spazio disponibile.
 
 #### Energia interna
 
-> In un sistema gassoso, le molecole sono in costante movimento, avendo energia cinetica. Grazie a questa presenza di  l'energia cinetica possiamo dire che il sistema ha una **energia interna** $E_{interna}=U$
+> In un sistema gassoso, le molecole sono in costante movimento, avendo energia cinetica. Grazie a questa presenza di energia cinetica possiamo dire che il sistema ha una **energia interna** $E_{interna}=U$
 
 #### Gas Ideale
 
-Un gas che ha :
+Un gas è ideale (o anche "perfetto") se:
 
-* Le molecole che non interagiscono tra di loro;
-* Le particelle non sono interagenti anche con il recipiente;
+* non esistono forze di interazione fra le particelle;
+
+* gli urti fra le particelle e con il recipiente sono perfettamente elastici, cioè l'energia cinetica della particella prima e dopo l'urto è conservata;
 * Il moto delle particelle è assolutamente casuale.
-
-è definito **gas ideale.**
-
 
 **Q:Cosa succede quando una particella tocca la parte del contenitore? **
 
@@ -1460,8 +1461,7 @@ $\vec{p}_{f}=-p_x\hat{x}+p_y\hat{y}$
 
 $\Delta\vec{P}=\vec{P}_f-\vec{P}_i=-2p_i\hat{x}$
 
-
-*Ma con il rimbalzo, non perdo energia?* No perchè è **perfettamente elastico** quindi non ho una perdita di energia, mentre in una pallina elastica ho una componente NON elastica che assorbe.
+*Ma con il rimbalzo, non perdo energia?* No perchè è **perfettamente elastico** quindi non ho una perdita di energia. In generale, una pallina da tennis che rimbalza perde energia, perché ho una componente NON elastica che disperde energia in attriti.
 
 
 **Q: Quante particelle ho in una zona gassosa che urtano il contenitore?**
@@ -1482,7 +1482,7 @@ tutto ciò che ho dentro a quel contenitore sta urtando la parete in velocità $
 
 Se il gas è perfetto ed ideale, le particelle che urtano sono $N$.
 
-$N=v\cdot n$ dove $n$ è la **densità di volumica**($[n]=[{1\over L^3}]$).
+$N=v\cdot n$ dove $n$ è la **densità volumica**($[n]=[{1\over L^3}]$).
 
 Quindi otteniamo che
 
@@ -1550,30 +1550,28 @@ dove $<{1\over2}mv^2>$ è **energia cinetica media.**
 
 ### Pressione
 
-$[P]=[{F\over S}]$ dove F è **forza** e **S** è superf. misurata in $1Pa$ cioè **Pascal**
+$[P]=[{F\over S}]$ dove F è **forza** e **S** è superficie, misurata in $Pa$ cioè **Pascal**
 
 Quindi la definizione è
 
-> $P={dF\over dS}$
-
-Sotto ad un determinato valore, le variazioni di superficie sono nulle.
+> $P={F\over S}$
 
 Abbiamo che:
 
 $1 bar=10^5 Pa$
 
-$1 atm= 1,015 bar= 1,015\cdot 10^5 Pa$
+$1 atm= 1,01325 bar= 1,01325\cdot 10^5 Pa$
 
 In millimetri di mercurio
 
 $1 mmHg | 1 atm=760mmHg$
 
-Facendo un po' di esperimenti ottieniamo che
+Facendo un po' di esperimenti otteniamo che
 >$PV=costante\ T$ 
 >
 >questo vale solo per gas molto rarefatti e poco reagenti(gas **ideali**) con **T misurata in Kelvin**.
 >
->Se misurata in C o F non vale.
+>Se misurata in °C o °F non vale.
 
 $costante \ = Rn$ dove $R$ è **indipendente dal gas considerato** e $n$ è **il numero di moli, la quantità di gas.**
 
@@ -1583,7 +1581,7 @@ $[R]=[{PV\over nTe}]=[{F_{L^2}\cdot L^3 \over QTe}]=[{F\cdot L \over Q T_e}]=[{E
 
 Esempio:
 
-*Ho 13 moli di azoto liquido, a quanti atomi ho?*
+*Ho 13 moli di azoto liquido, a quanti atomi corrispondono?*
 
 Che sia liquido o meno poco ci interessa.
 
@@ -1591,15 +1589,15 @@ $N=n\cdot N_a$ dove $N_a$ è il numero di avogadro e $n$ è il numero di moli.
 
 otteniamo $nR=N{R\over N_a}=NK_b$
 
-dove $K_b$ è la costante di boltzman.
+dove $K_b$ è la costante di Boltzmann.
 
-#### Costante di Boltzman
+#### Costante di Boltzmann
 >$K_b={R\over N_a}={8,314 J/\cancel{mol}K)\over 6,022\cdot 10^{23} K/\cancel{mol}}=1,38\cdot 10^{-23}J/K$
 
-ottenendo che
+
 
 #### Equazione di stato di gas perfetti
-> $PV=nRT \longrightarrow PV=NK_bT$
+> $PV=nRT \iff PV=NK_bT$
 >
 
 Noto che la prima equazione la ottengo **sperimentalmente** mentre la seconda la ottengo **misurando.**
@@ -1618,7 +1616,7 @@ $U=E_i=^{monoatomico} N<E_k>$ con
 
 > $u={U\over N}=^{n.a.}<E_k>$
 
-#### Equipartizione dell'energia cinetica
+#### Equipartizione dell'energia interna
 > $u=L {K_bT\over 2}$ dove $L$ è il **numero di gradi di libertà**.
 
 Vediamo dunque che dipende solo da $T$ temperatura e dal numero di gradi di libertà.
@@ -1664,7 +1662,7 @@ Adatto una scala diversa, spostando la $y$ dove ho lo **zero assoluto**
 
 > **Zero assoluto**: Zero kelvin sotto il quale non ha più senso parlare di termodinamica.
 >
-> $0K=-273,16 $ celsius
+> $0K=-273,16 5 °C
 
 ![1553253061397](./assets/1553253061397.png)
 
