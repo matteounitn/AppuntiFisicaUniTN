@@ -1585,7 +1585,7 @@ Esempio:
 
 Che sia liquido o meno poco ci interessa.
 
-$N=n\cdot N_a$ dove $N_a$ è il numero di avogadro e $n$ è il numero di moli.
+$N=n\cdot N_a$ dove $N_a$ è il numero di Avogadro e $n$ è il numero di moli.
 
 otteniamo $nR=N{R\over N_a}=NK_b$
 
@@ -1631,7 +1631,7 @@ $V_i=831,4l$
 
 $P=3 atm$
 
-Trasformazione isobarica
+Trasformazione isobara
 
 $V_f=2V_i$
 
@@ -1662,7 +1662,7 @@ Adatto una scala diversa, spostando la $y$ dove ho lo **zero assoluto**
 
 > **Zero assoluto**: Zero kelvin sotto il quale non ha più senso parlare di termodinamica.
 >
-> $0K=-273,16 5 °C
+> $0 K = -273,15 °C$
 
 ![1553253061397](./assets/1553253061397.png)
 
@@ -1671,7 +1671,7 @@ Ho un ambiente che chiamo universo e un sistema con un energia interna $U$. Come
 
 Ricordiamo **che quando si scalda, aumenta l'energia interna**.
 
-Posso avere degli scambi di:
+L'energia può essere scambiata sotto forma di **calore** o di **lavoro**:
 
 1. $W$ Lavoro:
    1. Ordinato;
@@ -1682,21 +1682,19 @@ Posso avere degli scambi di:
    2. Incoerente;
    3. Disorganizzato.
 ##### Esempio dei pistoni
-Ho un pistone, con dentro un gas, ha una forza esterna che spinge dentro e fuori il pistone.
+Ho un recipiente chiuso le cui pareti sono rigide e adiabatiche, una parete può muoversi (è un pistone). Una forza preme sul pistone comprimendo il gas: compie un lavoro.
 
-*Man mano che spingo, la pressione sarà maggiore, quindi la forza da applicare è maggiore. Questo aspetto lo trascuriamo, la forza applicata è sempre la stessa.*
+*Supponiamo che l'intensità della forza applicata sia costante e sufficiente a far muovere il pistone di una distanza $\Delta x$. Man mano che spingo, la pressione del gas esercitata sul pistone sarà maggiore, quindi si raggiungerà un equilibrio. Ignoriamo questo dettaglio.*
 
 $W=\vec{F}_{ext}\cdot\Delta\vec{x}=F\Delta x>0$
 
-Posso assumere che il lavoro esterno si tramuti tutto in variazione di energia interna:
+Posso assumere che il lavoro esterno si tramuti tutto in variazione di energia interna: le pareti sono rigide, quindi il gas non può compiere lavoro, e sono adiabatiche, quindi il gas non può cedere calore all'esterno:
 
 $W_{ext}=\Delta U$ cioè $U_i\to_{W_{ext}}U_f\Delta U=U_f-U_i=W_{ext}$
 
-Questo funziona perchè non ho altri scambi di energia di questo gas con l'esterno.
-
 #### Calore
 
-Se metto un oggetto al sole si "scalda". Ma non ho lavoro, perchè **non ho spostamento**.
+Se metto un oggetto al sole si "scalda", cioè aumenta la sua energia interna. Ma non ho lavoro, perchè **non ho spostamento**.
 
 Quindo ho un trasferimento di energia **senza lavoro**. Questo è chiamato **CALORE**.
 
@@ -1735,25 +1733,21 @@ Ottengo che
 
 > $\Delta U_{gas}=-W_{gas}$
 
-La variazione dell'energia interna è **uguale al lavoro COMPIUTO  dal sistema!**
+La variazione dell'energia interna è **opposta al lavoro compiuto  dal sistema!**
 
-cioè più generale 
+In generale, per trasformazioni senza scambio di calore, vale
 
 > $\Delta U=-W$
 > 
 > Convenzionalmente diciamo che:
 >
-> * $W>0$  componente del sistema, sistema che fornisce la variazione;
+> * $W>0$  il lavoro è compiuto dal sistema e subito dall'ambiente, ad esempio, il pistone si espande;
 > 
-> * $W<0$ Sistema che si **oppone** alla variazione.
+> * $W<0$ il lavoro è compiuto dall'ambiente, il sistema subisce il lavoro, ad esempio, il pistone viene compresso.
 > 
 
 
-Ricordiamo che $U_{int}$ è *qualcosachenonhocapito* della temperatura.
-
-I componenti sono $Na\cdot$ molecole.
-
-Quando definisco devo avere il grado di **disordine**.
+L'energia interna di un sistema termodinamico dipende unicamente dalla temperatura (questo risultato sarà dimostrato più avanti),
 
 #### Esercizio ruota bicicletta
 $r_{ext}=25cm$
@@ -1770,10 +1764,10 @@ Ho un uomo con $m=100kg$
 4. Calcolare il lavoro per gonfiare la gomma.
 
 #### Scatola con gas dentro
-Ho una scatola con gas dentro
+Ho una scatola rigida con gas dentro
 
 * Espongo la scatola al sole, ho **radiazione luminosa**.
-* **Non** conto una ipotetica riflessione.
+* **Non** conto una ipotetica riflessione, suppongo che la radiazione sia completamente assorbita dalla scatol.
 * Fornisco energia all'oggetto, il volume non cambia.
 * Ho $T_{gas}$ e $T_{ext}$(temperatura recipiente)
 
@@ -1802,7 +1796,9 @@ Ricordiamo che noi trattiamo **sistemi in equilibrio**, quindi il contenitore e 
 #### Primo principio della termodinamica
 >$\Delta U=Q-W$
 >
->Variazione di energia interna= Calore - Lavoro
+>Variazione di energia interna = Calore assorbito dal sistema - Lavoro compiuto dal sistema
+
+### Modalità di trasferimento del calore
 
 ##### Conduzione
 
@@ -1810,8 +1806,6 @@ Ricordiamo che noi trattiamo **sistemi in equilibrio**, quindi il contenitore e 
 
 
 Atomi che "vibrano",  percepibile da tutti gli atomi vicini. Aumentando la vibrazione avrò un aumento della vibrazione indotta. 
-
-Per conduzione: Sposto energia con calore. 
 
 La sua vibrazione **è l'energia media**, crea un'onda di calore.
 
@@ -1827,33 +1821,33 @@ Per esempio: in un sistema di raffreddamento a liquido, il liquido passa da fred
 
 A colpire il mio sistema è la **radiazione elettromagnetica**, cioè **energia pura**.
 
-L'energia non viene "riflessa", viene assorbita facendo in modo che l'oggetto vibri e si scaldi.
+L'energia che viene assorbita fa in modo che l'oggetto vibri e si scaldi.
 
->**Riflessione:** Un fotone entra, l'atomo si eccita e si diseccita subito, rispedendo lo stesso fotone(dove in realtà è vierso ma potente uguale).
->
+>**Riflessione:** Un fotone entra, l'atomo si eccita e si diseccita subito, rispedendo lo stesso fotone(dove in realtà è diverso ma ha la stessa energia).
 
-*Curiosità: Un corpo nero ha temperatura costante($\simeq 2.7 K$).*
 
-##### Sistema Isolato
 
-Sistema che non scambia **calore**, ne **lavoro** con il sistema esterno. 
+#### Sistemi chiusi e isolati
 
-Il sistema è definito **chiuso** se ho inoltre una assenza di scambio di materia.
+Un sistema **chiuso** non permette lo scambio di materia con l'esterno (ma permette lo scambio di energia, sotto forma di calore o lavoro).
+
+Un sistema **isolato** è un  sistema chiuso che inoltre non permette lo scambio di energia con l'ambiente (né sotto forma di calore, né sotto forma di lavoro).
+
+Altri termini spesso usati: un sistema **adiabatico** è un sistema chiuso che non permette lo scambio di calore con l'esterno (permette comunque lo scambio di energia sotto forma di lavoro). Per indicare che un sistema chiuso (ad esempio un recipiente) non permette lo scambio di energia sotto forma di lavoro si dice essere **rigido**.
 
 #### Esempio sistema isolato
 
 Ho un sistema isolato con un pendolo dentro.
 
-
 Se torno dopo anni avendo dato una spinta al pendolo e ho del gas dentro, il pendolo sarà fermo(attrito).
-avendo $U_i$ come energia interna iniziale e $U_f$ energia interna finale:
+Per definizione di sistema isolato, se $U_i$ è energia interna iniziale e $U_f$ energia interna finale:
 
 $\begin{cases} Q=0 \\ W=0 \end{cases}  \Delta U=0 \Longrightarrow U_f= U_i$
 ma quindi otteniamo che	
 
 $\begin{cases}U_i=U_i^{pendolo}+U_i^{gas}\\U_f= \bcancel{U_f^{pendolo}}+U_f^{gas}\end{cases}$
 
-abbiamo che $ \bcancel{U_f^{pendolo}}$ perchè $U_f^{pendolo}=0$ visto che il pendolo è **fermo** a fine esperimento.
+abbiamo che $ \bcancel{U_f^{pendolo}}$ perchè $U_f^{pendolo}=0$ visto che il pendolo è **fermo** a fine esperimento (ignoriamo l'energia interna dei corpi facenti parte del pendolo).
 
 Otteniamo dunque:
 
@@ -1861,10 +1855,10 @@ Otteniamo dunque:
 
 Ottengo delle osservazioni importanti:
 
-1.  $U$ finale del gas è la $U$ iniziale del pendolo $+$ la $U$ finale del gas.
+1.  $U$ finale del gas è la $U$ iniziale del pendolo $+$ la $U$ iniziale del gas. L'energia iniziale del pendolo è stata spesa per aumentare l'energia interna del gas.
 2.  $U$ del pendolo iniziale è dunque $\Delta U_{gas}$.
-3.  *Se vario la temperatura il pendolo non si muove, perchè il gas si scalda in modo disordinato, non solo da un lato.*
-4.  Il disordine è presente.
+3.  Il trasferimento di energia nell'altra direzione non funziona:*se vario la temperatura del gas il pendolo non si muove, perché il gas si scalda in modo disordinato, non solo da un lato.*
+4.  In questo senso, il calore è "disorganizzato", mentre il lavoro è "organizzato".
 
 #### Trasformazioni
 
@@ -1886,35 +1880,39 @@ $\Delta T=0 \Rightarrow \Delta U=0 \iff Q=W $ con $Q>0, W>0$ (temperatura non ca
 
 #### Capacità termica
 
-Avendo un gas
+Se fornisco calore a un sistema (non necessariamente un gas) questo aumenta la sua temperatura. La costante di proporzionalità fra calore e differenza di temperatura caratteristica di un sistema è detta **capacità termica**.
 
-$\Delta Q= \mathfrak{c} \ \ \ \Delta T \Longrightarrow \mathfrak{c}=^{def}$ Capacità termica $=$ 
+$Q= \mathfrak{c} \cdot \Delta T \Longrightarrow \mathfrak{c}\stackrel{def}{=} \frac{Q}{\Delta T}$ 
 
-$dQ\over dT$ 
-
->Quindi La capacità termica è  **il variare del calore in relazione alla variazione di temperatura**
->($\mathfrak{c} = {dQ\over dT}$ )
+>La capacità termica è **il variare del calore in relazione alla variazione di temperatura** per un certo sistema
 >
 
 Come **unità di misura** ha  $\mathfrak{c} ={1J \over 1K}$
 
 *Un buon piumino ha una **alta capacità termica**, mentre un fondo di pentola ha una **bassa capacità termica***.
 
-Affermiamo anche che
+Osserviamo anche che
 
 >Più massa $=$ Maggiore capacità termica. 
 
+nello specifico, consideriamo due sistemi composti dello stesso materiale. Se il primo ha massa doppia rispetto al secondo, ha anche capacità termica doppia.
+
 #### Calore specifico
+
 Di due tipi:
 
-1. **Calore specifico (per quantità di massa)**$= c = {\mathfrak{c}\over m}= {1\over m}\cdot {dQ\over dT } $
+1. **Calore specifico (capacità termica per unità di massa)**$= c = {\mathfrak{c}\over m}= {1\over m}\cdot {Q\over \Delta T } $
    
    *Unità di misura*$={J\over Kg \cdot K}$
-2. **Calore specifico (Molare)**$= c={\mathfrak{c}\over n}={1\over n}\cdot {dQ\over dT} $
+2. **Calore specifico molare (capacità termica per mole)**$= c={\mathfrak{c}\over n}={1\over n}\cdot {Q\over \Delta T} $
    
    *Unità di misura*$={J\over mol\cdot K}$
 
 #### Esperimento di Joule
+
+L'esperimento di Joule mostra l'equivalenza fra lavoro e calore.
+
+Joule costruisce un mulinello immerso in acqua, contenuto all'interno di un recipiente adiabatico e azionato da corpi collegati al mulinello che vengono lasciati cadere verso Terra. Ignorando gli attriti delle pulegge, l'energia meccanica persa dai corpi che cadono è assorbita dall'acqua, attraverso il mulinello che la agita. Il lavoro dei corpi che cadono è convertito interamente in calore assorbito dall'acqua; noto il lavoro compiuto e la variazione di temperatura dell'acqua è anche possibile misurare il calore specifico dell'acqua.
 
 ![Risultati immagini per esperimento di joule](./assets/01-termodinamica-mulinello-joule.png)
 
@@ -1924,24 +1922,22 @@ $W_{h_2O}=0$
 
 $\Delta U=Q$ (1 principio termodinamica)
 
-$p=1 atm \ \ \ 14,5 ^{\circ}\mathrm{c}\to 15,5 ^{\circ}\mathrm{c}$ 
+A pressione $p=1 atm$, per ottenere una variazione di temperatura $14,5 ^{\circ}\mathrm{C}\to 15,5 ^{\circ}\mathrm{C}$  devo applicare un lavoro $W_G=4,186 kJ$
 
-Devo applicare un lavoro $W_G=4,186 KJ$
-
-Otteniamo dunque il valore di una **kilocaloria (Kcal)**che
+Otteniamo dunque il valore di una **caloria**
 
 > $1 cal= 4,186J$
 > 
 
 
-$C_{H_2O}$ liquido$= {1Kcal\over 1Kg\cdot 1K}=4,186 {KJ\over KgK}$
+$C_{H_2O}$ liquido$= {1kcal\over 1Kg\cdot 1K}=4,186 {kJ\over KgK}$
 
 Ricordiamo che
 
-$\Delta T=1K=\Delta T= 1^{\circ}\mathrm{c}$
+$\Delta T=1K=\Delta T= 1^{\circ}\mathrm{C}$
 ##### Esempio pozzanghera
 
-Ho una pozzangera quadrata con uno strato di nylon sopra(ininfluente, serve solo per evitare l'evaporazione)
+Ho una pozzanghera quadrata con uno strato di nylon sopra(ininfluente, serve solo per evitare l'evaporazione)
 
 sappiamo che 
 
@@ -1951,13 +1947,11 @@ La pozzanghera è lunga e larga $50cm$ e profonda $1cm$
 
 $T_i=20^{\circ}\mathrm{c}$
 
-$\Delta U=Q-\bcancel{W}$ (Non ho variazioni di volume, trasformazione isocora)
-
 $\Delta t=8 hr$
 
 $T_f=?$ 
 
-Quale sarà la temperatura finale della pozzanghera se il sole apparisse istantaneamente(e non lentamente) per 8 ore?
+Quale sarà la temperatura finale della pozzanghera se il sole apparisse istantaneamente(e non lentamente) per 8 ore? Supponiamo $\Delta U = Q $.
 
 $W_{sole}\Delta t=Q= mc\cdot\Delta T$ cioè  il calore immesso dal sole per irraggiamento nel tempo.
 
@@ -1973,12 +1967,14 @@ Ora abbiamo dunque
 
 ${7\cdot10^2\cdot2,9\cdot10^4\over10^3\cdot 10^{-2}\cdot4,19\cdot10^3}K=5\cdot10^2=500K$
 
-è dunque aumentata di 500 gradi kelvin .
+è dunque aumentata di 500 Kelvin.
 
-Questo avviene perchè non ho considerato il **calore latente**.
-
+Ma se fosse davvero aumentata di 500K l'acqua sarebbe evaporata. Dobbiamo anche considerare il **calore latente**!
 
 #### Calore latente
+
+Affinché le trasformazioni di stato avvengano è necessario fornire energia al sistema, questo prende il nome di **calore latente**. L'energia posseduta dall'acqua (liquida) a 100°C non è la stessa del vapore d'acqua a 100°C: per trasformare l'acqua in vapore devo fornire altro calore, che non fa aumentare la temperatura ma aumenta comunque l'energia interna del sistema (e provoca il cambiamento di stato).
+
 $Q=\lambda m$
 
 >$\lambda$= Calore latente.
@@ -1987,13 +1983,13 @@ Si misura in $J/Kg$.
 
 $\Delta T_{Cambio\ di\ stato}=0$
 
-*è un calore che si verifica quando abbiamo una coesistenza tra vapore e liquido, una coesistenza di due stati.*
-
 #### Stati della materia
 
 SOLIDO $\xrightarrow[\xleftarrow{\text{Solidificazione}}]{\text{Fusione}}$ LIQUIDO $\xrightarrow[\xleftarrow{\text{Condensazione}}]{\text{Evaporazione}}$ VAPORE
 
 
+
+Per $H_2O$, i calori latenti di fusione ed evaporazione sono i seguenti:
 
 $\lambda _{SL}=3,3\cdot 10^5 J/Kg$ dove $SL$ sta per *Solido Liquido*.
 
@@ -2006,7 +2002,7 @@ $\lambda _{LV}=2,7\cdot 10^7 J/Kg$ dove $LV$ sta per*Liquido Vapore*.
 
    4. Disegnare il grafico Temperatura/ tempo (Temperatura asse $y$, tempo asse $x$)
 
-     Aggiungendo che ${dQ\over dT}=100 cal/hr$.
+     Aggiungendo che ${Q\over \Delta T}=100 cal/hr$.
 
 ----
 
