@@ -8,7 +8,7 @@
 
 > Fenomeno di interesse e sua idealizzazione, ho grandezze fisiche per descriverlo (**unità**), osservazione e misura (**incertezze**), formulazione di ipotesi, passando dal **modello alla legge fisica**.
 >
-> Attraverso quest'ultima (legge fisica) per descrivere e prevedere ed in caso **falsificare l'ipotesi.**
+> Attraverso quest'ultima (legge fisica) è possibile descrivere e prevedere ed in caso **falsificare l'ipotesi.**
 
 ---
 
@@ -90,7 +90,7 @@ s=$A \cos(Bt)$
 >
 > **NON** posso rimuovere la costante A, mentre posso rimuovere la costante B(se ad esempio la B vale 1), ma è consigliato tenerla in ogni caso. Senza A non posso dire di che cosa si tratta, di lunghezza, di tempo etc etc, quindi A deve essere **DEFINITA** ed avere una unità di misura.
 
-> **Pulsazione**: nella **formula** **precedente** la pulsazione è $\omega=B$.
+> **Pulsazione**: la **formula** **precedente** è la legge oraria che descrive un moto armonico (ad esempio: una molla, un pendolo). Il pendolo oscilla attorno alla condizione di riposo con pulsazione $\omega=B$.
 
 
 
@@ -108,7 +108,7 @@ Ovviamente ha una unità di misura
 
 $[v]={[s]\over[t]}$
 
-Le parentesi quadre indicano una equazione dimensionale, stiamo considerando l'uguaglianza del punto di vista delle **dimensioni**.
+Le parentesi quadre indicano una equazione dimensionale, stiamo considerando l'uguaglianza dal punto di vista delle **dimensioni**.
 
 
 
@@ -120,7 +120,7 @@ $udm(v)={udm(s)\over udm(t)}={m\over s}$
 
 
 
-> Nota che **è una differenza, non dipende dal sistema che abbiamo utilizzato**.
+> Nota che **è una differenza, non dipende dal sistema di riferimento (origine degli assi) che abbiamo utilizzato**.
 
 
 
@@ -142,8 +142,6 @@ $3{m\over s}$
 
 
 
-
-
 > Nota bene che **il grafico con tempo, non può avere valori che "tornano indietro nel tempo".**
 
 
@@ -152,13 +150,13 @@ $3{m\over s}$
 
 
 
-> Velocità nel tempo che dipende dall'istante $t$.
+> La velocità istantanea è la velocità media relativa a un tempo infinitesimo.
 
-$\lim_{\Delta t\longrightarrow0}{\Delta x\over \Delta t}=v$
+$\lim_\limits{\Delta t \to 0}{\Delta x\over \Delta t}=v$
 
 anche detta
 
-> $\lim_{\Delta t\longrightarrow0}{\ x(t)-x_0\over t-t_0}=v(t)$ 
+> $\lim_\limits{\Delta t\longrightarrow0}{\ x(t)-x_0\over t-t_0}=v(t)$ 
 >
 > Rapporto incrementale, quindi è la **derivata** nel grafico **spazio tempo.**
 
@@ -178,7 +176,7 @@ In questo caso A è **Spazio**.
 
 
 
-Avendo la **legge oraria della velocità**, posso ottenere la **legge oraria del moto** integrando $v(t)​$
+Avendo la **legge oraria della velocità**, posso ottenere la **legge oraria del moto** integrando $v(t)$
 
 
 
@@ -198,11 +196,9 @@ $s(t_0)=s_0+\bar{v}(t_0-t_0)=s_0$
 
 #### Accelerazione
 
-
-
-> **Variazione** della velocità nel tempo o **Derivata** della velocità nel tempo
+> **Derivata** della velocità nel tempo
 >
-> $\lim_{\Delta t\longrightarrow0}{\ v(t)-v(t_0)\over t-t_0}=a(t_0)$ 
+> $\lim_\limits{\Delta t \to 0}{\ v(t)-v(t_0)\over t-t_0}=a(t_0)$ 
 
 > **Protip**: Controllo di avere consistenza dimensionale
 >
@@ -212,23 +208,17 @@ $s(t_0)=s_0+\bar{v}(t_0-t_0)=s_0$
 
 ##### Accelerazione Gravitazionale 
 
-
-
 > L**'accelerazione gravitazionale** è pari a
 >
-> $g=9,8055{m\over s^2}$
+> $g=9,80665{m\over s^2}$
 
 ![1550511703222](./assets/1550511703222.png)
 
-> **Punti estremanti**: Punti di massimo e di minimo, punti nei quali  l'accelerazione vale ZERO, cioè la velocità è costante.
-
-
+> **Punti estremali** (o punti stazionari): Punti di massimo e di minimo di un grafico (punti in cui la derivata della funzione è zero). In un grafico velocità - tempo, nei punti di massimo e di minimo il corpo non subisce nessuna accelerazione (derivata della velocità in funzione del tempo = accelerazione). Analogamente, in un grafico spazio - tempo nei punti stazionari la velocità del corpo è zero (derivata dello spazio in funzione del tempo = velocità).
 
 
 
 #### Integrale della velocità
-
-
 
 > $v(t)=v_0+\int_{t_0}^t d\tau a(\tau)$
 
@@ -250,11 +240,11 @@ $s(t_0)=s_0+\bar{v}(t_0-t_0)=s_0$
 >
 > $F={-G\cdot m\cdot M\over r^2}={-m\cdot g\cdot r}$
 >
-> l'accelerazione gravitazionale è **diversa** in base a dove mi trovo nella terra, ma di poco, quindi la **assumo** come **definita prima**.
+> L'accelerazione gravitazionale è **diversa** in base a dove mi trovo sulla Terra, ma di poco, quindi la **assumo** come **costante**.
 
 #### Esercizio
 
-**Protip**: Io posso piazzare il mio asse delle $x$, cioè s(t) come mi pare e piace, quindi posso ottenere una $g$ **negativa**, per avere una accelerazione **positiva**.
+**Protip**: Io posso piazzare il mio asse delle $x$, cioè s(t) come mi pare e piace, di conseguenza si modifica il segno dell'accelerazione di gravità. Se $x$ cresce al crescere della distanza da terra, allora $g$ sarà **negativa**, altrimenti è viceversa.
 
 > Un tipo tira un sasso in aria
 >
@@ -263,8 +253,6 @@ $s(t_0)=s_0+\bar{v}(t_0-t_0)=s_0$
 > $v_0=?$
 >
 > $h=4,0 m$
-
-
 
 $s_0=0, t_0=0$
 
@@ -282,15 +270,13 @@ $s(t)=s_0+\int_{t0}^t d\tau v(\tau)=\int_0^t d\tau (v_0+g\tau)=v_0t+g{t^2\over2}
 
 ## 22/02/2019
 
-Ricordiamo che **l'accelerazione** è un **differenziale** della velocità
+Ricordiamo che **l'accelerazione** è la **derivata** della velocità rispetto al tempo
 
 ${dv\over dt}=a$
 
 tornando all'esercizio precedente, otteniamo 
 
 $\begin{cases} v(t)=v_0+gt \\ s(t)=v_0t+{1\over 2}gt^2 \end{cases}$
-
-
 
 Ora nel punto in cui la velocità è zero:
 
@@ -312,7 +298,7 @@ Vengono lanciati due sassi
 >
 > $v_0=8,0 m/s$
 >
-> $a=g=-9,8055m/s^2$
+> $a=g=-9,81m/s^2$
 >
 > $s_0=0m$
 >
@@ -347,15 +333,15 @@ Come possiamo vedere, la possibilità che si incontrino è **nell'intersezione d
 
 ### Grandezze vettoriali
 
-$s\longrightarrow\overrightarrow{s}$
+$s\longrightarrow\vec{s}$
 
-$v\longrightarrow\overrightarrow{v}$
+$v\longrightarrow\vec{v}$
 
-$a\longrightarrow\overrightarrow{a}$
+$a\longrightarrow\vec{a}$
 
 
 
-Ci sono diversi tipi di **assi**
+Ci sono diversi tipi di **sistemi di coordinate**
 
 1. **Cartesiano**
    ![Le ASSONOMETRIE – educazionetecnica.dantect.it](./assets/cartesiano.gif)
@@ -370,42 +356,36 @@ Ci sono diversi tipi di **assi**
 
 
 
-Formule (le quali non ho idea a cosa si riferiscano)
+Una grandezza vettoriale nello spazio è descritta quindi da un vettore con tre entrate, corrispondenti (nel caso di un sistema di coordinate cartesiano) all'intensità della grandezza lungo ciascuno degli assi:
 
+$ s\longrightarrow \Delta\vec{s}=\bigg(\begin{smallmatrix}\Delta s_x\\\Delta s_y\\\Delta s_z\end{smallmatrix}\bigg)=\Delta s_x \ \hat x + \Delta s_y \ \hat y + \Delta s_z \ \hat z$
 
+Dove con $\hat x$ si intende il versore relativo all'asse $x$, cioè il vettore $\hat x = \bigg(\begin{smallmatrix}1\\ 0 \\ 0\end{smallmatrix}\bigg)$, allo stesso modo $\hat y = \bigg(\begin{smallmatrix}0\\ 1 \\ 0\end{smallmatrix}\bigg)$ e $\hat z = \bigg(\begin{smallmatrix}0\\ 0 \\ 1\end{smallmatrix}\bigg)$.
 
-$ s\longrightarrow \Delta\overrightarrow{s}=\Delta\overrightarrow{r}=\bigg(\begin{smallmatrix}\Delta x\\\Delta y\\\Delta z\end{smallmatrix}\bigg)=\Delta x \ \hat x + \Delta y \ \hat y + \Delta z \ \hat z$
+Analogamente per il vettore velocità media:
 
-
-
-$\overrightarrow{v}_M={\Delta\overrightarrow{s}\over\Delta t}=\Bigg(\begin{smallmatrix}{\Delta x\over\Delta t}\\{\Delta y\over\Delta t}\\{\Delta z\over\Delta t}\end{smallmatrix}\Bigg)=\bigg(\begin{smallmatrix}{v_x}\\{v_y}\\{v_z}\end{smallmatrix}\bigg)= v_x \ \hat x + v_y \ \hat y + v_z \ \hat z$
-
-
-
-
+$\vec{v}_M={\Delta\vec{s}\over\Delta t}=\Bigg(\begin{smallmatrix}{\Delta x\over\Delta t}\\{\Delta y\over\Delta t}\\{\Delta z\over\Delta t}\end{smallmatrix}\Bigg)=\bigg(\begin{smallmatrix}{v_x}\\{v_y}\\{v_z}\end{smallmatrix}\bigg)= v_x \ \hat x + v_y \ \hat y + v_z \ \hat z$
 
 #### Velocità istantanea in più dimensioni
 
-> $\overrightarrow{v}(t)=\lim_{t'\longrightarrow t} {\overrightarrow{s}(t')-\overrightarrow{s}(t)\over t'-t}$
+> $\vec{v}(t)=\lim_\limits{t'\to t} {\vec{s}(t')-\vec{s}(t)\over t'-t}$
 
-Al cambio di dimensioni posso avere valori in più.
-
-La velocità, in ogni caso, **è sempre tangenziale alla direzione**.
+Si vede, per come è definito il vettore $\vec v$, che **la sua direzione è uguale a quella dello spostamento $\vec s$**.
 
 #### Accelerazione in più dimensioni
 
-> $\overrightarrow{a}(t)=\lim_{t'\longrightarrow t} {\overrightarrow{v}(t')-\overrightarrow{v}(t)\over t'-t}$
+> $\vec{a}(t)=\lim_\limits{t'\to t} {\vec{v}(t')-\vec{v}(t)\over t'-t}$
 
-Prima avevo solo una variazione di velocità, qui invece ci dice che l'accelerazione c'è se la velocità in un certo istante è **diversa** dalla velocità in un altro istante. Ciò **non implica** che i vue valori siano diversi. In **matematichese**:
+Una grandezza vettoriale è caratterizzata da una **intensità** (lunghezza del vettore), da una **direzione** (retta sulla quale giace il vettore) e da un **verso** (uno dei due possibili sulla retta direzione). Può quindi esserci, ad esempio, una variazione di velocità (accelerazione) sia se cambia l'intensità della velocità, sia se cambia la sua direzione. Ad esempio: se un corpo viaggia inizialmente con velocità $v_1 = 5 \hat x \frac{m}{s}$ (5 metri al secondo lungo la direzione dell'asse x) e poi modifica la sua velocità in $v_2 = 5 \hat y \frac{m}{s}$ c'è stata una accelerazione (l'intensità del vettore velocità non è cambiato, ma la direzione sì).
 
-$\overrightarrow{a}=\overrightarrow{0} \Rightarrow \overrightarrow{v}(t')\ne\overrightarrow{v}(t)\nRightarrow v(t')\ne v(t)$
+
 
 Possiamo avere
 
-1. Moto rettilineo uniforme **(MRV)**
+1. Moto rettilineo uniforme **(MRU)**
 2. Moto rettilineo uniforme vario **(MRVA)**
-3. Moto non rettilineo uniforme **(MNRV)**
-4. Moto non rettilineo non uniforme **(MNRNV)**
+3. Moto non rettilineo uniforme **(MNRU)**
+4. Moto non rettilineo non uniforme **(MNRNU)**
 
 ![1550832890549](./assets/1550832890549.png)
 
@@ -413,47 +393,41 @@ Possiamo avere
 
 ### Moto circolare uniforme
 
-> Ha **velocità costante**, con traiettoria **circonferenza**.
+> Un corpo in moto circolare uniforme percorre una traiettoria circolare, con velocità **scalare** (intensità) costante.
+
+Per una circonferenza di raggio $r$, le coordinate sul piano cartesiano in funzione dell'angolo $\phi$ possono essere calcolate tramite la relazione
 
 $\begin{cases}x=r\cos\phi \\y=r\sin\phi\end{cases}$
 
-per trovare le coordinate.
 
 
+*In ogni istante, il vettore spostamento e il vettore velocità hanno direzione tangente alla circonferenza.*
 
-> $r(t)=\cos t=R \Rightarrow s=R\phi$
-
-*Perchè R=s_phi.... ?* boh(dubbio)
-
-
-
-*Ogni punto della velocità è tangente alla circonferenza*(incerto)
-
-
-
-La velocità è il prodotto della **velocità angolare per il raggio**.
+In un MCU si può definire la velocità angolare come l'angolo di circonferenza percorso per unità di tempo (se il moto è uniforme, la velocità angolare è costante). La velocità scalare è il prodotto della **velocità angolare per il raggio**.
 
 > **Velocità:** 
 >
-> $v={ds\over dt}={d(R\phi)\over dt}=R\ {dy\over dt}= \omega R$
+> $v={ds\over dt}={d(R\phi)\over dt}=R\ {d\phi\over dt}= \omega R$
 
-$\omega$ è la **pulsazione**, cioè la **velocità angolare.**
+$\omega$ è la  **velocità angolare.**
+
+Allo stesso modo è possibile definire l'accelerazione angolare $$\alpha$$
 
 > **L'accelerazione**:
 >
 > $a={dv\over dt}=R\ {d\omega\over dt}=\alpha R$
 
-L'accelerazione è **diretta verso il centro**, cioè **accelerazione** **centripeta.**
+L'accelerazione è **diretta verso il centro**, cioè **accelerazione** **centripeta**; in un moto circolare uniforme il suo valore scalare è costante.
 
 Accelerazione centripeta in un moto non circolare = **accelerazione normale**.
 
-È normale moto, perpendicolare.
+È normale al moto, perpendicolare.
 
 ![Moto circolare uniforme](./assets/acccentripeta.png)
 
 **Nota che**:
 
-Se non ho una circonferenza, posso dire che **l'accelerazione ORTOGONALE** ci porta ad avere un'accelerazione centripeta verso una ipotetica circonferenza per la nostra curva:
+Se non ho una circonferenza, posso dire che **l'accelerazione normale** ci porta ad avere un'accelerazione centripeta verso una ipotetica circonferenza per la nostra curva:
 
 ![https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww2.unipr.it%2F~basgio93%2F2004%2FXI%2Findex_files%2Fimage055.jpg&f=1](./assets/accortogonale.jpg)
 
@@ -473,37 +447,42 @@ $v_y={dy\over dt}=R{d\sin \phi\over dt}=R\cos \phi {d\phi\over dt}$
 
 con le **accelerazioni** 
 
-$a_x={dv_x\over dt}=-R[{\cos \phi({d\phi\over dt})^2}+\sin \phi \xcancel{({d^2\phi\over dt^2})}]$
+$a_x={dv_x\over dt}=-R[{\cos \phi({d\phi\over dt})^2}+\sin \phi \xcancel{({d^2\phi\over dt^2})}] = -R \cos \phi \cdot \alpha$ 
 
-$a_y={dv_y\over dt}=R[{-\sin \phi({d\phi\over dt})^2}+\cos \phi \xcancel{({d^2\phi\over dt^2})}]$
+$a_y={dv_y\over dt}=R[{-\sin \phi({d\phi\over dt})^2}+\cos \phi \xcancel{({d^2\phi\over dt^2})}] = -R sin \phi \cdot \alpha$
+
+$$a = \Vert (a_x, a_y) \Vert = \sqrt{a_x^2 + a_y^2} = \sqrt{R^2\alpha^2(cos^2 \phi + sin^2 \phi)} = \alpha R$$
 
 > **Nota bene**: ${d^2\phi\over dt^2}={d\over dt}[{d\phi\over dt}]$
 >
-> dove $[{dy\over dt}]$=$\omega$ è costante, quindi la derivata di una costante è **zero**.
+> dove $[{d \phi\over dt}]$=$\omega$ è costante, quindi la derivata di una costante è **zero**.
 
 
 
 ## 25/02/2019
 
-$\omega=\cos t$
-
 > **Velocità angolare:** $v=\omega r$
 
 
 
-#### esercizio palla di cannone
+#### Esercizio palla di cannone
 
-Calcolo della traiettoria di un oggetto sparato con un cannone.
+Calcolo della traiettoria di un oggetto sparato con un cannone *(o di qualunque altro corpo con una velocità iniziale soggetto alla forza di gravità).*
 
+Il cannone è posizionato su $(0,0)$ e ha un certo alzo $$\phi$$ (angolo rispetto al terreno). Il cannone imprime sul corpo una velocità iniziale.
 
+Questi esercizi si risolvono nel seguente modo:
 
-Il cannone è posizionato su $(0,0)$.
+1. si scompone il moto nella componente orizzontale (lungo $$x$$ ) e verticale (lungo $$y$$);
+2. lungo la componente orizzontale il corpo non subisce accelerazione (si ignora l'attrito dell'aria) e quindi prosegue con un moto rettilineo uniforme
+3. lungo la componente verticale il corpo subisce accelerazione $$\vec g = - 9.81 \hat y \frac{m}{s} $$ e quindi prosegue con un moto rettilineo uniformemente accelerato
+4. si mettono a sistema le due leggi orarie (quella del moto lungo $x$ e lungo $y$): si usa la legge oraria lungo $y$ per calcolare quando il corpo toccherà terra ($y = 0$) e si inserirà il tempo trovato nella legge oraria lungo $x$ per calcolare la distanza percorsa dal corpo.
 
 $x_0=0$ 	$v_{0x}=v_0\cos\phi$
 
 $y_0=0$		$v_{0y}=v_0\sin\phi$
 
-$\overrightarrow{v}_0=v_{0x} \hat{x}+v_{0y} \hat{y} \iff v_o, \phi$
+$\vec{v}_0=v_{0x} \hat{x}+v_{0y} \hat{y} \iff v_o, \phi$
 
 $\begin{cases} x(t)=x_0+v_{0x}t\\ y(t)=y_0+v_{0y}t+{1\over2}at^2\end{cases} \begin{cases} x=v_{0x}t\\ y=v_{0y}t-{1\over2}gt^2\end{cases} \begin{cases} t={x\over v_{0x}}\\ y={v_{0y}\over v_{0x}}x-{1\over2v_{0x}}gx^2\end{cases}$
 
@@ -513,43 +492,29 @@ $x=-{b\over a}= \tan\phi {2v_{0x}^2\over g}={2v_{0x}v_{0y}\over g}$
 
 Sottolineo che ho sostituito $y=\tan\phi x -{g\over 2V_{0x}^2}x^2=bx+ax^2$
 
+### Principi della dinamica
 
+#### Primo principio (principio di inerzia):
 
+$\vec{v}=\vec{0}$
 
+$\vec{v}=\vec{costante}$
 
-La componente **perpendicolare** cambia la direzione del moto.
+> Un corpo rimane nello stato di quiete o di moto rettilineo uniforme fintanto che una forza non agisce su di esso.
 
-**Nota**
+**Sistema di riferimento inerziale**: un sistema di riferimento in cui è valido il primo principio della dinamica. Sistemi inerziali fra di loro diversi differiscono (al più) per una differenza **costante di velocità**.
 
-Non posso dopo un po' continuare a derivare perchè ottengo
+Se un sistema di riferimento accelera rispetto ad un sistema di riferimento inerziale, quel sistema di riferimento è detto **non inerziale**.
 
-$\overrightarrow{F}=c\cdot \overrightarrow{a}$
+> **Molto importante:** Se sono sopra un oggetto movente non posso affermare se si sta muovendo, perché mi sto muovendo con esso.
 
-derivando rimarrebbe solo $c$.
-
-
-
-### Inzerzia
-
-#### Primo principio di inerzia:
-
-$\overrightarrow{v}=\overrightarrow{0}$
-
-$\overrightarrow{v}=\overrightarrow{costante}$
-
-> Un corpo rimane in moto rettilineo uniforme fino a quando una forza esterna ne cambia e ferma la quiete del moto.
-
-**Sistema di riferimento inerziale**: Sistema di sistemi di riferimento tra i quali, per passare tra di essi attraverso una **velocità costante**.
-
-> **Molto importante:** Se sono sopra un oggetto movente non posso affermare se si sta muovendo, perchè mi sto muovendo con esso.
-
-#### Secondo principio di inerzia:
+#### Secondo principio (principio di Newton):
 
 ##### Esperimenti carrelli
 
 *IMMAGINE che non trovo*
 
-avendo due carrelli che si tirano tra loro con una molla di mezzo cosa succede?
+Avendo due carrelli che si tirano tra loro con una molla di mezzo cosa succede?
 
 Beh se i carrelli sono uguali, ho i $\Delta v1=\Delta v2$
 
@@ -557,69 +522,69 @@ altrimenti, se carrello 2 è 2 volte la **massa** del carrello 1 ottengo $\Delta
 
 idem se vale 3 ottengo $\Delta v1=3\Delta v2$
 
-da qui otteniamo che 
+Misuriamo quindi la seguente relazione fra massa e accelerazione, a cui diamo il nome di "forza":
 
-> $\overrightarrow{F}=m\cdot \overrightarrow{a}$
-
-Sull'es di prima ottengo
-
-$\overrightarrow{p}=m\cdot \overrightarrow{v}$
+> $\vec{F}=m\cdot \vec{a}$
 
 
+
+Per una definizione più precisa del concetto di forza, definiamo $\vec p$ **quantità di moto**:
+
+$\vec{p}=m\cdot \vec{v}$
 
 Forza è la variazione della quantità di moto per l'unità di tempo.
 
-La forza è l'interazione.
+Per l'esercizio di prima, con$ v1$ con stessa massa di $v2$ abbiamo
 
-per l'esercizio di prima, con$ v1$ con stessa massa di $v2$ abbiamo
+${d\vec{p}_1\over dt}=-{d\vec{p}_2\over dt}$
 
-${d\overrightarrow{p}_1\over dt}=-{d\overrightarrow{p}_2\over dt}$
-
-dove $\overrightarrow{F}_1={d\overrightarrow{p}_1\over dt}$ $\overrightarrow{F}_2={d\overrightarrow{p}_2\over dt}$
+dove $\vec{F}_1={d\vec{p}_1\over dt}$ $\vec{F}_2={d\vec{p}_2\over dt}$
 
 
 
 OTTENENDO
 
-$\overrightarrow{F}_1=-\overrightarrow{F}_2$
+$\vec{F}_1=-\vec{F}_2$
 
-$\overrightarrow{F}={d\overrightarrow{p}\over dt}={{d\over dt}(m\overrightarrow{v}_2)}={dm\over dt}\overrightarrow{v}+m {d\overrightarrow{v}\over dt}$
+$\vec{F}={d\vec{p}\over dt}={{d\over dt}(m\vec{v}_2)}={dm\over dt}\vec{v}+m {d\vec{v}\over dt}$
 
-Noi sappiamo che $a= {d\overrightarrow{v}\over dt}$
+Noi sappiamo che $a= {d\vec{v}\over dt}$
 
 
 
-quindi abbiamo la **seconda legge della termodinamica**
-
->$\overrightarrow{F}={d\overrightarrow{p}\over dt}$ 
+>$\vec{F}={d\vec{p}\over dt}$ 
 >
->cioè $\overrightarrow{F}= m\cdot \overrightarrow{a}+ {dm\over dt}\overrightarrow{v}$
+>cioè $\vec{F}= m\cdot \vec{a}+ {dm\over dt}\vec{v}$
 >
->**LA MAGGIOR PARTE DELLE VOLTE** ${dm\over dt}\overrightarrow{v}$ SI PUÒ **IGNORARE** PERCHÈ È NULLO, vale se abbiamo tipo un razzo mandato nello spazio.
+>Spesso nei problemi ${dm\over dt}\vec{v}$ si può ignorare, perché i corpi di cui vogliamo calcolare l'accelerazione o la forza ai quali sono soggetti non hanno una variazione di massa.
+>
+>Un esempio di corpo che riceve accelerazione da una variazione di massa sono i razzi spaziali.
 
-Unità di misura: **NEWTON** =km/h
+Unità di misura: **Newton**. $[N] = \frac{[kg] \cdot [m]}{[s^2]}$ =km/h
 
-$\overrightarrow{F}={d\overrightarrow{p}\over dt}$ 
+$\vec{F}={d\vec{p}\over dt}$ 
 
-${d\overrightarrow{p}}={\overrightarrow{F}}{dt}$
+${d\vec{p}}={\vec{F}}{dt}$
 
 per calcolare la 
 
 **forza media** dobbiamo avere l'impulso.
 
-> **Impulso**: $\Delta \overrightarrow{p}=\int^t_{t_0}\overrightarrow{F}(\tau)d\tau$
+> **Impulso**: $\Delta \vec{p}=\int^t_{t_0}\vec{F}(\tau)d\tau$
 
 
 
 Avendo poi
 
-> **Forza media**: $\overrightarrow{\bar{F}}={\Delta\overrightarrow{p}\over\Delta t}$
+> **Forza media**: $\vec{\bar{F}}={\Delta\vec{p}\over\Delta t}$
 
 
 
 #### Esercizio pallina da tennis
 
-Ho una pallina da tennis, la tiro contro il muro che succede?
+Ho una pallina da tennis, la tiro contro il muro. La pallina rimbalza e torna indietro: la velocità è variata, quindi il moto ha avuto una accelerazione, quindi il corpo ha subito una forza.
+
+Quanta forza è stata impressa dal muro sulla pallina?
 
 $m=150g$ di pallina
 
@@ -627,39 +592,37 @@ $v=36 km/h=10m/s$
 
 otteniamo
 
-$\xcancel{\overrightarrow{p}_i=1,5kg\ {m\over s}}$ è sbagliato!
+$\xcancel{\vec{p}_i=1,5kg\ {m\over s}}$ è sbagliato: la quantità di moto è una grandezza vettoriale
 
 
 
-**Non ho un vettore dall'altra parte!** devo mettere $\hat{x}$
+Indichiamo la direzione della quantità di moto moltiplicando il prodotto massa per velocità scalare della pallina per il versore $\hat x$:
 
-$\overrightarrow{p}_i=1,5kg\ {m\over s}\cdot \hat{x}$
+$\vec{p}_i=1,5kg\ {m\over s}\cdot \hat{x}$
 
-ottenendo
+supponiamo un impatto perfettamente elastico: dopo l'impatto con il muro, la pallina ha la stessa velocità scalare, la stessa direzione ma il verso opposto.
 
-$\begin{cases} \overrightarrow{p}_i=1,5kg\ {m\over s}\cdot \hat{x} \\ \overrightarrow{p}_i=-1,5kg\ {m\over s}\cdot \hat{x} \end{cases}$
+$\begin{cases} \vec{p}_i=1,5kg\ {m\over s}\cdot \hat{x} \\ \vec{p}_f=-1,5kg\ {m\over s}\cdot \hat{x} \end{cases}$
 
-
-
-il professore dovrà fornirmi in quanto tempo si stretcha. ($\Delta t$)
+La pallina è rimasta "attaccata" al muro per un certo intervallo di tempo $\Delta t$, durante il quale il muro ha impresso una forza sulla pallina. La variazione di quantità di moto è $\Delta \vec p = \vec p_f - \vec p_i = 2 \vec p_f$. La forza applicata dal muro sulla pallina è quindi $\vec F = \frac{\Delta \vec p}{\Delta t} $.
 
 
 
 > **Principio di sovrapposizione:**
 >
-> Gli effetti delle forze sono equivalenti alla sovrapposizione degli effetti delle forze (_somma_)
+> Se più forze agiscono su un corpo, l'effetto complessivo delle forze è equivalente alla sovrapposizione degli effetti delle forze (_somma vettoriale delle forze_)
 >
-> $\overrightarrow{F}_{tot}=m \overrightarrow{a}_{tot}$
+> $\vec{F}_{tot}=m \vec{a}_{tot}$
 
 
 
 
 
-$\overrightarrow{s}(t)=\overrightarrow{s}_0+\int^t_{t_0} d\tau \overrightarrow{v}_0(\tau)+\int^t_{t_0} d\tau+\int^\tau_{t_0} du {\overrightarrow{F}(u)\over m}\bcancel{(du-du)}$
+$\vec{s}(t)=\vec{s}_0+\int^t_{t_0} d\tau \vec{v}_0(\tau)+\int^t_{t_0} d\tau+\int^\tau_{t_0} du {\vec{F}(u)\over m}\bcancel{(du-du)}$
 
 
 
-**in ordine di forza crescente:**
+**Vi sono quattro tipi di "forze fondamentali". In ordine di intensità crescente:**
 
 1. Forza di gravità
 
@@ -679,23 +642,21 @@ $\overrightarrow{s}(t)=\overrightarrow{s}_0+\int^t_{t_0} d\tau \overrightarrow{v
 
 ![1551434665292](./assets/1551434665292.png)
 
-La massa descrive **quanto intensamente** sento la gravità.
+La massa descrive **quanto intensamente** sento la gravità:
 
-> **Forza che 1 esercita su 2:** $\overrightarrow{F}_{1\rightarrow2}=-G{m_1m_2\over r^2_{12}}\hat{r}_{12}$
-
-
+> **Forza che 1 esercita su 2:** $\vec{F}_{1\rightarrow2}=-G{m_1m_2\over r^2_{12}}\hat{r}_{12}$
 
 dove G è la costante di **gravitazione universale**
 
 $G=6,67\cdot 10^{-11} {N\cdot m^2\over kg^2}$
 
-La massa $m_1 $ è influenzata dalla massa $m_2$ e viceversa. 
+La massa $m_1 $ subisce una forza gravitazionale dalla massa $m_2$ e viceversa. 
 
 La gravità si propaga alla velocità della luce, ma non è istantanea, però per noi abbiamo velocità infinita.
 
 > Nota sulla elettricità:
 >
-> $\overrightarrow{F}=Kel{g1g2\over r^2_{12}}\hat{r}_{12}$ dove $Kel={1\over4\pi\epsilon_0}$
+> $\vec{F}=Kel{g1g2\over r^2_{12}}\hat{r}_{12}$ dove $Kel={1\over4\pi\epsilon_0}$
 
 
 
@@ -705,11 +666,11 @@ Forza con la quale descrivo il fenomeno della caduta dei gravi sulla superfice t
 
 *Ho un palazzo alto 100 metri, butto un sasso.*
 
-$\overrightarrow{F}=-G{Mm\over r^2}\hat{r}$ dove $M$ è la massa della terra, $m$ è la massa del sasso.($\overrightarrow{P}=-m\overrightarrow{g}$)
+$\vec{F}=-G{Mm\over r^2}\hat{r}$ dove $M$ è la massa della terra, $m$ è la massa del sasso.($\vec{P}=-m\vec{g}$)
 
-> **Teorema della forza centrale:** Posso assumere che la massa sia concentrata al centro dell'oggetto, poichè le forze applicate vanno al centro.
+> **Teorema della forza centrale:** al fine di calcolare la forza gravitazionale di un corpo, fintanto che la massa è distribuita uniformemente all'interno del suo volume, posso assumere che la massa sia concentrata al centro dell'oggetto.
 
-$\overrightarrow{F}=-G{M_Tm\over (R_t+h)^2}=-{GM_T\over R_T^2(1+{h\over R_T})}m$
+$\vec{F}=-G{M_Tm\over (R_t+h)^2}=-{GM_T\over R_T^2(1+{h\over R_T})}m$
 
 ora so che
 
@@ -723,19 +684,13 @@ So che
 
 $-{GM_T\over R_T^2}(1+2{h\over R_T})m=-{GM_T\over R_T^2}$ perchè $(1+2{h\over R_T})$ è dell'ordine di $10^{-5}$
 
-$\overrightarrow{g}=G{M_T\over R_T^2}\hat{R_T}$
-
-
+$\vec{F}=G{M_T\over R_T^2}\hat{R_T}$, con una buona approssimazione possiamo quindi ignorare la variazione di forza peso del sasso quando si trova sul terreno rispetto a quando si trova in cima al palazzo (e quindi, tutti i corpi sulla superficie della Terra o a poca distanza da essa subiscono accelerazione $\vec g = -G \frac{M_T}{R_T^2} \hat R_T$).
 
 
 
 **La gravità della luna è un sesto della gravità della terra**
 
-la massa è collegata in qualche modo a ciò?
-
-**NO**.
-
-
+Dunque, la forza peso di un corpo sulla luna è un sesto della forza peso che lo stesso corpo avrebbe sulla terra. La massa è invece una proprietà del corpo, e rimane uguale sia sulla Terra, sia sulla Luna, ovunque. 
 
 
 
@@ -744,8 +699,9 @@ la massa è collegata in qualche modo a ciò?
 ![1551436719109](./assets/1551436719109.png)
 
 
+I problemi sul piano inclinato si affrontano scomponendo la forza peso del corpo sul piano nella componente normale al piano e nella componente tangenziale al piano.
 
-$\overrightarrow{N}+\overrightarrow{P}_{perp}=0$
+$\vec{N}+\vec{P}_{perp}=0$
 
 $P_{parall}=P\sin \alpha$
 
@@ -756,30 +712,26 @@ $\begin{cases}t:ma_t=F_t=mg\sin \alpha \\n: ma_n=F_n=0 \end{cases}$
 da questo ottengo $a_t=g\sin\alpha$
 
 
-
-Se aggiungo una fune
+In assenza di attriti, la componente della forza tangenziale al piano inclinato porta il corpo ad accelerare. Per tenere fermo il corpo, supponiamo di aggiungere una fune
 
 ![1551437365748](./assets/1551437365748.png)
 
-ottengo che ho una forza $T$ che sommata a $P_t $ è $=0$
+la fune ha una forza $T$ (tensione) che sommata a $P_t $ deve essere $=0$
 
 quindi ottengo 
 
-$\overrightarrow{P}+\overrightarrow{N}+\overrightarrow{T}=\overrightarrow{0}$
+$\vec{P}+ \vec{N}+ \vec{T}= \vec{0}$
+
+_(Il corpo è in quiete, quindi per il primo prncipio della dinamica la somma delle forze su di esso deve essere zero)_
 
 
+Supponiamo ora un moto circolare. Il corpo non è in quiete, quindi
 
+$\vec {F}_c=m\vec{a}_c\ne\vec{0}$
 
+Posso immaginare la forza centripeta come una fune che è collegata al centro della circonferenza. Come varia la forza di tensione della fune in funzione della massa del corpo?
 
-Importante:
-
-$\overrightarrow{F}_c=m\overrightarrow{a}_c\ne\overrightarrow{0}$
-
-
-
-Con la forza centripeta, posso immaginarmi come una fune che è collegata al centro della circonferenza.
-
-Dunque il carico di rottura sale quadraticamente:
+Il carico di rottura sale quadraticamente:
 
 $F_c=-m\omega^2R=-G{mM\over R^2}$
 
@@ -793,49 +745,51 @@ otteniamo che
 
 ### Forza di attrito
 
-Forza di **reazione vincolare**.
+La forza di attrito è una forza che si oppone al movimento ed è proporzionale alla **reazione vincolare**.
 
-$\overrightarrow{F}_a| \overrightarrow{F}_t+\overrightarrow{F}_A=\overrightarrow{0}$
+$\vec{F}_a| \vec{F}_t+\vec{F}_A=\vec{0}$
 
 ##### L'attrito statico 
 
-dipende da quanto l'oggetto "preme". Ovviamente dipende dalla forza peso, che è uguale e opposta a $N$. Quindi uso N
+L'attrito statico è proprio di un corpo **fermo** che poggia su un piano. Dipende da quanto un corpo "preme" sul piano su cui poggia. Dipende cioè dalla forza peso (o nel caso del piano inclinato, dalla componente perpendicolare al piano della forza peso), che è uguale e opposta a $N$ reazione vincolare del piano. Quindi uso N
 
 > **Nota bene che:**
 >
-> $\overrightarrow{F}_a\le \overrightarrow{F}_{a,max}=\mu_S|\overrightarrow{N}|\hat{t}$
+> Se un corpo è fermo, la somma delle forze applicate su di esso è zero.
+> Pertanto, se un corpo non è soggetto a forze, anche l'attrito statico è zero.
+> Il calcolo dell'attrito statico ci dà la misura della **massima** forza di attrito che può opporsi ad una forza uguale e contraria applicata sul corpo.
+>
+> $\vec{F}_{a}\le \vec{F}_{a,max}=\mu_S|\vec{N}|\hat{t}$
 >
 > Questo esiste sempre. $\mu_S$ è il **coefficente di attrito statico**.
 
 
-
 ##### Attrito dinamico
 
-> $\overrightarrow{F}_{AD}=\mu_C|\overrightarrow{N}|\hat{t}\longrightarrow \overrightarrow{F}_{AD}=-\mu_C|\overrightarrow{N}|\hat{v}$
+L'attrito dinamico è proprio di un corpo **in movimento** che **scivola** su un piano.
+
+> $\vec{F}_{AD}=\mu_D|\vec{N}|\hat{t}\longrightarrow \vec{F}_{AD}=-\mu_D|\vec{N}|\hat{v}$
+
+$\mu_D$ è il **coefficiente di attrito dinamico**.
 
 
+Esercizio:
 
-Disco rotante:
-
-Velocità $\omega$, ho la corona inglese sopra, forza di attrito$ \mu s=0,3$ qual è il massimo a cui posso far girare prima che se ne vada?
+Si ha un disco rotante a velocità costante sul quale è poggiata la corona inglese, il coefficiente di attrito statico fra il disco e la corona è $\mu_s=0,3$. Qual è la massima velocità angolare $\omega$ tale per cui la corona rimanga ferma sul disco?
 
 ## 04/03/2019
 
-*spiegazione disco rotante che ho perso*
-
-
-
 ### Esercizio: Macchina che frena(senza ABS)
 
-Ho una macchina che frena
+Ho una macchina che frena (supponiamo le ruote si blocchino e quindi c'è attrito dinamico fra le ruote e l'asfalto)
 
 $t_{f}=$tempo frenata$=?$
 
 $s_f=$spazio frenata$=?$
 
-$\mu s$
+$\mu c$ attrito dinamico dato
 
-$\overrightarrow{F}=-\overrightarrow{F}_a=m\overrightarrow{a}$
+$\vec{F}=-\vec{F}_a=m\vec{a}$
 
 $-\mu_cN=m{dv\over dt}$
 
@@ -869,91 +823,87 @@ $-\mu g{t_f^2\over2}=s_f-v_0t_f$
 
 
 
-Ho due carrucole, attaccate ad una ruota.
+Ho due corpi collegati alle estremità di una fune, posta su una puleggia.
 
-Supponendo che la corda **non si estende**:
+Supponendo che la corda **non si estenda**, i due corpi:
 
-1. Si muovono a velocità uguali;
-2. Le variazioni di velocità sono uguali.
+1. si muovono a velocità uguali e opposte;
+2. le variazioni di velocità sono uguali e opposte.
 
-Posso dunque supporre che $\overrightarrow{a}=\overrightarrow{a}_1=\overrightarrow{a}_2$
+Posso dunque supporre che $\vec {a}=\vec {a}_1=- \vec{a}_2$
 
-$\begin{cases}m_1\overrightarrow{a}=\overrightarrow{P}_1+T\\m_2\overrightarrow{a}=\overrightarrow{P}_2+T\end{cases}\Longrightarrow\begin{cases}m_1\overrightarrow{a}=\overrightarrow{P}_1-T\\m_2(-\overrightarrow{a})=\overrightarrow{P}_2-T\end{cases}\Longrightarrow \begin{cases}m_1\overrightarrow{a}=m_1g-T\\m_2\overrightarrow{a}=T-m_2g\end{cases}$
+$\begin{cases}m_1\vec{a}=\vec{P}_1+T\\m_2\vec{a}=\vec{P}_2+T\end{cases}\Longrightarrow\begin{cases}m_1\vec{a}=\vec{P}_1-T\\m_2(-\vec{a})=\vec{P}_2-T\end{cases}\Longrightarrow \begin{cases}m_1\vec{a}=m_1g-T\\m_2\vec{a}=T-m_2g\end{cases}$
 
 Otteniamo:
 
-$(m_1+m_2)a=(m_1-m_2)g\Longrightarrow a={m_1-m_2\over m1+m2}g$
+$(m_1+m_2) \vec a=(m_1-m_2) \vec g\Longrightarrow \vec a={m_1-m_2\over m1+m2}\vec g$
 
 Osservo che 
 
-Se le due masse sono uguali, $m_1-m_2=0$ non si muovono! l'accelerazione è nulla!
+Se le due masse sono uguali, $m_1-m_2=0$ non si muovono! L'accelerazione è nulla.
 
-Se una delle due forze è zero otteniamo "g", quindi ottengo $\overrightarrow{a}=\pm g$ cioè uno dei due cade.
-
-
+Se una delle due masse è zero otteniamo "g", quindi ottengo $\vec{a}=\pm g$ cioè uno dei due corpi cade con accelerazione $\vec g$. Se i due corpi hanno masse diverse fra loro e diverse da zero, uno dei due corpi cade con accelerazione minore di $\vec  g$.
 
 ### Lavoro
 
-Ad una massa, tipo un treno che va per dei binari:
+A una massa, come un treno che va per dei binari:
 
-1. Applico forza parallela **concorde**, posso affermare che sono **avvantaggiato dal moto**;
-2. Applico forza parallela **discorde**(che ha il senso opposto). Posso affermare che sono **svantaggiato dal moto**.
-3. Forza perpendicolare (applicata ad esempio in "giù") non sono avvantaggiato ne svantaggiato dal moto.
+1. applico una forza parallela e **concorde** alla direzione dello spostamento, posso affermare che la forza **avvantaggia il moto**;
+2. applico forza parallela **discorde**(che ha il senso opposto) alla direzione dello spostamento, posso affermare che la forza **svantaggia il moto**;
+3. applico una forza perpendicolare (applicata ad esempio in "giù") alla direzione dello spostamento, posso affermare che non avvantaggia né svantaggia il moto.
 
-Voglio dunque ottenere una forza che dipende da:
+Vogliamo dunque rappresentare una caratteristica della forza applicata ad un corpo in movimento che esprima:
 
-1. Per quanto tempo la applico;
-2. Come la applico(1,2,3)
+1. quanto a lungo nello spostamento la forza è stata applicata al corpo;
+2. come la applico(1,2,3)
 
 > **Lavoro**: Prodotto scalare forza con spostamento.
 
-$w=\overrightarrow{F} \Delta\overrightarrow{s}=\cos(\Theta_{F_1\Delta s})$
+$W=\vec{F} \cdot \Delta\vec{s}=\Vert F \Vert \Vert \Delta s \Vert \cos(\theta_{F_1\Delta s})$
 
-cioè 
+Dimensionalmente: 
 
-$[w]=[FL]=M{L\over T^2}L]=[m {L^2\over T^2}]$
+$[w]=[FL]=[M{L\over T^2}L]=[m {L^2\over T^2}]$
 
-Con **unità di misura** pari a $1N\cdot 1m$
+**Unità di misura** del lavoro: Joule ($J$) pari a $1N\cdot 1m$. Un Joule è, ad esempio, il lavoro compiuto da una forza di $1N$ per spostare un corpo di $1m$ _nella stessa direzione di applicazione della forza_.
 
-> La formula di prima **VALE SOLO SE UNIFORME SU** $\Delta\overrightarrow{s}$
+> Questa formulazione del lavoro vale fintanto che la forza è uniforme per tutto lo spostamento.
 
-#### Esempio: Lancio sasso in aria
+#### Esempio: Lancio sasso in aria, calcolo del lavoro compiuto dalla gravità
 
-> Lancio in aria
+> Considero il moto di un sasso lanciato verticalmente verso l'alto, dal momento in cui lascia la mano alla massima altezza $h$ che raggiunge.
 
-$w_{grav}=\overrightarrow{F}\cdot \Delta\overrightarrow{s}=$
-
-
-
-$\begin{cases}\overrightarrow{F}=-mg\cdot\hat{z}\\\Delta\overrightarrow{s}=h\hat{z}\end{cases}=\overrightarrow{F}\cdot\Delta\overrightarrow{s}=-mgh$
+$W_{grav}=\vec{F}\cdot \Delta\vec{s}=$
 
 
 
-$w_{grav}=-mgh$
-
-cioè la gravità oppone.
-
-> Il sasso torna giù
+$\begin{cases}\vec{F}=-mg\cdot\hat{z}\\\Delta\vec{s}=h\hat{z}\end{cases}=\vec{F}\cdot\Delta\vec{s}=-mgh$
 
 
 
-$w_{grav}=\overrightarrow{F}\cdot \Delta\overrightarrow{s}=$
+$W_{grav}=-mgh$
 
-$\overrightarrow{F}=-mg\hat{z}$
+La gravità compie un lavoro negativo (si oppone al movimento) mentre il sasso muove verso l'alto.
 
-$\Delta\overrightarrow{s}=-h\hat{z}$
+> Quindi, il sasso torna giù
+
+$w_{grav}=\vec{F}\cdot \Delta\vec{s}=$
+
+$\vec{F}=-mg\hat{z}$
+
+$\Delta\vec{s}=-h\hat{z}$
 
 ottengo 
 
 $w_{grav}=mgh$ 
 
-cioè la gravità aiuta.
+La gravità compie un lavoro positivo (avvantaggia il movimento) mentre il sasso muove verso il basso.
 
-> Caso dove il sasso viene lanciato+ il sasso torna giù
+> Consideriamo l'intero moto: il sasso viene lanciato, raggiunge la massima altezza e torna al suolo
 
-$\overrightarrow{F}=-mg$
+$\vec{F}=-mg$
 
-$\Delta\overrightarrow{s}=\overrightarrow{0}$ quindi **zero**.
+$\Delta\vec{s}=\vec{0}$ quindi $W = 0$
 
 
 
@@ -965,13 +915,13 @@ In questo caso
 
 $\begin{cases}w_a=-mg{h\over3}\\w_c=-mg{2\over3}h\\w_b=0\end{cases}$
 
-$w_b=0$ perchè ho $\Delta \overrightarrow{s}=0$
+$w_b=0$ perchè ho $\Delta \vec{s}=0$
 
 
 
-ottengo che alla fine, sommandoli è $=-mgh$.
+ottengo che alla fine, sommandoli, $W_{TOT}=-mgh$.
 
-Questo ci fa capire che la formula rimane la stessa!
+Questo ci fa capire che il lavoro **compiuto dalla forza gravitazionale** non dipende dal percorso del corpo, ma solo dalla differenza di altezza fra il punto iniziale e il punto finale.
 
 
 
@@ -981,23 +931,27 @@ Cosa succede se la **forza non è costante?**
 
 ![1551875002361](./assets/1551875002361.png)
 
-dunque questo grafico, con curva che chiameremo AB
+Abbiamo questo grafico che rappresenta l'intensità della forza dal punto $A$ al punto $B$.
 
-$\overrightarrow{AB}=\sum^N_{i=1} d\overrightarrow{s}n \longrightarrow_{n\to\infty} \int^B_A \overrightarrow{F}\cdot d\overrightarrow{s}$
+Suddivido la curva in spostamenti infinitesimi $d\vec s$, per ciascun spostamento $i$ il corpo percepisce una forza (che suppongo istantaneamente costante) $\vec F_i$. 
 
-Quindi la vera definizione di lavoro è:
+$\vec{F_{AB}}=\sum^N_{i=1} \vec F_i \cdot d\vec{s} \longrightarrow_{n\to\infty} \int^B_A \vec{F}\cdot d\vec{s}$
 
-> **Lavoro:** $W_{A\to B}=\int^B_A \overrightarrow{F}\cdot d\overrightarrow{s}$
+Una definizione più generale di lavoro è quindi
+
+> **Lavoro:** $W_{A\to B}=\int^B_A \vec{F}\cdot d\vec{s}$
 
 ### Potenza
 
 ##### Potenza istantanea
 
-Lavoro che compie nel tempo: $dw\over dt$
+Lavoro che compie nell'istante di tempo $dt$: $dP = {dw\over dt}$
 
 ##### Potenza media
 
-Totale del lavoro nell'intervallo di tempo: $w_{tot}\over\Delta t$
+Lavoro medio compiuto per unità di tempo:  $\bar P = {w_{tot}\over\Delta t}$
+
+Unità di misura della potenza è il **Watt** ($W$). 1 Watt corrisponde a un lavoro di 1 $J$ / 1 $s$
 
 ----
 
@@ -1007,25 +961,33 @@ Totale del lavoro nell'intervallo di tempo: $w_{tot}\over\Delta t$
 
 ### Forza conservativa
 
+Una forza è conservativa se vale
+
 $W_{a\to a}=0$
 
-Cioè $\oint=\overrightarrow{F}\cdot d\overrightarrow{s}$
+cioè $\oint=\vec{F}\cdot d\vec{s}$
 
-> **Teorema**: $\oint^B_A\overrightarrow{F}\cdot d\overrightarrow{s}$ non dipende dal percorso $A\to B$
+qualunque sia il circuito scelto.
+
+> **Teorema**: per una forza conservativa,  $\int^B_A\vec{F}\cdot d\vec{s}$ non dipende dal percorso $A\to B$ 
 
 **Dimostrazione:**
 
-Ho due semimetà $I$ e $II$
+$\vec  F$ è conservativa $\to$ posso costruire un circuito che passa per i punti $A$ e $B$.
 
-$\oint_{II}\overrightarrow{F}\cdot d\overrightarrow{s}=0$
+"Taglio" il circuito nei punti $A$ e $B$: ho due curve, potenzialmente diverse, che congiungono i punti $A$ e $B$. Le chiamo $I$ e $II$.
 
-$I\oint^B_A\overrightarrow{F}\cdot d\overrightarrow{s}+II\oint^A_B\overrightarrow{F}\cdot d\overrightarrow{s}=0$
+$\oint\vec{F}\cdot d\vec{s}=0$
 
-$I\oint^B_A\overrightarrow{F}\cdot d\overrightarrow{s}=-II\oint^A_B\overrightarrow{F}\cdot d\overrightarrow{s}=II\oint^A_B\overrightarrow{F}\cdot d\overrightarrow{s}\Longrightarrow wI_{a\to b}=wII_{a\to b}$
+$I\oint^B_A\vec{F}\cdot d\vec{s}+II\oint^A_B\vec{F}\cdot d\vec{s}=0$
 
- $\blacksquare .$
+$I\oint^B_A\vec{F}\cdot d\vec{s}=-II\oint^A_B\vec{F}\cdot d\vec{s}=II\oint^A_B\vec{F}\cdot d\vec{s}\Longrightarrow wI_{a\to b}=wII_{a\to b}$
 
-### Forza Non conservativa
+Dunque il lavoro svolto dalla forza conservativa sulla curva $I$ è uguale a quello svolto sulla curva $II$ $\to$ il percorso svolto dal corpo è indifferente, il lavoro dipende solo dalla forza, dal punto iniziale $A$ e dal punto finale $B$.
+
+ $\blacksquare$
+
+### Forza non conservativa
 
 > Una forza non conservativa è la **forza di attrito.**
 
@@ -1035,72 +997,67 @@ Ho un oggetto sul quale ho una forza esercitata
 
 per andare da A a B quanto lavoro applica la forza d'attrito?
 
-$W^{(A)}_{A\to B}=\int_A^B \overrightarrow{F}\cdot d\overrightarrow{s}=\overrightarrow{F}_A\cdot \int_A^B  d\overrightarrow{s}=F_a \times \bar{AB}\cos\alpha_{\overrightarrow{F}_A,\overrightarrow{AB}}$
+$W^{(A)}_{A\to B}=\int_A^B \vec{F}\cdot d\vec{s}=\vec{F}_A\cdot \int_A^B  d\vec{s}=F_a \cdot \bar{AB}\cos\alpha_{\vec{F}_A,\vec{AB}}$
 
-Otteniamo che questa formula è $=-\mu_dmgd=W^{(A)}_{B\to A }$
+Otteniamo che questa formula è $=-\mu_dmgd=W^{(A)}_{B\to A }$.
 
-ci permette di dire che $\Longrightarrow W^{(A)}_{A\to A}=-2\mu_dmgd$ dove $A\to A$ mi significa qualcosa che va da un punto, fa un percorso non nullo e torna dove era.
+Ora consideriamo il lavoro svolto dalla forza di attrito se il corpo parte dal punto A, passa per il punto B e torna al punto A (un circuito). $W_{A\to A}=W_{A\to B} + W_{B\to A} = -\mu_dmgd_{A \to B} -\mu_dmgd_{B \to A} \neq 0$, dunque per le forze non conservative il lavoro compiuto su un ciclo può essere diverso da zero e, nello specifico, la forza di attrito è una forza non conservativa.
 
-
-
-#### Scelta origine del sistema di riferimento
+#### Caratterizzazione dell'energia potenziale
 
 ![1552040339087](./assets/1552040339087.png)
 
-Ho un asse cartesiano.
+Disponiamo su un piano cartesiano dei corpi, sottoposti a un campo di forze conservativo. Definiamo una funzione $f$ nel modo che segue: $f$ è uguale al lavoro necessario per portare il corpo dall'origine del piano cartesiano al punto in cui si trova.
 
-$W_{O\to B}=\int_O^B\overrightarrow{F}d\overrightarrow{s}=f(\overrightarrow{B})$
+$W_{O\to B}=\int_O^B\vec{F}d\vec{s}=f(\vec{B})$
+
+Il lavoro necessario a spostare un corpo da un punto ad un altro è
 
 $W_{A\to B}=W_{A\to O}+W_{O\to B}=-W_{O\to A}+W_{O\to B}$
 
 che è uguale a 
 
-$W_{A\to B}=f(\overrightarrow{B})-f(\overrightarrow{A})$
+$W_{A\to B}=f(\vec{B})-f(\vec{A})$
 
 Ma allora facendo così ottengo che
 
 > Il valore di $f$ è arbitrario, dipende dalla posizione di O, mentre **le differenze di $f$ sono non arbitrarie** cioè non dipendono da $O$, posso avere un'origine qualsiasi.
 
-
-
 ### Energia Potenziale
 
-$\int_O^B\overrightarrow{F}d\overrightarrow{s}=W_{A\to B}=^{\overleftarrow{def}}-(E_p(\overrightarrow{B})-E_p(\overrightarrow{A}))$
+> Il concetto di **energia** descrive la possibilità di un corpo di compiere un lavoro.
 
-dove $(E_p(\overrightarrow{B})-E_p(\overrightarrow{A}))=\Delta E_p=^{def}-W$
+$\int_O^B\vec{F}d\vec{s}=W_{A\to B} \stackrel{^{\overleftarrow{def}}}{=}-(E_p(\vec{B})-E_p(\vec{A}))$
 
-> **Energia Potenziale**: $\Delta E_p=^{def}-W$
+dove $(E_p(\vec{B})-E_p(\vec{A}))=\Delta E_p\stackrel{def}{=} -W$
 
-tutto questo è possibile solo perchè il $\Delta$ **non** è **arbitrario**.
+> **(Differenza di) Energia Potenziale**: $\Delta E_p\stackrel{def}{=}-W$
 
-mentre l'energia potenziale è definita a meno di costante arbitraria.
+Tutto questo è possibile solo perché per quanto visto prima il $\Delta$ **non** è **arbitrario**, l'energia potenziale è definita a meno di costante arbitraria (= dove pongo l'origine del sistema di riferimento).
+
+> Intuitivamente, se il corpo A è posto a $10m$ dal suolo e il corpo B è posto a $20m$ dal suolo, il corpo B ha più energia potenziale del corpo A e la differenza di energia potenziale fra A e B è pari a $\Delta_{AB}E_p = mg\Delta h_{AB}$ 
 
 ### Energia Cinetica
 
-$W_{(W>0)}=\int^B_A\overrightarrow{F}\cdot d\overrightarrow{s}=\int^B_A m{d\overrightarrow{v}\over d\overrightarrow{t}}\cdot d\overrightarrow{s}=\int^B_A md\overrightarrow{v}\cdot \overrightarrow{v}=$ caso speciale= $\int^B_Amv\ dv$
+Consideriamo un corpo di massa $m$ che acquista una velocità $v$. Sfruttiamo il secondo principio della dinamica per descrivere l'energia posseduta dal corpo:
+
+$W_{(W>0)}=\int^B_A\vec{F}\cdot d\vec{s}=\int^B_A m{d\vec{v}\over d\vec{t}}\cdot d\vec{s}=\int^B_A md\vec{v}\cdot \vec{v}$ 
 
 Per fare questa cosa ho dovuto fare un trick brutalmente poco matematico: passare il $dt$ sotto al $ds$
 
 $=[m{v^2\over2}]^B_A={1\over2}mv^2_B-{1\over2}mv_A^2$
 
-Ottengo dunque che energia cinetica
-
-*  non richiede lavoro;
-* non dipende da forze esterne;
-* $W=\Delta E_K$ vale sempre;
-* se c'è energia cinetica, qualcosa , una forza ci ha lavorato su.
-
-> **Energia Cinetica**: $E_k={1\over2}uv^2$
+> **Energia Cinetica**: $E_k={1\over2}mv^2$
 
 ### Bilancio energetico
 
-Avendo
+Un corpo si muove da $A$ a $B$
 
-$A\to B$
+$A \to B$
 
-$\overrightarrow{F}_{TOT}=\sum_i \overrightarrow{F}_i=\sum_i \overrightarrow{F}_i^{(Con)}+\sum_k\overrightarrow{F}_k^{{(n.c.)}}$
+$\vec{F}_{TOT}=\sum_i \vec{F}_i=\sum_i \vec{F}_i^{(Con)}+\sum_k\vec{F}_k^{{(n.c.)}}$
 
-$W_{TOT}=\int^B_A \overrightarrow{F}_{TOT}\cdot d\overrightarrow{s}=W^{(cons)}+W^{(n.cons)}=\Delta E_k$
+$W_{TOT}=\int^B_A \vec{F}_{TOT}\cdot d\vec{s}=W^{(cons)}+W^{(n.cons)}=\Delta E_k$
 
 con $W^{(cons)}=-\Delta E_p$
 
@@ -1124,7 +1081,7 @@ Alla fine gli integrali li devo usare solo con forze non conservative.
 
    $(E_p^f-E_p^i)+(E_k^f-E_k^i)=0$
 
-   $(E_p^f+E_k^f)+(E_k^i+E_p^i)=0​$
+   $(E_p^f+E_k^f)+(E_k^i+E_p^i)=0$
 
    Quindi abbiamo
 
@@ -1145,6 +1102,10 @@ Alla fine gli integrali li devo usare solo con forze non conservative.
 ### Esercizi:
 
 #### Lancio massa m in aria, a che altezza arriva?
+
+1. Quando l'altezza è massima, la velocità è zero (dunque l'energia cinetica è zero) e l'energia potenziale è massima
+2. Quando la massa raggiunge la terra, la velocità è massima e l'energia potenziale zero
+3. In assenza di forze non conservative (p.es. attriti) l'energia potenziale del punto (1) è uguale all'energia cinetica del punto (2), e in generale, ad ogni istante, la somma di energia potenziale e cinetica rimane costante.
 
 ![1552043047804](./assets/1552043047804.png)
 
@@ -1181,7 +1142,7 @@ $\theta<<1$
 1. Analisi delle forze
 2. $\theta=\theta(t)$
 3. scegliere $c_1,c_2$(Sistema di coordinate a piacere)
-   1. $c_1=c_1(t),  {d_{c_1}\over d_t(t)}, v_1, a_1​$
+   1. $c_1=c_1(t),  {d_{c_1}\over d_t(t)}, v_1, a_1$
    2. $c_2=c_2(t) , {d_{c_2}\over d_t(t)}, v_2, a_2$
 
 -----
@@ -1214,11 +1175,11 @@ Ora per aiutarmi disegno un triangolo
 
 noto che formo due angoli $\theta$ coniugati interni!
 
-Dunque ora, mettendo $\overrightarrow{R}=\overrightarrow{P}_{parallela}$ e $\overrightarrow{P}=\overrightarrow{F}_p$
+Dunque ora, mettendo $\vec{R}=\vec{P}_{parallela}$ e $\vec{P}=\vec{F}_p$
 
 $\begin{cases} R_x=-R\cos\theta = -P\sin\theta\cos\theta \\R_y=-R\sin\theta=-P\sin^2\theta\end{cases}$
 
-$\overrightarrow{R}=\overrightarrow{F}=m{d^2\overrightarrow{r}\over dt^2} \Rightarrow\begin{cases}R_x=m{d^2x\over dt^2}\\R_y=m{d^2y\over dt^2}\end{cases}$
+$\vec{R}=\vec{F}=m{d^2\vec{r}\over dt^2} \Rightarrow\begin{cases}R_x=m{d^2x\over dt^2}\\R_y=m{d^2y\over dt^2}\end{cases}$
 
 Proseguendo:
 
@@ -1228,7 +1189,7 @@ Ora divido per $l$ e sposto tutto a sinistra
 
 $\begin{cases} \cos\theta{d^2\theta\over dt^2}-\sin\theta({d\theta\over dt})^2+{g\over l}\sin\theta\cos\theta=0 \\\\sin\theta{d^2\theta\over dt^2}+\cos\theta({d\theta\over dt})^2+{g\over l}\sin^2\theta=0\end{cases}$
 
-Ricordando le *serie di taylor mcLaureen*
+Ricordando l'espansione in serie di Taylor
 
 > $\sin\epsilon\simeq\epsilon \ \ \ \ \epsilon\longrightarrow0$
 >
@@ -1236,7 +1197,7 @@ Ricordando le *serie di taylor mcLaureen*
 >
 > $(1+\epsilon)^\alpha \simeq 1+\alpha\epsilon  \ \ \ \ \epsilon\longrightarrow0$
 
-Continiuamo con
+Sfrutto la prima espansione e sostituisco $sin \theta$ con $\theta$. Questa sostituzione è valida fintanto che le oscillazioni sono piccole.
 
 $\begin{cases}\theta''-\theta(\theta')^2+{g\over l}\theta=0\\\theta\theta''+(\theta')^2+{g\over l}\theta^2=0\end{cases}$ ora moltiplico la seconda equazione per $\theta$ e ottengo $\begin{cases}\theta''-\theta(\theta')^2+{g\over l}\theta=0\\\theta^2\theta''+(\theta')^2\theta+{g\over l}\theta^3=0\end{cases}$
 
@@ -1244,7 +1205,7 @@ Effettuo una somma della prima equazione con la seconda ottenendo:
 
 $(1+\theta^2)\theta''(1+\theta^2){g\over l}\theta=0$
 
-$\theta"+{g\over l}\theta=0$ ma questa è una **differenziale!**
+$\theta"+{g\over l}\theta=0$  Si tratta di risolvere un'equazione differenziale.
 
 #### Equazione differenziale armonica
 
@@ -1254,21 +1215,23 @@ dove a è la **pulsazione al quadrato** del moto armonico. Ottengo la
 
 > **Pulsazione:** $\omega=\sqrt{c}$
 
-Come soluzioni abbiamo 
+Come soluzioni generali per un'equazione di questa forma abbiamo sempre 
 
-$\begin{cases}\theta(t)=A\sin(\sqrt{(c)}t+B)\\\theta''=-A\sin(\sqrt{(c)}t+B)c\end{cases}$
-
-
+$\begin{cases}\theta(t)=A\sin(\sqrt{c}t+B)\\ \theta'(t) = A \cos (\sqrt {c} t + B) \sqrt c \\ \theta''=-A\sin(\sqrt{c}t+B)c\end{cases}$
 
 nell'esempio di prima otteniamo
 
 $\begin{cases}\theta(t)=A\sin\sqrt{({g\over l})}t+B)\\\theta''=-A\sin(\sqrt{({g\over l})}t+B){g\over l}\end{cases}$
 
-Ora **trovo A e B:**
+Dove A e B possono essere risolte imponendo le condizioni al contorno (problema di Cauchy):
 
-$\begin{cases}\theta(o)=\theta_0\ (angolo\ iniziale)\\B={\pi\over2}\end{cases}$ 
+$\begin{cases}\theta(0)=\theta_0\ (angolo\ iniziale)\\\theta'(0) = 0\ (velocità\ iniziale) \end{cases}$ 
 
-quindi la soluzone è $\theta(t)=\theta_0\sin(\sqrt{{g\over l}}+{\pi\over2})=\theta_0\cos(\sqrt{g\over l}t)$.
+Risolvendo il sistema risulta
+
+$$\begin{cases}A = \theta_0 \\B={\pi\over2} \end{cases}$$
+
+quindi la soluzione è $\theta(t)=\theta_0\sin(\sqrt{{g\over l}}+{\pi\over2})=\theta_0\cos(\sqrt{g\over l}t)$.
 
 $\blacksquare$
 
@@ -1286,17 +1249,21 @@ Avendo che
 >
 > Tempo tra due riproposizioni nello stesso atto di moto, cioè stesso spazio con la stessa velocità.
 >
-> più pulsazioni ho più il periodo è **corto.**
+> Maggiore è la pulsazione più il periodo è **corto.**
 
-Da notare che nell'esercizio del pendolo precedente **non ho considerato l'attrito, quindi ho continue oscillazioni**. Cioè il pendolo non si ferma.
+Da notare che nell'esercizio del pendolo precedente **non ho considerato l'attrito, quindi ho continue oscillazioni**. Cioè il pendolo non si ferma e continua a oscillare fra l'angolo $\theta_0$ e l'angolo $-\theta_0$.
+
+Da notare inoltre che la pulsazione dipende unicamente dalla lunghezza del filo del pendolo (oltre che dall'accelerazione di gravità).
 
 > **Isocronia delle piccole oscillazioni:** Per angoli piccoli, maggiore spostamento **non significa** maggiore periodo.
 
 ### Forza Elastica
 
-> **Forza di richiamo(o Elastica):** $\overrightarrow{F}=-k\overrightarrow{x}$
+Una molla (ideale) se compressa o espansa rispetto alla posizione di riposo produce una forza "di richiamo" (che tende a farla tornare alla posizione di riposo) di intensità direttamente proporzionale alla lunghezza della compressione (o espansione). La costante di proporzionalità è detta _costante elastica della molla_.
 
-#### Esercizio: Calcolo molla con piccole contrazioni
+> **Forza di richiamo(o Elastica):** $\vec{F}=-k\vec{x}$
+
+#### Esercizio: Calcolo molla con piccole oscillazioni
 
 $m=10kg$
 
@@ -1324,21 +1291,21 @@ $W_{AB}=\int^0_x-ky(-dy)=-{1\over2}kx^2$
 
 *Il meno è presente perchè vado da $x$ a zero.*
 
-Noto che questo integrale è $\int^B_A\overrightarrow{F}\cdot d\overrightarrow{s}=\int^x_0 kxdx={1\over2}kx^2=-Ep$
+Noto che questo integrale è $\int^B_A\vec{F}\cdot d\vec{s}=\int^x_0 kxdx={1\over2}kx^2=-Ep$
 
 #### Esercizio: Ciclista
 
-Un ciclista va a 25 km/h
+Un ciclista va a 25 km/h (la velocità  costante)
 
-La potenza che produce è $ P=150w$
+La potenza che produce è $ P=150W$
 
-Attrito $=?$ (Calcola l'attrito che colpisce il ciclista)
+Attrito $=?$ 
 
 $v=25km/h={25\over3,6}m/s=6,9m/s$
 
-$P={dw\over dt}=\overrightarrow{F}{d\overrightarrow{s}\over dt}$ Qui ho dovuto fare un trick poco matematico, **spostando il $dt$** sotto il $d\overrightarrow{s}$
+$P={dw\over dt}=\vec{F}{d\vec{s}\over dt}$ Qui ho dovuto fare un trick poco matematico, **spostando il $dt$** sotto il $d\vec{s}$
 
-$P_a=\overrightarrow{F}_a\cdot \overrightarrow{v}=-Av$
+$P_a=\vec{F}_a\cdot \vec{v}=-Av$
 
 Sappiamo che $P_c=-P_a$
 
@@ -1354,7 +1321,7 @@ $A={P_c\over v}=21,6 N\simeq 2Kg$ cioè è come se spingesse circa $2kg$
 
 ## 12/03/2019
 
-#### Esercizio:Massa puntiforme che fa un cerchio
+#### Esercizio: Pendolo conico (massa puntiforme appesa a un filo che traccia una circonferenza sul piano)
 
 
 $m=50g=50\cdot10^{-3}kg$
@@ -1407,62 +1374,57 @@ Ho la terra, con un raggio $R$ , una forza gravitazionale e $\theta$ è l'angolo
 
 
 
-
+---
 
 ### Termodinamica
 
-> **Atomi**: Costituenti minimi della materia che conosciamo, sistemi aggregati composti da un nucleo e sistemi orbitali(elettroni) che gravitano attorno questo nucleo.
+> **Atomi**: Costituenti minimi della materia, sistemi aggregati composti da un nucleo e sistemi orbitali(elettroni).
 
 
-Gli atomi sono a **carica neutra**, quindi se gli elettroni hanno carica **negativa**, i protoni la hanno **positiva** e contraria agli elettroni(somma =0).
+Gli atomi sono a **carica neutra**, quindi gli elettroni hanno carica **negativa**, i protoni la hanno **positiva** e contraria agli elettroni(somma =0).
 
 **Raggio** **nucleo** è dell'ordine alla $10^{-15}m$
 
-**atomo**= $10^{-10}m$
+**Raggio atomo**= $10^{-10}m$
 
-**molecole**= $10^{-8}m$
+**Raggio molecole**= $10^{-8}m$
 
-**Nucleo**= Composto di nucleoni
+**Nucleo**= Composto di nucleoni, cioè protoni e neutroni (particelle con carica neutra)
 
 **Elettroni**: non riusciamo a calcolarne il raggio, troppo piccolo.
 
->**Costante di avogadro:**  $N_a=6,022 \cdot 10^{23}$
+>**Numero di avogadro:**  $N_a=6,022 \cdot 10^{23}$
 
-Quanti atomi ho?
-
->**MOLE**: Quantità di sostanza che contiene esattamente un numero di avogadro di componenti. misuratasi in $mol$.
+>**MOLE**: Quantità di sostanza che contiene esattamente un numero di Avogadro di componenti. misurata in $mol$.
 
 > $1 mol=$ quantità di sostanza contenuta in $m=A$ grammi dell'elemento, dove $A$ è il **peso atomico**.
 
 **Esempio**:
-Avendo un Idrogeno, ho una A=1, cioè una mole di $^1H$ è la quantità di quanta sostanza in 1g di H
+L'idrogeno ha peso atomico A=1, quindi una mole di $^1H$ è la quantità di sostanza contenuta in 1 grammo di idrogeno.
 
 mentre
 
-Avendo un Carbonio, ho una A=12, cioè una mole di $^{12}C$ è la quantità di quanta sostanza in 12g di C
+Il carbonio ha peso atomico A=12, quindi una mole di $^{12}C$ ha massa 12 grammi.
 
-Avendo $H_2O$, ho una $A_{effettiva}=18$ cioè $1mol$ di $H_20$ è la quantità di sostanza in 18g di $H_20$
+Avendo $H_2O$, ho una $A_{effettiva}=18$ cioè $1mol$ di $H_2O$ è la quantità di sostanza contenuta in 18g di $H_20$
 
 Stati della materia:
 
-* **Solido**: Conservo volume e massa;
-* **Liquido**: Ho un volume proprio ma non ho forma, assume quella del recipiente;
-* **Gassoso**: Non ho un volume, non ho una forma, si espande prendendo tutto lo spazio disponibile.
-
-#### Energia interna
-
-> In un sistema gassoso, le molecole sono in costante movimento, avendo energia cinetica. Grazie a questa presenza di  l'energia cinetica possiamo dire che il sistema ha una **energia interna** $E_{interna}=U$
+* **Solido**: Un corpo solido ha una forma e un volume proprio.
+* **Liquido**: Un liquido ha un volume proprio ma non ha forma: assume quella del recipiente.
+* **Gassoso**: Un gas non ha né un volume né una forma propria, assume volume e forma del recipiente, si espande in tutto lo spazio disponibile.
 
 #### Gas Ideale
 
-Un gas che ha :
+Un gas è ideale (o anche "perfetto") se:
 
-* Le molecole che non interagiscono tra di loro;
-* Le particelle non sono interagenti anche con il recipiente;
+* non esistono forze di interazione fra le particelle;
+* gli urti fra le particelle e con il recipiente sono perfettamente elastici, cioè l'energia cinetica della particella prima e dopo l'urto è conservata;
 * Il moto delle particelle è assolutamente casuale.
 
-è definito **gas ideale.**
+#### Energia interna
 
+> In un sistema gassoso, le molecole sono in costante movimento, avendo energia cinetica. Possiamo dire che il sistema ha un'**energia interna** e se il gas è perfetto (non ci sono altre interazioni), $E_{interna}=E_{cinetica} = U$
 
 **Q:Cosa succede quando una particella tocca la parte del contenitore? **
 
@@ -1470,14 +1432,13 @@ Un gas che ha :
 
 Il rimbalzo è calcolabile : $i$= iniziale; $f$=finale.
 
-$\overrightarrow{p}_i=p_x \hat{x}+p_y\hat{y}$
+$\vec{p}_i=p_x \hat{x}+p_y\hat{y}$
 
-$\overrightarrow{p}_{f}=-p_x\hat{x}+p_y\hat{y}$
+$\vec{p}_{f}=-p_x\hat{x}+p_y\hat{y}$
 
-$\Delta\overrightarrow{P}=\overrightarrow{P}_f-\overrightarrow{P}_i=-2p_i\hat{x}$
+$\Delta\vec{P}=\vec{P}_f-\vec{P}_i=-2p_i\hat{x}$
 
-
-*Ma con il rimbalzo, non perdo energia?* No perchè è **perfettamente elastico** quindi non ho una perdita di energia, mentre in una pallina elastica ho una componente NON elastica che assorbe.
+*Ma con il rimbalzo, non perdo energia?* No perchè è **perfettamente elastico** quindi non ho una perdita di energia. In generale, una pallina da tennis che rimbalza perde energia, perché ho una componente NON elastica che disperde energia in attriti.
 
 
 **Q: Quante particelle ho in una zona gassosa che urtano il contenitore?**
@@ -1498,7 +1459,7 @@ tutto ciò che ho dentro a quel contenitore sta urtando la parete in velocità $
 
 Se il gas è perfetto ed ideale, le particelle che urtano sono $N$.
 
-$N=v\cdot n$ dove $n$ è la **densità di volumica**($[n]=[{1\over L^3}]$).
+$N=v\cdot n$ dove $n$ è la **densità volumica**($[n]=[{1\over L^3}]$).
 
 Quindi otteniamo che
 
@@ -1566,30 +1527,28 @@ dove $<{1\over2}mv^2>$ è **energia cinetica media.**
 
 ### Pressione
 
-$[P]=[{F\over S}]$ dove F è **forza** e **S** è superf. misurata in $1Pa$ cioè **Pascal**
+$[P]=[{F\over S}]$ dove F è **forza** e **S** è superficie, misurata in $Pa$ cioè **Pascal**
 
 Quindi la definizione è
 
-> $P={dF\over dS}$
-
-Sotto ad un determinato valore, le variazioni di superficie sono nulle.
+> $P={F\over S}$
 
 Abbiamo che:
 
 $1 bar=10^5 Pa$
 
-$1 atm= 1,015 bar= 1,015\cdot 10^5 Pa$
+$1 atm= 1,01325 bar= 1,01325\cdot 10^5 Pa$
 
 In millimetri di mercurio
 
 $1 mmHg | 1 atm=760mmHg$
 
-Facendo un po' di esperimenti ottieniamo che
+Facendo un po' di esperimenti otteniamo che
 >$PV=costante\ T$ 
 >
 >questo vale solo per gas molto rarefatti e poco reagenti(gas **ideali**) con **T misurata in Kelvin**.
 >
->Se misurata in C o F non vale.
+>Se misurata in °C o °F non vale.
 
 $costante \ = Rn$ dove $R$ è **indipendente dal gas considerato** e $n$ è **il numero di moli, la quantità di gas.**
 
@@ -1599,23 +1558,23 @@ $[R]=[{PV\over nTe}]=[{F_{L^2}\cdot L^3 \over QTe}]=[{F\cdot L \over Q T_e}]=[{E
 
 Esempio:
 
-*Ho 13 moli di azoto liquido, a quanti atomi ho?*
+*Ho 13 moli di azoto liquido, a quanti atomi corrispondono?*
 
 Che sia liquido o meno poco ci interessa.
 
-$N=n\cdot N_a$ dove $N_a$ è il numero di avogadro e $n$ è il numero di moli.
+$N=n\cdot N_a$ dove $N_a$ è il numero di Avogadro e $n$ è il numero di moli.
 
 otteniamo $nR=N{R\over N_a}=NK_b$
 
-dove $K_b$ è la costante di boltzman.
+dove $K_b$ è la costante di Boltzmann.
 
-#### Costante di Boltzman
+#### Costante di Boltzmann
 >$K_b={R\over N_a}={8,314 J/\cancel{mol}K)\over 6,022\cdot 10^{23} K/\cancel{mol}}=1,38\cdot 10^{-23}J/K$
 
-ottenendo che
+
 
 #### Equazione di stato di gas perfetti
-> $PV=nRT \longrightarrow PV=NK_bT$
+> $PV=nRT \iff PV=NK_bT$
 >
 
 Noto che la prima equazione la ottengo **sperimentalmente** mentre la seconda la ottengo **misurando.**
@@ -1630,11 +1589,11 @@ Ora ottengo che
 
 #### Energia interna media in un gas perfetto monoatomico
 
-$U=E_i=^{monoatomico} N<E_k>$ con 
+$U=E_i=^{monoatomico} N<E_k>$ (dove $<E_k>$ è l'energia cinetica media rispetto ad un grado di libertà)
 
 > $u={U\over N}=^{n.a.}<E_k>$
 
-#### Equipartizione dell'energia cinetica
+#### Equipartizione dell'energia interna
 > $u=L {K_bT\over 2}$ dove $L$ è il **numero di gradi di libertà**.
 
 Vediamo dunque che dipende solo da $T$ temperatura e dal numero di gradi di libertà.
@@ -1649,7 +1608,7 @@ $V_i=831,4l$
 
 $P=3 atm$
 
-Trasformazione isobarica
+Trasformazione isobara
 
 $V_f=2V_i$
 
@@ -1680,7 +1639,7 @@ Adatto una scala diversa, spostando la $y$ dove ho lo **zero assoluto**
 
 > **Zero assoluto**: Zero kelvin sotto il quale non ha più senso parlare di termodinamica.
 >
-> $0K=-273,16 $ celsius
+> $0 K = -273,15 °C$
 
 ![1553253061397](./assets/1553253061397.png)
 
@@ -1689,7 +1648,7 @@ Ho un ambiente che chiamo universo e un sistema con un energia interna $U$. Come
 
 Ricordiamo **che quando si scalda, aumenta l'energia interna**.
 
-Posso avere degli scambi di:
+L'energia può essere scambiata sotto forma di **calore** o di **lavoro**:
 
 1. $W$ Lavoro:
    1. Ordinato;
@@ -1700,21 +1659,19 @@ Posso avere degli scambi di:
    2. Incoerente;
    3. Disorganizzato.
 ##### Esempio dei pistoni
-Ho un pistone, con dentro un gas, ha una forza esterna che spinge dentro e fuori il pistone.
+Ho un recipiente chiuso le cui pareti sono rigide e adiabatiche, una parete può muoversi (è un pistone). Una forza preme sul pistone comprimendo il gas: compie un lavoro.
 
-*Man mano che spingo, la pressione sarà maggiore, quindi la forza da applicare è maggiore. Questo aspetto lo trascuriamo, la forza applicata è sempre la stessa.*
+*Supponiamo che l'intensità della forza applicata sia costante e sufficiente a far muovere il pistone di una distanza $\Delta x$. Man mano che spingo, la pressione del gas esercitata sul pistone sarà maggiore, quindi si raggiungerà un equilibrio. Ignoriamo questo dettaglio.*
 
-$W=\overrightarrow{F}_{ext}\cdot\Delta\overrightarrow{x}=F\Delta x>0$
+$W=\vec{F}_{ext}\cdot\Delta\vec{x}=F\Delta x>0$
 
-Posso assumere che il lavoro esterno si tramuti tutto in variazione di energia interna:
+Posso assumere che il lavoro esterno si tramuti tutto in variazione di energia interna: le pareti sono rigide, quindi il gas non può compiere lavoro, e sono adiabatiche, quindi il gas non può cedere calore all'esterno:
 
 $W_{ext}=\Delta U$ cioè $U_i\to_{W_{ext}}U_f\Delta U=U_f-U_i=W_{ext}$
 
-Questo funziona perchè non ho altri scambi di energia di questo gas con l'esterno.
-
 #### Calore
 
-Se metto un oggetto al sole si "scalda". Ma non ho lavoro, perchè **non ho spostamento**.
+Se metto un oggetto al sole si "scalda", cioè aumenta la sua energia interna. Ma non ho lavoro, perchè **non ho spostamento**.
 
 Quindo ho un trasferimento di energia **senza lavoro**. Questo è chiamato **CALORE**.
 
@@ -1725,15 +1682,15 @@ Quindo ho un trasferimento di energia **senza lavoro**. Questo è chiamato **CAL
 ## 25/03/2019
 
 #### Esercizio pistone
-$\overrightarrow{F}_{tot}=\overrightarrow{0}$
+$\vec{F}_{tot}=\vec{0}$
 
-$\overrightarrow{F}_{ext}+\overrightarrow{F}_{int}=0$
+$\vec{F}_{ext}+\vec{F}_{int}=0$
 
-${\overrightarrow{F}_{ext}\over A}={\overrightarrow{F}_{int}\over A}\Rightarrow P_{ext}=P_{int}$
+${\vec{F}_{ext}\over A}={\vec{F}_{int}\over A}\Rightarrow P_{ext}=P_{int}$
 
 ![1553768816547](./assets/1553768816547.png)
 
-$\overrightarrow{F}_{ext}\cdot\Delta\overrightarrow{x}=F\Delta x= W_{ext}>0$
+$\vec{F}_{ext}\cdot\Delta\vec{x}=F\Delta x= W_{ext}>0$
 
 $W_{ext}=\Delta U=U_1-U_i>0$
 
@@ -1741,7 +1698,7 @@ La forza esterna va sempre pensata come la forza che **comprime/tenta di comprim
 
 Il lavoro esterno, per questo motivo, sarà dunque **negativo**.
 
-$\overrightarrow{F}_{ext}\cdot \Delta\overrightarrow{x}=-F\Delta x=W_{ext}<0$
+$\vec{F}_{ext}\cdot \Delta\vec{x}=-F\Delta x=W_{ext}<0$
 
 $W_{ext}=\Delta U= U_f- U_i<0$
 
@@ -1753,25 +1710,21 @@ Ottengo che
 
 > $\Delta U_{gas}=-W_{gas}$
 
-La variazione dell'energia interna è **uguale al lavoro COMPIUTO  dal sistema!**
+La variazione dell'energia interna è **opposta al lavoro compiuto  dal sistema!**
 
-cioè più generale 
+In generale, per trasformazioni senza scambio di calore, vale
 
 > $\Delta U=-W$
 > 
 > Convenzionalmente diciamo che:
 >
-> * $W>0$  componente del sistema, sistema che fornisce la variazione;
+> * $W>0$  il lavoro è compiuto dal sistema e subito dall'ambiente, ad esempio, il pistone si espande;
 > 
-> * $W<0$ Sistema che si **oppone** alla variazione.
+> * $W<0$ il lavoro è compiuto dall'ambiente, il sistema subisce il lavoro, ad esempio, il pistone viene compresso.
 > 
 
 
-Ricordiamo che $U_{int}$ è *qualcosachenonhocapito* della temperatura.
-
-I componenti sono $Na\cdot$ molecole.
-
-Quando definisco devo avere il grado di **disordine**.
+L'energia interna di un sistema termodinamico dipende unicamente dalla temperatura (questo risultato sarà dimostrato più avanti),
 
 #### Esercizio ruota bicicletta
 $r_{ext}=25cm$
@@ -1788,10 +1741,10 @@ Ho un uomo con $m=100kg$
 4. Calcolare il lavoro per gonfiare la gomma.
 
 #### Scatola con gas dentro
-Ho una scatola con gas dentro
+Ho una scatola rigida con gas dentro
 
 * Espongo la scatola al sole, ho **radiazione luminosa**.
-* **Non** conto una ipotetica riflessione.
+* **Non** conto una ipotetica riflessione, suppongo che la radiazione sia completamente assorbita dalla scatol.
 * Fornisco energia all'oggetto, il volume non cambia.
 * Ho $T_{gas}$ e $T_{ext}$(temperatura recipiente)
 
@@ -1820,7 +1773,9 @@ Ricordiamo che noi trattiamo **sistemi in equilibrio**, quindi il contenitore e 
 #### Primo principio della termodinamica
 >$\Delta U=Q-W$
 >
->Variazione di energia interna= Calore - Lavoro
+>Variazione di energia interna = Calore assorbito dal sistema - Lavoro compiuto dal sistema
+
+### Modalità di trasferimento del calore
 
 ##### Conduzione
 
@@ -1828,8 +1783,6 @@ Ricordiamo che noi trattiamo **sistemi in equilibrio**, quindi il contenitore e 
 
 
 Atomi che "vibrano",  percepibile da tutti gli atomi vicini. Aumentando la vibrazione avrò un aumento della vibrazione indotta. 
-
-Per conduzione: Sposto energia con calore. 
 
 La sua vibrazione **è l'energia media**, crea un'onda di calore.
 
@@ -1845,33 +1798,33 @@ Per esempio: in un sistema di raffreddamento a liquido, il liquido passa da fred
 
 A colpire il mio sistema è la **radiazione elettromagnetica**, cioè **energia pura**.
 
-L'energia non viene "riflessa", viene assorbita facendo in modo che l'oggetto vibri e si scaldi.
+L'energia che viene assorbita fa in modo che l'oggetto vibri e si scaldi.
 
->**Riflessione:** Un fotone entra, l'atomo si eccita e si diseccita subito, rispedendo lo stesso fotone(dove in realtà è vierso ma potente uguale).
->
+>**Riflessione:** Un fotone entra, l'atomo si eccita e si diseccita subito, rispedendo lo stesso fotone(dove in realtà è diverso ma ha la stessa energia).
 
-*Curiosità: Un corpo nero ha temperatura costante($\simeq 2.7 K$).*
 
-##### Sistema Isolato
 
-Sistema che non scambia **calore**, ne **lavoro** con il sistema esterno. 
+#### Sistemi chiusi e isolati
 
-Il sistema è definito **chiuso** se ho inoltre una assenza di scambio di materia.
+Un sistema **chiuso** non permette lo scambio di materia con l'esterno (ma permette lo scambio di energia, sotto forma di calore o lavoro).
+
+Un sistema **isolato** è un  sistema chiuso che inoltre non permette lo scambio di energia con l'ambiente (né sotto forma di calore, né sotto forma di lavoro).
+
+Altri termini spesso usati: un sistema **adiabatico** è un sistema chiuso che non permette lo scambio di calore con l'esterno (permette comunque lo scambio di energia sotto forma di lavoro). Per indicare che un sistema chiuso (ad esempio un recipiente) non permette lo scambio di energia sotto forma di lavoro si dice essere **rigido**.
 
 #### Esempio sistema isolato
 
 Ho un sistema isolato con un pendolo dentro.
 
-
 Se torno dopo anni avendo dato una spinta al pendolo e ho del gas dentro, il pendolo sarà fermo(attrito).
-avendo $U_i$ come energia interna iniziale e $U_f$ energia interna finale:
+Per definizione di sistema isolato, se $U_i$ è energia interna iniziale e $U_f$ energia interna finale:
 
 $\begin{cases} Q=0 \\ W=0 \end{cases}  \Delta U=0 \Longrightarrow U_f= U_i$
 ma quindi otteniamo che	
 
 $\begin{cases}U_i=U_i^{pendolo}+U_i^{gas}\\U_f= \bcancel{U_f^{pendolo}}+U_f^{gas}\end{cases}$
 
-abbiamo che $ \bcancel{U_f^{pendolo}}$ perchè $U_f^{pendolo}=0$ visto che il pendolo è **fermo** a fine esperimento.
+abbiamo che $ \bcancel{U_f^{pendolo}}$ perchè $U_f^{pendolo}=0$ visto che il pendolo è **fermo** a fine esperimento (ignoriamo l'energia interna dei corpi facenti parte del pendolo).
 
 Otteniamo dunque:
 
@@ -1879,10 +1832,10 @@ Otteniamo dunque:
 
 Ottengo delle osservazioni importanti:
 
-1.  $U$ finale del gas è la $U$ iniziale del pendolo $+$ la $U$ finale del gas.
+1.  $U$ finale del gas è la $U$ iniziale del pendolo $+$ la $U$ iniziale del gas. L'energia iniziale del pendolo è stata spesa per aumentare l'energia interna del gas.
 2.  $U$ del pendolo iniziale è dunque $\Delta U_{gas}$.
-3.  *Se vario la temperatura il pendolo non si muove, perchè il gas si scalda in modo disordinato, non solo da un lato.*
-4.  Il disordine è presente.
+3.  Il trasferimento di energia nell'altra direzione non funziona:*se vario la temperatura del gas il pendolo non si muove, perché il gas si scalda in modo disordinato, non solo da un lato.*
+4.  In questo senso, il calore è "disorganizzato", mentre il lavoro è "organizzato".
 
 #### Trasformazioni
 
@@ -1904,35 +1857,39 @@ $\Delta T=0 \Rightarrow \Delta U=0 \iff Q=W $ con $Q>0, W>0$ (temperatura non ca
 
 #### Capacità termica
 
-Avendo un gas
+Se fornisco calore a un sistema (non necessariamente un gas) questo aumenta la sua temperatura. La costante di proporzionalità fra calore e differenza di temperatura caratteristica di un sistema è detta **capacità termica**.
 
-$\Delta Q= \mathfrak{c} \ \ \ \Delta T \Longrightarrow \mathfrak{c}=^{def}$ Capacità termica $=$ 
+$Q= \mathfrak{c} \cdot \Delta T \Longrightarrow \mathfrak{c}\stackrel{def}{=} \frac{Q}{\Delta T}$ 
 
-$dQ\over dT$ 
-
->Quindi La capacità termica è  **il variare del calore in relazione alla variazione di temperatura**
->($\mathfrak{c} = {dQ\over dT}$ )
+>La capacità termica è **il variare del calore in relazione alla variazione di temperatura** per un certo sistema
 >
 
-Come **unità di misura** ha  $\mathfrak{c} ={1J \over 1K}​$
+Come **unità di misura** ha  $\mathfrak{c} ={1J \over 1K}$
 
 *Un buon piumino ha una **alta capacità termica**, mentre un fondo di pentola ha una **bassa capacità termica***.
 
-Affermiamo anche che
+Osserviamo anche che
 
 >Più massa $=$ Maggiore capacità termica. 
 
+nello specifico, consideriamo due sistemi composti dello stesso materiale. Se il primo ha massa doppia rispetto al secondo, ha anche capacità termica doppia.
+
 #### Calore specifico
+
 Di due tipi:
 
-1. **Calore specifico (per quantità di massa)**$= c = {\mathfrak{c}\over m}= {1\over m}\cdot {dQ\over dT } $
+1. **Calore specifico (capacità termica per unità di massa)**$= c = {\mathfrak{c}\over m}= {1\over m}\cdot {Q\over \Delta T } $
    
    *Unità di misura*$={J\over Kg \cdot K}$
-2. **Calore specifico (Molare)**$= c={\mathfrak{c}\over n}={1\over n}\cdot {dQ\over dT} $
+2. **Calore specifico molare (capacità termica per mole)**$= c={\mathfrak{c}\over n}={1\over n}\cdot {Q\over \Delta T} $
    
    *Unità di misura*$={J\over mol\cdot K}$
 
 #### Esperimento di Joule
+
+L'esperimento di Joule mostra l'equivalenza fra lavoro e calore.
+
+Joule costruisce un mulinello immerso in acqua, contenuto all'interno di un recipiente adiabatico e azionato da corpi collegati al mulinello che vengono lasciati cadere verso Terra. Ignorando gli attriti delle pulegge, l'energia meccanica persa dai corpi che cadono è assorbita dall'acqua, attraverso il mulinello che la agita. Il lavoro dei corpi che cadono è convertito interamente in calore assorbito dall'acqua; noto il lavoro compiuto e la variazione di temperatura dell'acqua è anche possibile misurare il calore specifico dell'acqua.
 
 ![Risultati immagini per esperimento di joule](./assets/01-termodinamica-mulinello-joule.png)
 
@@ -1942,24 +1899,22 @@ $W_{h_2O}=0$
 
 $\Delta U=Q$ (1 principio termodinamica)
 
-$p=1 atm \ \ \ 14,5 ^{\circ}\mathrm{c}\to 15,5 ^{\circ}\mathrm{c}$ 
+A pressione $p=1 atm$, per ottenere una variazione di temperatura $14,5 ^{\circ}\mathrm{C}\to 15,5 ^{\circ}\mathrm{C}$  devo applicare un lavoro $W_G=4,186 kJ$
 
-Devo applicare un lavoro $W_G=4,186 KJ$
-
-Otteniamo dunque il valore di una **kilocaloria (Kcal)**che
+Otteniamo dunque il valore di una **caloria**
 
 > $1 cal= 4,186J$
 > 
 
 
-$C_{H_2O}$ liquido$= {1Kcal\over 1Kg\cdot 1K}=4,186 {KJ\over KgK}$
+$C_{H_2O}$ liquido$= {1kcal\over 1Kg\cdot 1K}=4,186 {kJ\over KgK}$
 
 Ricordiamo che
 
-$\Delta T=1K=\Delta T= 1^{\circ}\mathrm{c}$
+$\Delta T=1K=\Delta T= 1^{\circ}\mathrm{C}$
 ##### Esempio pozzanghera
 
-Ho una pozzangera quadrata con uno strato di nylon sopra(ininfluente, serve solo per evitare l'evaporazione)
+Ho una pozzanghera quadrata con uno strato di nylon sopra(ininfluente, serve solo per evitare l'evaporazione)
 
 sappiamo che 
 
@@ -1969,13 +1924,11 @@ La pozzanghera è lunga e larga $50cm$ e profonda $1cm$
 
 $T_i=20^{\circ}\mathrm{c}$
 
-$\Delta U=Q-\bcancel{W}$ (Non ho variazioni di volume, trasformazione isocora)
-
 $\Delta t=8 hr$
 
 $T_f=?$ 
 
-Quale sarà la temperatura finale della pozzanghera se il sole apparisse istantaneamente(e non lentamente) per 8 ore?
+Quale sarà la temperatura finale della pozzanghera se il sole apparisse istantaneamente(e non lentamente) per 8 ore? Supponiamo $\Delta U = Q $.
 
 $W_{sole}\Delta t=Q= mc\cdot\Delta T$ cioè  il calore immesso dal sole per irraggiamento nel tempo.
 
@@ -1991,12 +1944,14 @@ Ora abbiamo dunque
 
 ${7\cdot10^2\cdot2,9\cdot10^4\over10^3\cdot 10^{-2}\cdot4,19\cdot10^3}K=5\cdot10^2=500K$
 
-è dunque aumentata di 500 gradi kelvin .
+è dunque aumentata di 500 Kelvin.
 
-Questo avviene perchè non ho considerato il **calore latente**.
-
+Ma se fosse davvero aumentata di 500K l'acqua sarebbe evaporata. Dobbiamo anche considerare il **calore latente**!
 
 #### Calore latente
+
+Affinché le trasformazioni di stato avvengano è necessario fornire energia al sistema, questo prende il nome di **calore latente**. L'energia posseduta dall'acqua (liquida) a 100°C non è la stessa del vapore d'acqua a 100°C: per trasformare l'acqua in vapore devo fornire altro calore, che non fa aumentare la temperatura ma aumenta comunque l'energia interna del sistema (e provoca il cambiamento di stato).
+
 $Q=\lambda m$
 
 >$\lambda$= Calore latente.
@@ -2005,13 +1960,13 @@ Si misura in $J/Kg$.
 
 $\Delta T_{Cambio\ di\ stato}=0$
 
-*è un calore che si verifica quando abbiamo una coesistenza tra vapore e liquido, una coesistenza di due stati.*
-
 #### Stati della materia
 
 SOLIDO $\xrightarrow[\xleftarrow{\text{Solidificazione}}]{\text{Fusione}}$ LIQUIDO $\xrightarrow[\xleftarrow{\text{Condensazione}}]{\text{Evaporazione}}$ VAPORE
 
 
+
+Per $H_2O$, i calori latenti di fusione ed evaporazione sono i seguenti:
 
 $\lambda _{SL}=3,3\cdot 10^5 J/Kg$ dove $SL$ sta per *Solido Liquido*.
 
@@ -2024,7 +1979,7 @@ $\lambda _{LV}=2,7\cdot 10^7 J/Kg$ dove $LV$ sta per*Liquido Vapore*.
 
    4. Disegnare il grafico Temperatura/ tempo (Temperatura asse $y$, tempo asse $x$)
 
-     Aggiungendo che ${dQ\over dT}=100 cal/hr$.
+     Aggiungendo che ${Q\over \Delta T}=100 cal/hr$.
 
 ----
 
@@ -2060,33 +2015,33 @@ $T_f={\mathfrak{c}_1T_1+\mathfrak{c}_2T_2\over\mathfrak{c}_1+\mathfrak{c}_2}$
 
 
 #### Esercizio
-$m_1=30g​$
+$m_1=30g$
 
-$t_1=-15^{\circ}\mathrm{c}​$
+$t_1=-15^{\circ}\mathrm{c}$
 
-$m_2=50g​$
+$m_2=50g$
 
-$t_2=60 ^{\circ}\mathrm{c}​$
+$t_2=60 ^{\circ}\mathrm{c}$
 
-$T_e=?​$
+$T_e=?$
 
 traduciamo i dati in una forma utilizzabile
 
-$t_{1_k}=T_1=258K​$
+$t_{1_k}=T_1=258K$
 
-$t_{2_k}=T_2=333K​$
+$t_{2_k}=T_2=333K$
 
-$\lambda_{H_2O}=3,3\cdot10^5 J/Kg​$
+$\lambda_{H_2O}=3,3\cdot10^5 J/Kg$
 
 $c_{H_2O}={1kcal\over Kg\cdot K}=4,19 KJ/Kg\cdot K$
 
-$Q_1=m_1c_1\cdot(T_f-T_1) \\ Q_2=m_2c_2\cdot(T_f-T_2)​$
+$Q_1=m_1c_1\cdot(T_f-T_1) \\ Q_2=m_2c_2\cdot(T_f-T_2)$
 
 sommandoli
 
-$Q_1+Q_2=(m_1\cdot c_1+m_2\cdot c_2)\cdot T_f-(m_1\cdot c_1\cdot T_1 + m_2\cdot c_2\cdot T_2)​$
+$Q_1+Q_2=(m_1\cdot c_1+m_2\cdot c_2)\cdot T_f-(m_1\cdot c_1\cdot T_1 + m_2\cdot c_2\cdot T_2)$
 
-$T_f={m_1c_1T_1+m_2c_2T_2\over m_1c_1+m_2c_2}​$
+$T_f={m_1c_1T_1+m_2c_2T_2\over m_1c_1+m_2c_2}$
 
 
 
@@ -2110,28 +2065,27 @@ $Teq={m_1\cdot c_1 T_1+m_2 c_2 T_2\over m_1c_1+m_2c_2}={30g\cdot273K+50g+281,5 K
 
 ## 01/04/2019
 
-$\overrightarrow{F}_{ext}=\overrightarrow{0}\Rightarrow {d\overrightarrow{P}t\over dt}=\overrightarrow{0}\Rightarrow \overrightarrow{P}_{tot}=\overrightarrow{const}\Rightarrow \overrightarrow{P}_{tot}$
+$\vec{F}_{ext}=\vec{0}\Rightarrow {d\vec{P}t\over dt}=\vec{0}\Rightarrow \vec{P}_{tot}=\vec{const}\Rightarrow \vec{P}_{tot}$
 
 ottenendo
 
-$\overrightarrow{P}_{tot}^{iniziale}=\overrightarrow{P}_{tot}^{finale}$
+$\vec{P}_{tot}^{iniziale}=\vec{P}_{tot}^{finale}$
 Quindi otteniamo che
-> Se niente perturba il moto del sistema, **la quantità di moto totale si conserva**.\
+> Se niente perturba il moto del sistema, **la quantità di moto totale si conserva**.
 > 
 
 In altre parole
-$\sum ^N_{i=1}\overrightarrow{P}_i(iniziale)=\sum ^M_{j=1}\overrightarrow{P}_i(finale)$
+$\sum ^N_{i=1}\vec{P}_i(iniziale)=\sum ^M_{j=1}\vec{P}_i(finale)$
 
 Noto che $N$ e $M$ non sono necessariamente uguali(non necessariamente stesso numero), vale anche per $i$ e $j$(non necessariamente stesso corpo).
 
 ### Centro di massa
->$\overrightarrow{x}_{CM}={m_1}\overrightarrow{x}_1+m_2 \overrightarrow{x}_2\over m_1+m_2$
+>$\vec{x}_{CM}=\frac{{m_1}\vec{x}_1+m_2 \vec{x}_2}{ m_1+m_2}$
 >Punto che **meglio approssima** *l'equilibrio del sistema.*
->
 
 In una dimensione, tolgo semplicemente i vettori.
 
-#### Esempio Sole Terra
+#### Esempio: Calcolo del centro di massa del sistema Sole - Terra
 
 ![1554667622045](assets/1554667622045.png)
 
@@ -2142,7 +2096,7 @@ $m_s=2\cdot 10^{30}Kg$
 
 $m_T=6\cdot 10^{24}Kg$
 
-$d=1,5\cdot 10^{11}m​$ cioè la distanza tra la terra e il sole.
+$d=1,5\cdot 10^{11}m$ cioè la distanza tra la terra e il sole.
 
 Calcolo $r$:
 
@@ -2208,36 +2162,36 @@ Ora avendo $i$ che varia tra $1$ e $2$
 
 ottengo 
 
-$\overrightarrow{v_i}'={d\overrightarrow{x}_i\over dt}={d\over dt}(\overrightarrow{x}_i-\overrightarrow{x}_{CM})={d\overrightarrow{x}_i\over dt}-{d\overrightarrow{x}_{CM}\over dt}$
-dove ${d\overrightarrow{x}_i\over dt}=\overrightarrow{v}_i$ e ${d\overrightarrow{x}_{CM}\over dt}=\overrightarrow{v}_{CM}$
+$\vec{v_i}'={d\vec{x}_i\over dt}={d\over dt}(\vec{x}_i-\vec{x}_{CM})={d\vec{x}_i\over dt}-{d\vec{x}_{CM}\over dt}$
+dove ${d\vec{x}_i\over dt}=\vec{v}_i$ e ${d\vec{x}_{CM}\over dt}=\vec{v}_{CM}$
 
 Ma noto che tutto ciò è **energia cinetica**
 
-$E_k=\sum^n_{i=1}{1\over2}m_i \overrightarrow{v}_i^2$
+$E_k=\sum^n_{i=1}{1\over2}m_i \vec{v}_i^2$
 
-$E_k=\sum^n_{i=1}{1\over2}m_i \overrightarrow{v}_i^2=\sum^n_{i=1}{1\over2}m_i(\overrightarrow{v}_i-\overrightarrow{v}_{CM})^2=\sum^n_{i=1}{1\over2}m_i(\overrightarrow{v}_i^2+\overrightarrow{v}_{CM}^2-2\cdot\overrightarrow{v}_i\overrightarrow{v}_{CM})=$
+$E_k=\sum^n_{i=1}{1\over2}m_i \vec{v}_i^2=\sum^n_{i=1}{1\over2}m_i(\vec{v}_i-\vec{v}_{CM})^2=\sum^n_{i=1}{1\over2}m_i(\vec{v}_i^2+\vec{v}_{CM}^2-2\cdot\vec{v}_i\vec{v}_{CM})=$
 
-$=\sum^n_{i=1}{1\over2}m_i v_i+ \sum^n_{i=1}{1\over2}m_iv_{CM}^2-(\sum^n_{i=1} m_i\overrightarrow{v}_i)\overrightarrow{v}_{CM}$
+$=\sum^n_{i=1}{1\over2}m_i v_i+ \sum^n_{i=1}{1\over2}m_iv_{CM}^2-(\sum^n_{i=1} m_i\vec{v}_i)\vec{v}_{CM}$
 
 Ottenendo
 
-$\begin{cases}E_k=\sum^n_{i=1} {1\over2} m_i \overrightarrow{v}_i^2 \\ E_k'=E_k {1\over2}Mv^2_{CM}-\overrightarrow{v}_{CM}\cdot\sum m_i\cdot \overrightarrow{v}_i\end{cases}$
+$\begin{cases}E_k=\sum^n_{i=1} {1\over2} m_i \vec{v}_i^2 \\ E_k'=E_k {1\over2}Mv^2_{CM}-\vec{v}_{CM}\cdot\sum m_i\cdot \vec{v}_i\end{cases}$
 
 >Cioè che possiamo** cambiare il sistema di riferimento senza variare il risultato**(anche se l'energia cinetica varia!)
 
 #### La quantità di moto si conserva
-$\overrightarrow{x}_{CM}=\overrightarrow{0}$
+$\vec{x}_{CM}=\vec{0}$
 
-$m_1 \overrightarrow{v}_1+m_2\overrightarrow{v}_2=\overrightarrow{0}$
+$m_1 \vec{v}_1+m_2\vec{v}_2=\vec{0}$
 
 Ora derivo in base al tempo
 
-$m_1\overrightarrow{v}_1+m_2\overrightarrow{v}_2=\overrightarrow{0}$
-cioè $\overrightarrow{P}_1+\overrightarrow{P}_2=\overrightarrow{0}​$
+$m_1\vec{v}_1+m_2\vec{v}_2=\vec{0}$
+cioè $\vec{P}_1+\vec{P}_2=\vec{0}$
 
 Ottengo
 
->$\Delta \overrightarrow{P}_{tot}=\overrightarrow{0}$, cioè la **quantità di moto** si conserva nell'urto!
+>$\Delta \vec{P}_{tot}=\vec{0}$, cioè la **quantità di moto** si conserva nell'urto!
 >
 
 #### Esperimento barra
@@ -2273,13 +2227,13 @@ $x_1^{Finale}={m_2\over m_1+m_2}\cdot d$
 **Esercizio**
 Avendo un pendolo balistico
 
-$\Delta \overrightarrow{P}_{tot}=0$ 
+$\Delta \vec{P}_{tot}=0$ 
 
-$\overrightarrow{P}_{iniziale}=\overrightarrow{P}_{finale}$
+$\vec{P}_{iniziale}=\vec{P}_{finale}$
 
-$m_1\overrightarrow{v}_1^{iniziale}+m_2\overrightarrow{v}_2^{iniziale}=(m_1+m_2)\cdot \overrightarrow{v}^{finale}$
+$m_1\vec{v}_1^{iniziale}+m_2\vec{v}_2^{iniziale}=(m_1+m_2)\cdot \vec{v}^{finale}$
 
-$\overrightarrow{v}^{finale}={m_i \overrightarrow{v}_i^{iniziale}m_2\overrightarrow{v}_2\over m_1+m_2}\xrightarrow[{m_b}]{{v_b}}$
+$\vec{v}^{finale}={m_i \vec{v}_i^{iniziale}m_2\vec{v}_2\over m_1+m_2}\xrightarrow[{m_b}]{{v_b}}$
 
 Più in specifico 
 
@@ -2372,7 +2326,7 @@ $p_AV_A=nRT_A$ dove $R \text{ e } T_A$ sono costanti.
 
 $\Delta U= U_C-U_A=?$
 
-Riprendo il calore specifico molare: $c={1\over n}{dQ\over dT}​$, 
+Riprendo il calore specifico molare: $c={1\over n}{dQ\over dT}$, 
 >ho un calore specifico che dipende dal processo considerato: $c_{proc}={1\over n}[{dq\over dT}]_{proc}$
 
 Ciò significa che una espansione **isoterma** crea un differente $c_{proc}$ di una espansione **isocora.**
@@ -2520,7 +2474,7 @@ $W_{superiore}+W_{inferiore}=W$
 
 Affermiamo che 
 $|W_{superiore}|>|W_{Inferiore}|$ 
-$\begin{cases}W_{superiore}>0\\W_{inferiore}<0 \end{cases}$ allora $W>0​$, senso **orario**.
+$\begin{cases}W_{superiore}>0\\W_{inferiore}<0 \end{cases}$ allora $W>0$, senso **orario**.
 
 ![1555013282548](assets/1555013282548.png)
 
@@ -2568,7 +2522,7 @@ Uno stato di equilibrio di esempio, per un gas ideale: $pVnRT$ per ogni punto.
 
 ![1555015836193](assets/1555015836193.png)
 $AB=T_2>T_1$
-$W>0​$ perchè **orario**.
+$W>0$ perchè **orario**.
 
 Avendo il seguente ciclo possiamo affermare che:
 * $AB$ è una **espansione reversibile isoterma**;
@@ -2616,7 +2570,7 @@ $T_1 V_D^{\gamma-1}=T_2 V_A^{\gamma-1}$
 
 $W_{II}=-\Delta U_{DA}=nc_V(T_1-T_2)$
 
-$T_1 V_D^{\gamma-1} $ è associabile a $D$ mentre $T_2 V_A^{\gamma-1}$ è associabile a $A​$
+$T_1 V_D^{\gamma-1} $ è associabile a $D$ mentre $T_2 V_A^{\gamma-1}$ è associabile a $A$
 
 Mi calcolo il rendimento
 $\eta=1-{|Q_C|\over Q_A}=1-{Q_1\over Q_2}=1-{nRT_1\ln({V_D\over V_C})\over nRT_2\ln({V_B\over V_A})}$
@@ -2883,8 +2837,8 @@ avendo
 >$\epsilon_0=$ costante dielettrica del vuoto = $8,85\cdot 10^{-12} {c^2\over N\cdot m^2}$
 
 ##### Paragone interessante
-Forza di Newton$= \overrightarrow{F}_{1\to2}=K_G{m_1m_2\over r^2}$
-Forza di Coulomb$= \overrightarrow{F}_{1\to2}={1\over 4\pi\epsilon_0}{q_1q_2\over r_{12}^2}\cdot \hat{r}_{12}$
+Forza di Newton$= \vec{F}_{1\to2}=K_G{m_1m_2\over r^2}$
+Forza di Coulomb$= \vec{F}_{1\to2}={1\over 4\pi\epsilon_0}{q_1q_2\over r_{12}^2}\cdot \hat{r}_{12}$
 Sono molto simili!
 
 * Un oggetto senza massa **non è incline ad accettare interazioni** con la forza di Newton
@@ -2909,7 +2863,7 @@ Tornando all'elettromagnetismo
 
 **Cariche puntiformi**
 
-$\overrightarrow{F}_{1\to2}={1\over 4\pi\epsilon_0}{q_1q_2\over |\overrightarrow{r}_{12}|^2}\hat{r}_{12}=-\overrightarrow{F}_{2\to1}$
+$\vec{F}_{1\to2}={1\over 4\pi\epsilon_0}{q_1q_2\over |\vec{r}_{12}|^2}\hat{r}_{12}=-\vec{F}_{2\to1}$
 
 
 $q_1=400_nC$
@@ -2922,18 +2876,18 @@ $r_1=2 mm$
 
 $r_2=1 mm$
 
-$\overrightarrow{F}=\overrightarrow{?}$
+$\vec{F}=\vec{?}$
 
 L'inclinazione a muoversi la da la massa, non la carica. Ci manca la massa.
 
 Supponiamo che i due punti siano fissati.
 >**Principio di sovrapposizione**: Le forze elettriche sono indipendenti dall'ambiente circostante.
 
-$\overrightarrow{F}_{1\to Q}={1\over 4\pi\epsilon_0}{400(nC)^2\over 4(\mu m)^2}\hat{r}_1=$
+$\vec{F}_{1\to Q}={1\over 4\pi\epsilon_0}{400(nC)^2\over 4(\mu m)^2}\hat{r}_1=$
 
 $={9\cdot10^9\cdot10^{-16}\over10^{-6}}N=9\cdot 10^{-1} N=0,9 N$
 
-$\overrightarrow{F}_{2\to Q}={1\over 4\pi\epsilon_0}{100(nC)^2\over 1(\mu m)^2}\hat{r}_2=0,9 N$
+$\vec{F}_{2\to Q}={1\over 4\pi\epsilon_0}{100(nC)^2\over 1(\mu m)^2}\hat{r}_2=0,9 N$
 
 
 
@@ -2941,15 +2895,15 @@ $\overrightarrow{F}_{2\to Q}={1\over 4\pi\epsilon_0}{100(nC)^2\over 1(\mu m)^2}\
 
 Come è possibile che siano entrambi $0,9N$ nonostante la differenza tra le due cariche? per la distanza.
 
-Ridisegnando l'angolo, faccio la regola del parallelogramma tra $\overrightarrow{F}_{1\to Q}$ e $\overrightarrow{F}_{2\to Q}$ ottengo $\overrightarrow{F}$
+Ridisegnando l'angolo, faccio la regola del parallelogramma tra $\vec{F}_{1\to Q}$ e $\vec{F}_{2\to Q}$ ottengo $\vec{F}$
 
-$|\overrightarrow{F}|=\sqrt{3}\cdot 0,9N=1,55 N$
+$|\vec{F}|=\sqrt{3}\cdot 0,9N=1,55 N$
 
 Calcoliamo il lavoro!
 
 ![1556519568713](assets/1556519568713.png)
 
-$W=\int^B_A \overrightarrow{F}\cdot d\overrightarrow{S}={qQ\over 4\pi\epsilon_0}\int^B_A {1\over r^2}\hat{r}\cdot d\overrightarrow{S}=\lim_{N\to+\infty}{qQ\over 4\pi\epsilon_0}\sum^N_{i=1}{1\over r^2_i}\hat{r}_i\cdot d\overrightarrow{S}_i$
+$W=\int^B_A \vec{F}\cdot d\vec{S}={qQ\over 4\pi\epsilon_0}\int^B_A {1\over r^2}\hat{r}\cdot d\vec{S}=\lim_{N\to+\infty}{qQ\over 4\pi\epsilon_0}\sum^N_{i=1}{1\over r^2_i}\hat{r}_i\cdot d\vec{S}_i$
 che è uguale a 
 $\sum^N_{i=1}{1\over r^2_i}dS_i^{//}$
 
@@ -2971,7 +2925,7 @@ Otteniamo che la forza elettrica è una forza **conservativa**.
 
 $W_{A\to B}=U_A-U_B=-\Delta U$
 
-$U_p=U(\overrightarrow{r}_p)=U(r_p)={qQ\over 4\pi\epsilon_0}{1\over r}+C_G$
+$U_p=U(\vec{r}_p)=U(r_p)={qQ\over 4\pi\epsilon_0}{1\over r}+C_G$
 
 con p per punto (puntiforme)
 
@@ -2985,11 +2939,11 @@ Boh.
 
 
 #### Carica di prova e campo elettrico
-$\overrightarrow{F}_{TOT}=\sum^N_{i=1} {1\over 4\pi\epsilon_0}{q_1Q\over r^2_i}\hat{r}_i$
+$\vec{F}_{TOT}=\sum^N_{i=1} {1\over 4\pi\epsilon_0}{q_1Q\over r^2_i}\hat{r}_i$
 
 $=Q\sum^N_{i=1}{1\over 4\pi\epsilon_0}{q_1\over r_i^2}\hat{r}_i$
 
-$\overrightarrow{E}_{TOT}={\overrightarrow{F}_{TOT}\over Q}=\sum^N_{i=1}{1\over 4\pi\epsilon_0} {q_1\over r^2_i}\hat{r}_i$
+$\vec{E}_{TOT}={\vec{F}_{TOT}\over Q}=\sum^N_{i=1}{1\over 4\pi\epsilon_0} {q_1\over r^2_i}\hat{r}_i$
 
 Il campo elettrico ha un corrispettivo fisico.
 Un vettore associato a un punto nello spazio.
@@ -3006,33 +2960,33 @@ Se **scalare lo descrive un numero.**(ad esempio la temperatura!)
 Posso ottenerlo senza **descrivere necessariamente le sue sorgenti.**
 
 con i differenziali
-$\overrightarrow{F}_{TOT}\xrightarrow{1/Q}{}\overrightarrow{E}_{TOT}$
-$\overrightarrow{U}\xrightarrow{1/Q}{}\overrightarrow{V}|\Delta V={\Delta U\over Q}$
+$\vec{F}_{TOT}\xrightarrow{1/Q}{}\vec{E}_{TOT}$
+$\vec{U}\xrightarrow{1/Q}{}\vec{V}|\Delta V={\Delta U\over Q}$
 
 ## 29/04/2019
 
-$\overrightarrow{E}=^{def} {\overrightarrow{F}\over q_0}$
+$\vec{E}=^{def} {\vec{F}\over q_0}$
 
 Con unità di misura 
 
 $[E]=[{F \over Q}]= udm [E]={N\over C}={V\over m}$
 
-$W_e=\int_c \overrightarrow{F}_e\cdot d\overrightarrow{l}=^{(*)}\int^B_A \overrightarrow{F}\cdot d\overrightarrow{l}=^{def} -\Delta U= - [U_B-U_A]=-q_0[V_B-V_A]$
+$W_e=\int_c \vec{F}_e\cdot d\vec{l}=^{(*)}\int^B_A \vec{F}\cdot d\vec{l}=^{def} -\Delta U= - [U_B-U_A]=-q_0[V_B-V_A]$
 
 (\*) *L'integrale lungo la curva posso farlo calcolando l'integrale agli estremi ( non è una cosa immediata)*
 
 dove 
 
-$-[U_B-U_A]=W_e=\int _A ^B q_0\overrightarrow{E}\cdot d\overrightarrow{l}=q_0\int_A^B \overrightarrow{E}\cdot d\overrightarrow{l}=^{def}=-q\Delta V$ **cioè differenza di potenziale**
+$-[U_B-U_A]=W_e=\int _A ^B q_0\vec{E}\cdot d\vec{l}=q_0\int_A^B \vec{E}\cdot d\vec{l}=^{def}=-q\Delta V$ **cioè differenza di potenziale**
 
 
 #### Carica puntiforme
 
 In una carica puntiforme
 
-$\overrightarrow{F}={q_0Q\over 4\pi \epsilon_0 r}\hat{r}$
+$\vec{F}={q_0Q\over 4\pi \epsilon_0 r}\hat{r}$
 
-$\overrightarrow{E}={q_0Q\over 4\pi \epsilon_0 r}\hat{r}$
+$\vec{E}={q_0Q\over 4\pi \epsilon_0 r}\hat{r}$
 
 $V={Q\over 4\pi \epsilon_0 r}+costante$
 
@@ -3112,13 +3066,13 @@ $\sigma={d_q\over d\Sigma}={Q\over 4\pi R^2_a}={-16\cdot 10^{-20}\mathcal{c}\ove
 #### Passaggio al continuo (PAC)
 Ho un campo elettrico formato da una serie di cariche
 
-$\overrightarrow{E}(\overrightarrow{r}_p)=\sum^N_{i=1}{q_i\over 4\pi\epsilon_0|\overrightarrow{r}_i-\overrightarrow{r}_p|^2}=^{(\sum _i {dq_i}_{ = ds})}\int^B_A ds{\lambda\over 4\pi\epsilon_0|\overrightarrow{r}_s-\overrightarrow{r}_p|^2}\hat{r}_{SP}$
+$\vec{E}(\vec{r}_p)=\sum^N_{i=1}{q_i\over 4\pi\epsilon_0|\vec{r}_i-\vec{r}_p|^2}=^{(\sum _i {dq_i}_{ = ds})}\int^B_A ds{\lambda\over 4\pi\epsilon_0|\vec{r}_s-\vec{r}_p|^2}\hat{r}_{SP}$
 
 
-$\overrightarrow{V}(\overrightarrow{r}_p)=\sum^N_{i=1}{q_i\over 4\pi\epsilon_0|\overrightarrow{r}_i-\overrightarrow{r}_p|}=^{(\sum _i {dq_i}_{ = \rho d\tau})}\int^A d\tau{\rho\over 4\pi\epsilon_0|\overrightarrow{r}_\tau-\overrightarrow{r}_p|}$
+$\vec{V}(\vec{r}_p)=\sum^N_{i=1}{q_i\over 4\pi\epsilon_0|\vec{r}_i-\vec{r}_p|}=^{(\sum _i {dq_i}_{ = \rho d\tau})}\int^A d\tau{\rho\over 4\pi\epsilon_0|\vec{r}_\tau-\vec{r}_p|}$
 
 
-$U_e={1\over2}\sum{i\ne j}{q_i q_j\over 4\pi\epsilon_0|\overrightarrow{r}_i-\overrightarrow{r}_j|}=\dots$
+$U_e={1\over2}\sum{i\ne j}{q_i q_j\over 4\pi\epsilon_0|\vec{r}_i-\vec{r}_j|}=\dots$
 
 <!--*IMMAGINE PUNTINI FRECCIA PAC CON CUBO*-->
 
@@ -3183,7 +3137,7 @@ Ho un anello di carica, spedisco una particella tra l'anello
 
 $V(x,0,0)=?$
 
-$\overrightarrow{E}(x,0,0)=?$
+$\vec{E}(x,0,0)=?$
 
 $dV={dq\over 4\pi\epsilon_0 r}={\lambda ds\over 4\pi \epsilon_0 r}$
 
@@ -3201,15 +3155,15 @@ se ${R\over x}<<1 \Rightarrow {Q\over 4\pi\epsilon_0 |x|}$
 
 ## 03/05/2019
 
-$V_A-V_B=\int ^B_A \overrightarrow{E}\cdot d\overrightarrow{s}$
+$V_A-V_B=\int ^B_A \vec{E}\cdot d\vec{s}$
 
 Abbiamo un **gradiente**
 
 *Che cosa è un gradiente?*
 
-$\overrightarrow{E}=-\overrightarrow{\nabla}V=-\begin{bmatrix} {\delta V\over \delta x}\\{\delta V\over \delta y}\\{\delta V\over \delta z}\end{bmatrix}$
+$\vec{E}=-\vec{\nabla}V=-\begin{bmatrix} {\delta V\over \delta x}\\{\delta V\over \delta y}\\{\delta V\over \delta z}\end{bmatrix}$
 
-con  $\overrightarrow{\nabla}$ è il gradiente, composto da derivate parziali(?)
+con  $\vec{\nabla}$ è il gradiente, composto da derivate parziali(?)
 
 Dove ho le derivate parziali:
 
@@ -3221,17 +3175,17 @@ $E_z= -{\delta\over \delta z}V=-V_0x^2y$
 
 Da queste tre ho:
 
-$\overrightarrow{E}=-\hat{r} {dV\over dr}$
+$\vec{E}=-\hat{r} {dV\over dr}$
 
 #### Circuitazione 
 
->**Circuitazione**: $\oint q\overrightarrow{E}\cdot d\overrightarrow{s}=0$
+>**Circuitazione**: $\oint q\vec{E}\cdot d\vec{s}=0$
 >
->dove $q\overrightarrow{E}=\overrightarrow{F}$, ma possiamo togliere la carica $q$ perchè costante, ottenendo:
+>dove $q\vec{E}=\vec{F}$, ma possiamo togliere la carica $q$ perchè costante, ottenendo:
 >
->$\oint \overrightarrow{E}\cdot d\overrightarrow{s}=0​$ che viene più semplicemente scritto come
+>$\oint \vec{E}\cdot d\vec{s}=0$ che viene più semplicemente scritto come
 >
->$\Gamma \overrightarrow{E}=0$
+>$\Gamma \vec{E}=0$
 
 
 >**Tutti i campi conservativi hanno circuitazione zero.**
@@ -3251,7 +3205,7 @@ Oltretutto ho un vettore **normale** che non è necessariamente perpendicolare a
 
 Otteniamo la **definizione di flusso**:
 
-> $d\Phi _{d\Sigma}(\overrightarrow{v})=^{def}\overrightarrow{v}\cdot \hat{n} d\Sigma$
+> $d\Phi _{d\Sigma}(\vec{v})=^{def}\vec{v}\cdot \hat{n} d\Sigma$
 > 
 > Quantità matematica di un campo vettoriale
 
@@ -3262,7 +3216,7 @@ Il segno del flusso è **arbitrario** in base al vettore **normale**.
 
 disegno coso superfice 
 
-$=\overrightarrow{E}\cdot\hat{n}\ d\Sigma={1\over 4\pi\epsilon_0}{q\over r^2}{\hat{r}\cdot\hat{n}}\ d\Sigma={q\over 4\pi\epsilon_0}\cos\theta {d\Sigma\over r^2}$
+$=\vec{E}\cdot\hat{n}\ d\Sigma={1\over 4\pi\epsilon_0}{q\over r^2}{\hat{r}\cdot\hat{n}}\ d\Sigma={q\over 4\pi\epsilon_0}\cos\theta {d\Sigma\over r^2}$
 
 con $\cos\theta {d\Sigma}$ scrivibile come $d\Sigma_r$
 
@@ -3293,11 +3247,11 @@ $\Omega_{TOT}={S\over R^2}={4\pi R^2\over R^2}=4\pi$
 
 ![1556876898769](assets/1556876898769.png)
 
->$\Phi_{\Sigma}(\overrightarrow{E})=\int d\Phi={q\over 4\pi \epsilon_0}=\int d\omega={q\over \cancel{4\pi} \epsilon_0}\cdot \cancel{4\pi}={q\over \epsilon_0}$
+>$\Phi_{\Sigma}(\vec{E})=\int d\Phi={q\over 4\pi \epsilon_0}=\int d\omega={q\over \cancel{4\pi} \epsilon_0}\cdot \cancel{4\pi}={q\over \epsilon_0}$
 >
 >cioè 
 >
->$\Phi(\overrightarrow{E})={\sum_i q_i\over \epsilon_0}$
+>$\Phi(\vec{E})={\sum_i q_i\over \epsilon_0}$
 
 Si basa sulla definizione di interno ed esterno.
 
@@ -3323,7 +3277,7 @@ Quanto vale il campo elettrico in funzione della posizione?
 
 ![1556877786492](assets/1556877786492.png)
 
-$\overrightarrow{E}(\overrightarrow{r})=\overrightarrow{?}$
+$\vec{E}(\vec{r})=\vec{?}$
 
 Noto che il problema è puramente radiale.
 
@@ -3333,11 +3287,11 @@ otteniamo con il teorema di gauss
 
 La fisica mi dice che
 
-$\Phi_{S_D}(\overrightarrow{e})=^{phys} {q\over \epsilon_0}$
+$\Phi_{S_D}(\vec{e})=^{phys} {q\over \epsilon_0}$
 
 La matematica mi dice che
 
-$\Phi(\overrightarrow{e})=E4\pi r_p^2$
+$\Phi(\vec{e})=E4\pi r_p^2$
 
 ed ottengo
 
@@ -3349,11 +3303,11 @@ $E={q\over 4\pi\epsilon_0}{1\over r^2_p}$
 
 La fisica mi dice che
 
-$\Phi_{S_A}(\overrightarrow{e})=^{phys} 0$
+$\Phi_{S_A}(\vec{e})=^{phys} 0$
 
 La matematica mi dice che
 
-$\Phi(\overrightarrow{e})=E4\pi r_A^2$
+$\Phi(\vec{e})=E4\pi r_A^2$
 
 ed ottengo
 
@@ -3369,13 +3323,13 @@ $E=0$
 
  
 
-$\Gamma (\overrightarrow{E})=0$
+$\Gamma (\vec{E})=0$
 
-$\Phi(\overrightarrow{E})={q_{int}\over \epsilon_0}$
+$\Phi(\vec{E})={q_{int}\over \epsilon_0}$
 
 Come varia il campo elettrico al variare della superficie?
 
-ho $\sigma(x,y,z)$ e $\overrightarrow{r}=(x,y,z)$
+ho $\sigma(x,y,z)$ e $\vec{r}=(x,y,z)$
 
 Ho che 
 $\bar{AB}=\bar{CD}$
@@ -3389,13 +3343,13 @@ come sappiamo il campo elettrico che è in un punto è la somma dei campi che es
 
 ottengo la circuitazione
 
-$\Gamma_{\square} (\overrightarrow{E})=\oint_\square \overrightarrow{E}\cdot d\overrightarrow{l}= \overrightarrow{E}_2\cdot \overrightarrow{AB}+\xcancel{(\overrightarrow{E}_2 ? \overrightarrow{E}_1)\cdot \overrightarrow{BC}}+\\\overrightarrow{E}_1\cdot \overrightarrow{CD}+\xcancel{(\overrightarrow{E}_1?\overrightarrow{E}_2)\cdot \overrightarrow{DA}}$
+$\Gamma_{\square} (\vec{E})=\oint_\square \vec{E}\cdot d\vec{l}= \vec{E}_2\cdot \vec{AB}+\xcancel{(\vec{E}_2 ? \vec{E}_1)\cdot \vec{BC}}+\\\vec{E}_1\cdot \vec{CD}+\xcancel{(\vec{E}_1?\vec{E}_2)\cdot \vec{DA}}$
 
 Li cancello perchè sono infinitesimali!
 
 ottengo
 
-> $\Gamma (\overrightarrow{E})=0\oint \overrightarrow{E}\cdot d\overrightarrow{l}=E_{2t}-E_{1t}=0 \Rightarrow E_{2t}=E_{1t}$
+> $\Gamma (\vec{E})=0\oint \vec{E}\cdot d\vec{l}=E_{2t}-E_{1t}=0 \Rightarrow E_{2t}=E_{1t}$
 
 cioè il campo elettrico non varia, è conservativo
 
@@ -3407,21 +3361,21 @@ Abbiamo un cilindro
 
 
 
-$\Phi_{cyl}\overrightarrow{E}=^{math} \overrightarrow{E}_2\cdot \hat{n}_2 S+\xcancel{(\overrightarrow{E}_1?\overrightarrow{E}_2)\cdot \hat{n}_2 S_2}+\\+\overrightarrow{E}_1\hat{n}_1S=(E_{2n}-E_{1n})S$
+$\Phi_{cyl}\vec{E}=^{math} \vec{E}_2\cdot \hat{n}_2 S+\xcancel{(\vec{E}_1?\vec{E}_2)\cdot \hat{n}_2 S_2}+\\+\vec{E}_1\hat{n}_1S=(E_{2n}-E_{1n})S$
 
 Posso rimuovere anche qui perchè è infinitesimale.
 
 Ottengo dunque che 
 
->$\Phi_{}\overrightarrow{E}={q_{int}\over \epsilon_0}\Rightarrow E_{2n}-E_{1n}={\sigma\over\epsilon_0}$
+>$\Phi_{}\vec{E}={q_{int}\over \epsilon_0}\Rightarrow E_{2n}-E_{1n}={\sigma\over\epsilon_0}$
 >
 
 
-Campo elettrico varia di $\sigma\over\epsilon_0​$
+Campo elettrico varia di $\sigma\over\epsilon_0$
 
 > Unendo questi due otteniamo
 >
-> $\begin{cases}\Gamma (\overrightarrow{E})=0\oint \overrightarrow{E}\cdot d\overrightarrow{l}=E_{2t}-E_{1t}=0 \Rightarrow E_{2t}=E_{1t}\\ \Phi_{}\overrightarrow{E}={q_{int}\over \epsilon_0} \Rightarrow E_{2n}-E_{1n}={\sigma\over\epsilon_0}\end{cases}\Rightarrow  \ \ \ \ \ \overrightarrow{E}_2-\overrightarrow{E}_1={\sigma\over \epsilon_0}$ 
+> $\begin{cases}\Gamma (\vec{E})=0\oint \vec{E}\cdot d\vec{l}=E_{2t}-E_{1t}=0 \Rightarrow E_{2t}=E_{1t}\\ \Phi_{}\vec{E}={q_{int}\over \epsilon_0} \Rightarrow E_{2n}-E_{1n}={\sigma\over\epsilon_0}\end{cases}\Rightarrow  \ \ \ \ \ \vec{E}_2-\vec{E}_1={\sigma\over \epsilon_0}$ 
 >
 > con $n>\epsilon_0$
 
@@ -3431,7 +3385,7 @@ Campo elettrico varia di $\sigma\over\epsilon_0​$
 
 Come fa il campo elettrico nello spazio?
 
-$\overrightarrow{E}(\overrightarrow{r})=?$
+$\vec{E}(\vec{r})=?$
 
 ---
 
@@ -3445,7 +3399,7 @@ Avendo una piana di carica positiva, il campo elettrico infinito sarà così
 
 ![1557153093108](assets/1557153093108.png)
 
-> $\overrightarrow{E}_2-\overrightarrow{E}_1={\sigma\over\epsilon_0}\hat{n}_2\\ \overrightarrow{E}_2-(-\overrightarrow{E}_2)={\sigma\over\epsilon_0}\hat{n}_2\Rightarrow\overrightarrow{E}={\sigma\over2\epsilon_0}\hat{n}$
+> $\vec{E}_2-\vec{E}_1={\sigma\over\epsilon_0}\hat{n}_2\\ \vec{E}_2-(-\vec{E}_2)={\sigma\over\epsilon_0}\hat{n}_2\Rightarrow\vec{E}={\sigma\over2\epsilon_0}\hat{n}$
 
 Dato che il piano è infinito, non si ha una dipendenza dalla distazna, infatti ${\infty\over d=1m}=\infty$
 
@@ -3462,7 +3416,7 @@ come ${\infty\over d=1GPa}=\infty$
 
 Se ho o meno le cariche all'interno non mi interessa perchè influiscono solo quelle esterne.
 
-$\overrightarrow{E}_{int}=\overrightarrow{0}$
+$\vec{E}_{int}=\vec{0}$
 
 ##### Induzione
 
@@ -3557,7 +3511,7 @@ Ottenendo $Q=C\Delta V=8,9\cdot 10^{-8}\mathcal{c}$
 #### Corollari
 
 
-$\overrightarrow{E}=\overrightarrow{O}$ all'interno
+$\vec{E}=\vec{O}$ all'interno
 
 Posso immaginare che tutte le cariche siano appoggiate all'esterno.
 
@@ -3571,23 +3525,23 @@ Non è vero che dentro il campo è nullo, però stiamo guardando macroscopicamen
 
 1. >Il campo è zero perchè alla fine consideriamo statico.
    
-   $\Phi_{\Sigma}(\overrightarrow{E})=^{MATH} \oint_{\Sigma} \overrightarrow{E}\cdot \hat{n}d\Sigma=0$ perchè $\overrightarrow{E}=0$ mentre $=^{PHYS}{q_{int}\over \epsilon_0}$
+   $\Phi_{\Sigma}(\vec{E})=^{MATH} \oint_{\Sigma} \vec{E}\cdot \hat{n}d\Sigma=0$ perchè $\vec{E}=0$ mentre $=^{PHYS}{q_{int}\over \epsilon_0}$
 
 2. >Le superfici dei conduttori sono equipotenziali: 
 
     $P_1,P_2\in \text{conduttore}$
 
-    $V(P_1)-V(P_2)=-\oint_{P_1}^{P_2}\overrightarrow{E}_{int}\cdot d \overrightarrow{l}=0$ sempre perchè $\overrightarrow{E}_{int}=0$
+    $V(P_1)-V(P_2)=-\oint_{P_1}^{P_2}\vec{E}_{int}\cdot d \vec{l}=0$ sempre perchè $\vec{E}_{int}=0$
 
-    $\Rightarrow V(P_1)=V(P_2)​$
+    $\Rightarrow V(P_1)=V(P_2)$
     
 3. >Ho più carica concentrata sui punti di curvatura minore che su un'area più vasta.(effetto punta)
    
-   $\overrightarrow{E}_{ext}\ne\overrightarrow{O}$
+   $\vec{E}_{ext}\ne\vec{O}$
    
-   $\overrightarrow{E}_{int}=\overrightarrow{O}$
+   $\vec{E}_{int}=\vec{O}$
    
-   $\overrightarrow{E}_{ext}-\xcancel{\overrightarrow{E}_{int}}={\sigma\over \epsilon_0}\hat{u}_n$
+   $\vec{E}_{ext}-\xcancel{\vec{E}_{int}}={\sigma\over \epsilon_0}\hat{u}_n$
    
    Tutta la carica va a distribuirsi nei carichi di curvatura minore perchè devono avere la stessa differenza di potenziale.
    
@@ -3601,7 +3555,7 @@ $C={q\over V}$
 
 Calcoliamo la capacità della sfera
 
-$V(P)-V(+\infty_{=0})=-\int^{r_p=R}_{+\infty}\overrightarrow{E}\cdot d\overrightarrow{r}=+{q\over 4\pi\epsilon_0}\int_R^{+\infty} {1\over r^2}dr={q\over 4\pi\epsilon_0}\cdot{1\over R}$
+$V(P)-V(+\infty_{=0})=-\int^{r_p=R}_{+\infty}\vec{E}\cdot d\vec{r}=+{q\over 4\pi\epsilon_0}\int_R^{+\infty} {1\over r^2}dr={q\over 4\pi\epsilon_0}\cdot{1\over R}$
 
 Ottengo
 
@@ -3623,7 +3577,7 @@ Ho un campo elettrico, dalle cariche $+$ alle cariche $-$, con la circuitazione 
 
 Avendo due tratti, $I$ non nel campo, mentre $II$ nel campo.
 
-$\xcancel{\int_I \overrightarrow{E}\cdot d\overrightarrow{l}}+\int_{II} \overrightarrow{E}\cdot d\overrightarrow{l}\ne 0$
+$\xcancel{\int_I \vec{E}\cdot d\vec{l}}+\int_{II} \vec{E}\cdot d\vec{l}\ne 0$
 
 >Se sulla superficie interna  di un conduttore ci fosse carica violerebbe la circuitazione! quindi anche se faccio una cavità non posso avere cariche nella cavità interna!
 >
@@ -3632,7 +3586,7 @@ $\xcancel{\int_I \overrightarrow{E}\cdot d\overrightarrow{l}}+\int_{II} \overrig
 
 ![1557480279547](assets/1557480279547.png)
 
-$\Phi_{\Sigma}(\overrightarrow{E})=^{MATH} \oint_{\Sigma} \overrightarrow{E}\cdot \hat{n}d\Sigma=0$ perchè $\overrightarrow{E}=0$ mentre $=^{PHYS}{q_{int}(\Sigma)\over \epsilon_0}$
+$\Phi_{\Sigma}(\vec{E})=^{MATH} \oint_{\Sigma} \vec{E}\cdot \hat{n}d\Sigma=0$ perchè $\vec{E}=0$ mentre $=^{PHYS}{q_{int}(\Sigma)\over \epsilon_0}$
 
 Ma ho un problema, perchè ho un campo dentro. 
 
@@ -3722,7 +3676,7 @@ $\lim_{R_2-R_1\to 0} C_{sphere}=C_{piano}|_{\Sigma=4\pi R^2 r\ \  h=\epsilon} $
 
 #### Condensatore cilindrico
 
-$\overrightarrow{E}={\lambda\over {2\pi\epsilon_0 r}}\hat{u}_r$
+$\vec{E}={\lambda\over {2\pi\epsilon_0 r}}\hat{u}_r$
 
 $\Delta V={\lambda\over 2\pi\epsilon_0}\ln({R_2\over R_1})$
 
@@ -3736,7 +3690,7 @@ $C={2\pi\epsilon_0 d\over \ln{R_2\over R_1}}$
 
 Per muovere una carica all'interno di un campo elettrico
 
-$dW=q\overrightarrow{E}\cdot d\overrightarrow{l}$
+$dW=q\vec{E}\cdot d\vec{l}$
 
 Ho un consensatore inizialmente scarico, un interruttore che sta tra il condensatore e la batteria.
 
@@ -3931,7 +3885,7 @@ ricordiamo che **velocità della luce** $c\simeq3\cdot 10^8 m/s$
 
 Abbiamo un **moto browniano** perchè continuano ad essere urtati, viaggiando ad un centesimo della velocità della luce.
 
-Se ho un campo elettrico $\overrightarrow{E}\ne\overrightarrow{0}$ cosa succede?
+Se ho un campo elettrico $\vec{E}\ne\vec{0}$ cosa succede?
 
 Il loro movimento non è più determinato solo dall'urto, ma anche da un campo che ne devia la traiettoria.
 
@@ -3946,13 +3900,13 @@ A che **velocità**? calcoliamocela.
 
 Posso definire la corrente anche così:
 
-> $\overrightarrow{j}=ne\overrightarrow{v}_d$ dove $\overrightarrow{v}_d$ è la velocità di drift.
+> $\vec{j}=ne\vec{v}_d$ dove $\vec{v}_d$ è la velocità di drift.
 
 Cioè il **flusso di corrente che passa in quella superficie.**
 
->$i=\int _{\Sigma} \overrightarrow{j}\cdot \hat{u}_n d\Sigma$ 
+>$i=\int _{\Sigma} \vec{j}\cdot \hat{u}_n d\Sigma$ 
 
-Qui possiamo definire anche $j\Sigma=\int _{\Sigma} \overrightarrow{j}\cdot \hat{u}_n d\Sigma$ se ho esempi *non patologici(?)*
+Qui possiamo definire anche $j\Sigma=\int _{\Sigma} \vec{j}\cdot \hat{u}_n d\Sigma$ se ho esempi *non patologici(?)*
 
 #### Esercizio
 
@@ -3979,7 +3933,7 @@ confrontandolo con un autoscontro è come se ci fosse una macchina che si muove 
 
 #### Legge della conservazione della carica
 
->La corrente $i=\oint \overrightarrow{j}\cdot\hat{u}_n d\Sigma=-{{\rho}q_{int}\over \rho t} $
+>La corrente $i=\oint \vec{j}\cdot\hat{u}_n d\Sigma=-{{\rho}q_{int}\over \rho t} $
 
 Questo ci dice che **tanto entra tanto esce**.
 
@@ -3997,20 +3951,20 @@ $-j_1\Sigma_1+j_2\Sigma_2=0$ allora vuol dire che $j_1\Sigma_1=j_2\Sigma_2$
 
 Avendo un protone e neutrone
 
-$\overrightarrow{j}=n_+e\overrightarrow{v}_+-n_e\overrightarrow{v}_-$
+$\vec{j}=n_+e\vec{v}_+-n_e\vec{v}_-$
 
 otteniamo che
 
->Legge di Ohm(definizione potenziale): $\overrightarrow{j}={1\over \rho} \overrightarrow{E}$
+>Legge di Ohm(definizione potenziale): $\vec{j}={1\over \rho} \vec{E}$
 >
 
 che mi porta a 
 
-$i={1\over \rho}\cdot \overrightarrow{E}\cdot \hat{n}\Sigma$
+$i={1\over \rho}\cdot \vec{E}\cdot \hat{n}\Sigma$
 
 dove integrando otteniamo
 
-$\int^B_A \overrightarrow{E}\cdot d\overrightarrow{l}=\int^B_A\overrightarrow{E}\cdot \hat{n}\ d\overrightarrow{l}= Eh$
+$\int^B_A \vec{E}\cdot d\vec{l}=\int^B_A\vec{E}\cdot \hat{n}\ d\vec{l}= Eh$
 
 $=^{def} V_A-V_B=\Delta V$
 
@@ -4045,11 +3999,11 @@ $R=2,35\cdot 10^{-2}\Omega$
 
 >Potenza del singolo elettrone
 >
-$P=\overrightarrow{F}\cdot\overrightarrow{v}=e\overrightarrow{E}\cdot\overrightarrow{v}_D$
+$P=\vec{F}\cdot\vec{v}=e\vec{E}\cdot\vec{v}_D$
 
 Se voglio calcolarla per il volume/densità di elettroni
 
-$P_{\tau}=nP=ne\overrightarrow{E}\cdot\overrightarrow{V}_D=ne\overrightarrow{v}_D\cdot \overrightarrow{E}=\overrightarrow{j} \overrightarrow{E}=_{(\overrightarrow{j}{{1\over\rho}\overrightarrow{E}})} {1\over \rho}{E}^2$
+$P_{\tau}=nP=ne\vec{E}\cdot\vec{V}_D=ne\vec{v}_D\cdot \vec{E}=\vec{j} \vec{E}=_{(\vec{j}{{1\over\rho}\vec{E}})} {1\over \rho}{E}^2$
 
 ma equivale anche $\rho j^2$
 
@@ -4114,51 +4068,51 @@ Quindi
 #### Campo non conservativo e forza elettromotrice
 Ho un campo elettrico 
 
-$V_A-V_B=\int^B_A\overrightarrow{E}\cdot d\overrightarrow{s}=R i$
+$V_A-V_B=\int^B_A\vec{E}\cdot d\vec{s}=R i$
 
-dove $\overrightarrow{E}$ è il generatore.
+dove $\vec{E}$ è il generatore.
 
 Avendo un circuito chiuso
 
-> $\oint \overrightarrow{E}\cdot d\overrightarrow{s}=R_Ti$
+> $\oint \vec{E}\cdot d\vec{s}=R_Ti$
 
 con $R=\rho {h\over \Sigma}$ 
 
-Per le forze conservative, la circuitazione valeva zero. Ma abbiamo detto che (per la circuitazione) $\oint \overrightarrow{E}\cdot d\overrightarrow{s}=0$
+Per le forze conservative, la circuitazione valeva zero. Ma abbiamo detto che (per la circuitazione) $\oint \vec{E}\cdot d\vec{s}=0$
 
 Beh possiamo dire che questo campo **non è un campo conservativo**.
 
 In dettaglio, provando sul **campo elettrostatico**
 
 
-$\oint \overrightarrow{E}_{el}\cdot d\overrightarrow{s}=\int_A^B \overrightarrow{E}_{el}\cdot d\overrightarrow{s}+\int^A_B\overrightarrow{E}_el\cdot d\overrightarrow{s}=0$
+$\oint \vec{E}_{el}\cdot d\vec{s}=\int_A^B \vec{E}_{el}\cdot d\vec{s}+\int^A_B\vec{E}_el\cdot d\vec{s}=0$
 
-dove $\int_A^B \overrightarrow{E}_{el}\cdot d\overrightarrow{s}=$ *ext generatore*
+dove $\int_A^B \vec{E}_{el}\cdot d\vec{s}=$ *ext generatore*
 
-$\int^A_B\overrightarrow{E}_el\cdot d\overrightarrow{s}=$ *int generatore*
+$\int^A_B\vec{E}_el\cdot d\vec{s}=$ *int generatore*
 
 
 
-Possiamo dunque definire $\overrightarrow{E}^*$ <u>non conservativo</u>
+Possiamo dunque definire $\vec{E}^*$ <u>non conservativo</u>
 
-- **all'interno del generatore** ho $\overrightarrow{E}_{el}+\overrightarrow{E}^*$
-- **all'esterno** $\overrightarrow{E}_{el}$
+- **all'interno del generatore** ho $\vec{E}_{el}+\vec{E}^*$
+- **all'esterno** $\vec{E}_{el}$
 
 cioè 
 
-$\int ^A_B \overrightarrow{E}\cdot d\overrightarrow{s}=\int^A_B(\overrightarrow{E}_{el}+\overrightarrow{E}^*)\cdot d\overrightarrow{s}$
+$\int ^A_B \vec{E}\cdot d\vec{s}=\int^A_B(\vec{E}_{el}+\vec{E}^*)\cdot d\vec{s}$
 
 
 Definiamo dunque **f.e.m.**: Forza elettromotrice ($udm$ volt)
 
->$f.e.m.=^{def}\int^A_B\overrightarrow{E}^*\cdot d\overrightarrow{s}$
+>$f.e.m.=^{def}\int^A_B\vec{E}^*\cdot d\vec{s}$
 >
-> con $|\overrightarrow{E}^*|>|\overrightarrow{E}|$
+> con $|\vec{E}^*|>|\vec{E}|$
 
 
 #### Resistenza interna
 
->$\int_A^B(\overrightarrow{E}_{el}+\overrightarrow{E}^*)\cdot d\overrightarrow{s}=r i$ cioè **resistenza interna**.
+>$\int_A^B(\vec{E}_{el}+\vec{E}^*)\cdot d\vec{s}=r i$ cioè **resistenza interna**.
 
 Se ho una resistenza interna, dissipa calore! Un buon generatore ha resistenza interna **bassa**.
 
@@ -4166,25 +4120,25 @@ Se ho una resistenza interna, dissipa calore! Un buon generatore ha resistenza i
 
 Sapendo
 
-$\oint (\overrightarrow{E}_{el}+\overrightarrow{E}^*)\cdot d\overrightarrow{s}=R_T i$
+$\oint (\vec{E}_{el}+\vec{E}^*)\cdot d\vec{s}=R_T i$
 
 abbiamo che
 
-$\int^B_A(\overrightarrow{E}_{el}+\xcancel{\overrightarrow{E}^*})\cdot d\overrightarrow{s}+{\int^A_B (\overrightarrow{E}_{el}+\overrightarrow{E}^*)\cdot d\overrightarrow{s}}=$
+$\int^B_A(\vec{E}_{el}+\xcancel{\vec{E}^*})\cdot d\vec{s}+{\int^A_B (\vec{E}_{el}+\vec{E}^*)\cdot d\vec{s}}=$
 
 
-$\xcancel{\overrightarrow{E}^*}$ perchè all'esterno vale **zero**.
+$\xcancel{\vec{E}^*}$ perchè all'esterno vale **zero**.
 
 Questi due integrali sono rispettivamente
 
 $V_A-V_B=R_i$ e $r\cdot i$
 
 
->Ricordiamo che $\mathcal{E}=V_A-V_B=\int^B_A \overrightarrow{E}\cdot d\overrightarrow{s}$
+>Ricordiamo che $\mathcal{E}=V_A-V_B=\int^B_A \vec{E}\cdot d\vec{s}$
 
 quindi
 
-$\oint (\overrightarrow{E}_{el}+\overrightarrow{E}^*)\cdot d\overrightarrow{s}=R_T i=R_i+ri=(R+r)i=fem$
+$\oint (\vec{E}_{el}+\vec{E}^*)\cdot d\vec{s}=R_T i=R_i+ri=(R+r)i=fem$
 
 e sappiamo che $R_T=R+r$
 
@@ -4326,9 +4280,9 @@ Se due correnti vanno nello stesso verso, si attirano i due fili, mentre se vann
 
 ##### Nomenclatura
 
-Induzione magnetica $\overrightarrow{B}$ (molti fisici lo chiamano campo magnetico anche se non è così.)
+Induzione magnetica $\vec{B}$ (molti fisici lo chiamano campo magnetico anche se non è così.)
 
-Campo magnetico $\overrightarrow{H}$
+Campo magnetico $\vec{H}$
 
 #### Teorema di Gauss
 
@@ -4345,7 +4299,7 @@ Quindi il flusso è zero(somma entranti e uscenti).
 Se prendo una zona includendo il magnete, accade la stessa cosa! Tutte le linee di flusso sono sempre entranti/uscenti. Quindi ho sempre un flusso $=0$
 
 
->$\oint_{\Sigma} \overrightarrow{B}\cdot \hat{n}d\Sigma=\Phi_{\Sigma}(\overrightarrow{B})=0$
+>$\oint_{\Sigma} \vec{B}\cdot \hat{n}d\Sigma=\Phi_{\Sigma}(\vec{B})=0$
 >
 Questo flusso vale zero indipendentemente dalla superficie in analisi.
 
@@ -4366,7 +4320,7 @@ Quando ho una $+q$ che entra in un campo magnetico, la sua direzione viene devia
 
 > La forza di **lorentz** viene data da
 > 
->$\overrightarrow{F}_L=\rho\overrightarrow{v}\text{ x } \overrightarrow{B}$
+>$\vec{F}_L=\rho\vec{v}\text{ x } \vec{B}$
 
 cioè prodotto vettoriale.
 
@@ -4382,15 +4336,15 @@ Questo ci porta
 
 Lavoro della forza di lorentz
 
-$W_L=\int \overrightarrow{F}_L\cdot d\overrightarrow{s}$
+$W_L=\int \vec{F}_L\cdot d\vec{s}$
 
 derviandola nel tempo
 
->${dW_L\over dt}=\int \overrightarrow{F}_L\cdot {d\overrightarrow{s}\over dt}$ varrà $0$.
+>${dW_L\over dt}=\int \vec{F}_L\cdot {d\vec{s}\over dt}$ varrà $0$.
 >
 La forza di lorentz non compie lavoro.
 
-$|\overrightarrow{F}_L|=q v B\sin \theta_{vB}$
+$|\vec{F}_L|=q v B\sin \theta_{vB}$
 
 #### Caso del ciclotrone
 
@@ -4424,13 +4378,13 @@ La frequenza è $1\over T$.
 La forza di lorentz vale sul singolo. 
 Sul filo?
 
-$\overrightarrow{F}_L=-e\overrightarrow{v}_d\text{ x }\overrightarrow{B}$
+$\vec{F}_L=-e\vec{v}_d\text{ x }\vec{B}$
 
-$d\overrightarrow{F}= n\Sigma ds\overrightarrow{F}_L=-e\Sigma ds\overrightarrow{v}_D\text{ x }\overrightarrow{B}=\Sigma ds\overrightarrow{j}\text{ x }\overrightarrow{B}$
+$d\vec{F}= n\Sigma ds\vec{F}_L=-e\Sigma ds\vec{v}_D\text{ x }\vec{B}=\Sigma ds\vec{j}\text{ x }\vec{B}$
 
 ottenendo 
 
->$d\overrightarrow{F}=id\overrightarrow{s}\text{ x }\overrightarrow{B}$
+>$d\vec{F}=id\vec{s}\text{ x }\vec{B}$
 >
 
 
@@ -4443,13 +4397,13 @@ Avendo una spira, con la quale gira corrente ed un magnete
 
 ![1558965331427](assets/1558965331427.png)
 
->$\overrightarrow{m}=i\sum \hat{u}_n$
+>$\vec{m}=i\sum \hat{u}_n$
 
 $\hat{u}_n$ è dettato da come scorre $i$
 
 Quando un magnete interagisce con il campo magnetico di fondo, sono due campi magnetici che interagiscono tra loro.
 
-$\overrightarrow{m}$ è il campo magnetico generato dal magnete.
+$\vec{m}$ è il campo magnetico generato dal magnete.
 
 Si vede facendo la regola della mano destra, ma il campo magnetico si avvolge attorno.
 
@@ -4462,16 +4416,16 @@ Avremmo una situazione che va da $mB$ a $-mB$, quindi mettiamo un $-$ davanti al
 
 Definiamo **l'energia potenziale magnetica** con
 
->$U_m=-\overrightarrow{m}\cdot \overrightarrow{B}$
+>$U_m=-\vec{m}\cdot \vec{B}$
 
 ora
 
 $U\to F=-\nabla U= -{dU\over dr}$
 
 
-Se ho un campo magnetico $\overrightarrow{B}$, con un magnete posizionato sul campo magnetico, il magnete **vibra**.
+Se ho un campo magnetico $\vec{B}$, con un magnete posizionato sul campo magnetico, il magnete **vibra**.
 
->$\begin{cases} U_0=-\overrightarrow{m}\cdot \overrightarrow{B}\\E_{K0}=0\\E=+\overrightarrow{m}\cdot\overrightarrow{B}\end{cases}$
+>$\begin{cases} U_0=-\vec{m}\cdot \vec{B}\\E_{K0}=0\\E=+\vec{m}\cdot\vec{B}\end{cases}$
 
 ![1558966490823](assets/1558966490823.png)
 
@@ -4481,7 +4435,7 @@ Ora otteniamo la prima legge elementare di laplace
 
 ![img](assets/300px-Laplace_magnetic.png)
 
->$d\overrightarrow{B}=k_m {id\overrightarrow{s}\text{ x }\hat{u}_r\over r^2}$
+>$d\vec{B}=k_m {id\vec{s}\text{ x }\hat{u}_r\over r^2}$
 
 dove $k_m=10^{-7} {T\cdot m\over A}=10^{-7}{H\over m}={\mu_0\over 4\pi}$
 
@@ -4493,13 +4447,13 @@ La prima legge di laplace è **solo uno strumento matematico**, non esiste **dB*
 
 #### Legge di ampere
 
->$\overrightarrow{B}=\int_{\Gamma}{d\overrightarrow{B}}=\oint K_m {id\overrightarrow{s}\text{ x } u_r\over r^2}$
+>$\vec{B}=\int_{\Gamma}{d\vec{B}}=\oint K_m {id\vec{s}\text{ x } u_r\over r^2}$
 
 continuando 
 
-$\overrightarrow{B}(\overrightarrow{p})={\mu_0i\over 4\pi}\oint {d\overrightarrow{s}\cdot \hat{u}_r\over r^2}$
+$\vec{B}(\vec{p})={\mu_0i\over 4\pi}\oint {d\vec{s}\cdot \hat{u}_r\over r^2}$
 
-$\overrightarrow{B}={\mu_0i\over 4\pi}\hat{u}_{edL}\int^{2\pi}_0 {Rd\phi\over R^2}={\mu_0 i\over \cancel{4\pi} R}\cancel{2\pi} \hat{u}_{EDL}={\mu_0 i\hat 2R}\hat{u}_{EDL}$
+$\vec{B}={\mu_0i\over 4\pi}\hat{u}_{edL}\int^{2\pi}_0 {Rd\phi\over R^2}={\mu_0 i\over \cancel{4\pi} R}\cancel{2\pi} \hat{u}_{EDL}={\mu_0 i\hat 2R}\hat{u}_{EDL}$
 
 *con questo posso calcolare il campo magnetico al centro di una spira con un magnete*
 
@@ -4508,21 +4462,21 @@ $\overrightarrow{B}={\mu_0i\over 4\pi}\hat{u}_{edL}\int^{2\pi}_0 {Rd\phi\over R^
 
 #### Collegamento tra velocità della luce e elettromagnetismo
 
-$d\overrightarrow{B}={\mu_0\over 4\pi}{\overrightarrow{j}d\tau\text{ x }\hat{u}_r\over r^2}$
+$d\vec{B}={\mu_0\over 4\pi}{\vec{j}d\tau\text{ x }\hat{u}_r\over r^2}$
 
-con $\overrightarrow{j}d\tau=id\overrightarrow{s}$
+con $\vec{j}d\tau=id\vec{s}$
 
 continuando
 
-${\mu_2\over 4\pi} {q\overrightarrow{v}\text{ x } \hat{u}_r\over r^2}nd\tau$
+${\mu_2\over 4\pi} {q\vec{v}\text{ x } \hat{u}_r\over r^2}nd\tau$
 
 se $nd\tau$ è $1$?
 
-$\overrightarrow{B}={\mu_0\over 4\pi}{q\overrightarrow{v}\text{ x }\hat{u}_r\over r^2}$ e $\overrightarrow{E}={1\over 4\pi \epsilon_0}{q\over r^2}\hat{u}_r$
+$\vec{B}={\mu_0\over 4\pi}{q\vec{v}\text{ x }\hat{u}_r\over r^2}$ e $\vec{E}={1\over 4\pi \epsilon_0}{q\over r^2}\hat{u}_r$
 
 unendo queste due ottengo
 
-$\overrightarrow{B}=\epsilon_0\mu_0\overrightarrow{v}\text{ x }\overrightarrow{E}$
+$\vec{B}=\epsilon_0\mu_0\vec{v}\text{ x }\vec{E}$
 
 ma se faccio un po' di calcoli
 
@@ -4542,40 +4496,40 @@ che è la **velocità della luce!**
 
 quindi possiamo concludere che 
 
->$\overrightarrow{B}={1\over c^2}\overrightarrow{v}\text{ x }\overrightarrow{E}$ dove $c^2$ è la velocità della luce.
+>$\vec{B}={1\over c^2}\vec{v}\text{ x }\vec{E}$ dove $c^2$ è la velocità della luce.
 
 
 #### Legge di ampere (circuitazione)
 
 Avendo un circuito chiuso
 
-$\oint d\overrightarrow{s}\cdot \overrightarrow{v}=\sum^\infty_{i=1} d\overrightarrow{s}_1\cdot \overrightarrow{v}_1+d\overrightarrow{s}_2\cdot \overrightarrow{v}_2\dots$
+$\oint d\vec{s}\cdot \vec{v}=\sum^\infty_{i=1} d\vec{s}_1\cdot \vec{v}_1+d\vec{s}_2\cdot \vec{v}_2\dots$
 
 ricordiamo che
 
-$\oint \overrightarrow{E}\cdot d\overrightarrow{s}=0$
+$\oint \vec{E}\cdot d\vec{s}=0$
 
 e 
-$\oint \overrightarrow{B}\cdot d\overrightarrow{s}=?$
+$\oint \vec{B}\cdot d\vec{s}=?$
 
 avendo un filo indefinito su cui passa corrente $i$, il campo gli gira attorno *(regola della mano destra)*.
 
-$\overrightarrow{B}={\mu_0 i\over 2\pi R}\hat{u}\phi$
+$\vec{B}={\mu_0 i\over 2\pi R}\hat{u}\phi$
 
 Più mi allontano più è debole il campo.
 
-$\overrightarrow{B}$ sarà sempre **parallelo** a $d\overrightarrow{s}$
+$\vec{B}$ sarà sempre **parallelo** a $d\vec{s}$
 
->$\oint \overrightarrow{B}\cdot d\overrightarrow{s}=\int_{2\pi R} B\ ds={\mu_0 i\over 2\pi R}\int_{2\pi R} ds=\mu_0 i$
+>$\oint \vec{B}\cdot d\vec{s}=\int_{2\pi R} B\ ds={\mu_0 i\over 2\pi R}\int_{2\pi R} ds=\mu_0 i$
 >
 >Ho ottenuto un valore non dipendente dal raggio della circonferenza! è generico.
 
 ![1558969621929](assets/1558969621929.png)
 
-|              |                 $\overrightarrow{E}_{stat}$                  |                  $\overrightarrow{E}_{ST}$                   |
+|              |                       $\vec{E}_{stat}$                       |                        $\vec{E}_{ST}$                        |
 | ------------ | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| $S_{divise}$ | $\Phi(\overrightarrow{E}={q_{int}\over \epsilon_0})$ (teorema gauss campo elettrico) | $\Phi(\overrightarrow{E}=0$(solenoidalità campo linee sempre chiuse ) |
-| $L_{divise}$ | $\Gamma(\overrightarrow{E})=0$ (conservatività campo elettrico) | $\Gamma(\overrightarrow{B})=\mu_0 i_{concatenate(interne)}$    (teorema di ampere) |
+| $S_{divise}$ | $\Phi(\vec{E}={q_{int}\over \epsilon_0})$ (teorema gauss campo elettrico) |  $\Phi(\vec{E}=0$(solenoidalità campo linee sempre chiuse )  |
+| $L_{divise}$ |     $\Gamma(\vec{E})=0$ (conservatività campo elettrico)     | $\Gamma(\vec{B})=\mu_0 i_{concatenate(interne)}$    (teorema di ampere) |
 
 ## 30/05/2019
 
@@ -4584,9 +4538,9 @@ $\overrightarrow{B}$ sarà sempre **parallelo** a $d\overrightarrow{s}$
 
 ![1559201308943](assets/1559201308943.png)
 
-$U_i=-\overrightarrow{m}\cdot \overrightarrow{B}=-i\sum \hat{u}_n\cdot \overrightarrow{B}$
+$U_i=-\vec{m}\cdot \vec{B}=-i\sum \hat{u}_n\cdot \vec{B}$
 
-$U_f=-\overrightarrow{m}\cdot \overrightarrow{B}$ (riferente al verde)
+$U_f=-\vec{m}\cdot \vec{B}$ (riferente al verde)
 
 Otteniamo che la spira deformata è
 
@@ -4600,11 +4554,11 @@ Devo dunque compiere lavoro per passare da una situazione bianca ad una situazio
 
 (il cerchio è una linea di campo)
 
-Il vettore risultato avrà la stessa direzione, perchè abbiamo i vettori paralleli.($d\overrightarrow{B}$)
+Il vettore risultato avrà la stessa direzione, perchè abbiamo i vettori paralleli.($d\vec{B}$)
 
-*Il filo, essendo infinito, mi rende possibile avere lo stesso punto per tutta la $x$ passante per il punto di partenza di $d\overrightarrow{B}$(?)*
+*Il filo, essendo infinito, mi rende possibile avere lo stesso punto per tutta la $x$ passante per il punto di partenza di $d\vec{B}$(?)*
 
-$d_B=K_m{id\overrightarrow{s}\text{ x } \hat{u}_r\over r^2}$
+$d_B=K_m{id\vec{s}\text{ x } \hat{u}_r\over r^2}$
 
 $dB=K_m{ids\sin\theta\over r^2}$ con $K_m={\mu_0\over 4\pi}$
 
@@ -4626,18 +4580,18 @@ proseguendo con $dB=K_m i{\cancel{R}{d\theta\over \cancel{\sin^2\theta}}\sin\the
 
 $B=\int^{\theta=\pi}_{\theta=0} dB={K_m i\over R}\int^\pi_0 d\theta \sin \theta={K_m i\over R}[-\cos\theta]^\pi_0={2K_m i\over R}=\cancel{2}{\mu_0\over \cancel{4}\pi R}i={\mu_0 i\over 2\pi R}$
 
-ottenendo $\overrightarrow{B}={\mu_0 i\over 2\pi R}\hat{u}_{\rho}$
+ottenendo $\vec{B}={\mu_0 i\over 2\pi R}\hat{u}_{\rho}$
 
 #### Recap
 
 1. Principio di inerzia
-2. ${d\overrightarrow{p}\over dt}=\overrightarrow{F}_{ext}$
-3. $\overrightarrow{F}_{1\to 2}=-\overrightarrow{F}_{2\to 1}$
+2. ${d\vec{p}\over dt}=\vec{F}_{ext}$
+3. $\vec{F}_{1\to 2}=-\vec{F}_{2\to 1}$
 4. newton(con formula solita)
 5. forze conservative:
-  1. $ W=-\Delta U| \Delta U=-\int^B_A\overrightarrow{F}\cdot d\overrightarrow{s}​$
+  1. $ W=-\Delta U| \Delta U=-\int^B_A\vec{F}\cdot d\vec{s}$
   2. $E_{mec}=E_c+U=costante(\Delta E_{mec}=0)$
-6. $W=\int^B_A \overrightarrow{F}\cdot d \overrightarrow{s}\big| E_c={1\over 2}m\cdot v^2 $
+6. $W=\int^B_A \vec{F}\cdot d \vec{s}\big| E_c={1\over 2}m\cdot v^2 $
 7. $W_{attr}=-\Delta E_{mec}$
 8. $U_{int/gdl}={1\over 2}K_B T\Rightarrow U_{int}={l\over 2}K_B T$
 9. $pV=nRT\iff pV=NK_B T$
@@ -4651,17 +4605,17 @@ ottenendo $\overrightarrow{B}={\mu_0 i\over 2\pi R}\hat{u}_{\rho}$
 14. 2 principio della termodinamica 
     1. kelvin $\eta_{any}\le \eta_{rev}$
     2. clausus $\Delta S_{AB}=\int^B_A {dQ\over T}$
-15. $\mathcal{C}=k{Q_C\over r^2}​$
-16. $\overrightarrow{F}={1\over 4\pi \epsilon_0}{q_1 q_2\over r^2_{12}}\hat{r}_{12}$
-17. $\overrightarrow{E}=k_e {q\over r^2} \hat{r}$ principio di sovrapposizione(?)
-18. $E$ conservativo ($\Gamma(\overrightarrow{E}=0)$)  $U,V|\Delta V_{AB}=\int^A_B\overrightarrow{E}\cdot d\overrightarrow{s}$
-19. $\Phi(\overrightarrow{E})={q_{int}\over \epsilon_0}$ 
+15. $\mathcal{C}=k{Q_C\over r^2}$
+16. $\vec{F}={1\over 4\pi \epsilon_0}{q_1 q_2\over r^2_{12}}\hat{r}_{12}$
+17. $\vec{E}=k_e {q\over r^2} \hat{r}$ principio di sovrapposizione(?)
+18. $E$ conservativo ($\Gamma(\vec{E}=0)$)  $U,V|\Delta V_{AB}=\int^A_B\vec{E}\cdot d\vec{s}$
+19. $\Phi(\vec{E})={q_{int}\over \epsilon_0}$ 
 20. conduttori
 21. schermo elettrostatico, messa a terra $|C={Q\over V}$
-22. $C_{sys}={Q\over \Delta V}|i,\overrightarrow{j}|$ continuità$|\Delta V=Ri$
+22. $C_{sys}={Q\over \Delta V}|i,\vec{j}|$ continuità$|\Delta V=Ri$
 23. $P=Ri^2$
 24. generatori, $r_{int}$
 25. $f.e.m.$ **non conservativa**
-26. $\overrightarrow{B},\overrightarrow{m}$
-	1. Laplace $\Phi(\overrightarrow{B})=\overrightarrow{0}$ 
-	2. Laplace $\Gamma(\overrightarrow{B})=\mu_0 i$
+26. $\vec{B},\vec{m}$
+	1. Laplace $\Phi(\vec{B})=\vec{0}$ 
+	2. Laplace $\Gamma(\vec{B})=\mu_0 i$
