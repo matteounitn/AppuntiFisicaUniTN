@@ -120,7 +120,7 @@ $udm(v)={udm(s)\over udm(t)}={m\over s}$
 
 
 
-> Nota che **è una differenza, non dipende dal sistema che abbiamo utilizzato**.
+> Nota che **è una differenza, non dipende dal sistema di riferimento (origine degli assi) che abbiamo utilizzato**.
 
 
 
@@ -139,8 +139,6 @@ $3{m\over s}$
 > **Coefficente Angolare: ** Nel grafico ho
 >
 > **$m={\Delta y\over\Delta x}$**
-
-
 
 
 
@@ -198,8 +196,6 @@ $s(t_0)=s_0+\bar{v}(t_0-t_0)=s_0$
 
 #### Accelerazione
 
-
-
 > **Derivata** della velocità nel tempo
 >
 > $\lim_\limits{\Delta t \to 0}{\ v(t)-v(t_0)\over t-t_0}=a(t_0)$ 
@@ -212,8 +208,6 @@ $s(t_0)=s_0+\bar{v}(t_0-t_0)=s_0$
 
 ##### Accelerazione Gravitazionale 
 
-
-
 > L**'accelerazione gravitazionale** è pari a
 >
 > $g=9,80665{m\over s^2}$
@@ -224,11 +218,7 @@ $s(t_0)=s_0+\bar{v}(t_0-t_0)=s_0$
 
 
 
-
-
 #### Integrale della velocità
-
-
 
 > $v(t)=v_0+\int_{t_0}^t d\tau a(\tau)$
 
@@ -254,7 +244,7 @@ $s(t_0)=s_0+\bar{v}(t_0-t_0)=s_0$
 
 #### Esercizio
 
-**Protip**: Io posso piazzare il mio asse delle $x$, cioè s(t) come mi pare e piace, quindi posso ottenere una $g$ **negativa**, per avere una accelerazione **positiva**.
+**Protip**: Io posso piazzare il mio asse delle $x$, cioè s(t) come mi pare e piace, di conseguenza si modifica il segno dell'accelerazione di gravità. Se $x$ cresce al crescere della distanza da terra, allora $g$ sarà **negativa**, altrimenti è viceversa.
 
 > Un tipo tira un sasso in aria
 >
@@ -263,8 +253,6 @@ $s(t_0)=s_0+\bar{v}(t_0-t_0)=s_0$
 > $v_0=?$
 >
 > $h=4,0 m$
-
-
 
 $s_0=0, t_0=0$
 
@@ -289,8 +277,6 @@ ${dv\over dt}=a$
 tornando all'esercizio precedente, otteniamo 
 
 $\begin{cases} v(t)=v_0+gt \\ s(t)=v_0t+{1\over 2}gt^2 \end{cases}$
-
-
 
 Ora nel punto in cui la velocità è zero:
 
@@ -372,19 +358,13 @@ Ci sono diversi tipi di **sistemi di coordinate**
 
 Una grandezza vettoriale nello spazio è descritta quindi da un vettore con tre entrate, corrispondenti (nel caso di un sistema di coordinate cartesiano) all'intensità della grandezza lungo ciascuno degli assi:
 
-
-
 $ s\longrightarrow \Delta\vec{s}=\bigg(\begin{smallmatrix}\Delta s_x\\\Delta s_y\\\Delta s_z\end{smallmatrix}\bigg)=\Delta s_x \ \hat x + \Delta s_y \ \hat y + \Delta s_z \ \hat z$
 
-Dove con $\hat x$ si intende il versore relativo all'asse $x$, cioè il vettore $x = \bigg(\begin{smallmatrix}1\\ 0 \\ 0\end{smallmatrix}\bigg)$.
+Dove con $\hat x$ si intende il versore relativo all'asse $x$, cioè il vettore $\hat x = \bigg(\begin{smallmatrix}1\\ 0 \\ 0\end{smallmatrix}\bigg)$, allo stesso modo $\hat y = \bigg(\begin{smallmatrix}0\\ 1 \\ 0\end{smallmatrix}\bigg)$ e $\hat z = \bigg(\begin{smallmatrix}0\\ 0 \\ 1\end{smallmatrix}\bigg)$.
 
 Analogamente per il vettore velocità media:
 
 $\vec{v}_M={\Delta\vec{s}\over\Delta t}=\Bigg(\begin{smallmatrix}{\Delta x\over\Delta t}\\{\Delta y\over\Delta t}\\{\Delta z\over\Delta t}\end{smallmatrix}\Bigg)=\bigg(\begin{smallmatrix}{v_x}\\{v_y}\\{v_z}\end{smallmatrix}\bigg)= v_x \ \hat x + v_y \ \hat y + v_z \ \hat z$
-
-
-
-
 
 #### Velocità istantanea in più dimensioni
 
@@ -441,7 +421,7 @@ L'accelerazione è **diretta verso il centro**, cioè **accelerazione** **centri
 
 Accelerazione centripeta in un moto non circolare = **accelerazione normale**.
 
-È normale moto, perpendicolare.
+È normale al moto, perpendicolare.
 
 ![Moto circolare uniforme](./assets/acccentripeta.png)
 
@@ -688,7 +668,7 @@ Forza con la quale descrivo il fenomeno della caduta dei gravi sulla superfice t
 
 $\vec{F}=-G{Mm\over r^2}\hat{r}$ dove $M$ è la massa della terra, $m$ è la massa del sasso.($\vec{P}=-m\vec{g}$)
 
-> **Teorema della forza centrale:** in un corpo, fintanto che la massa è distribuita uniformemente all'interno del suo volume, al fine di calcolare la forza gravitazionale posso assumere che la massa sia concentrata al centro dell'oggetto.
+> **Teorema della forza centrale:** al fine di calcolare la forza gravitazionale di un corpo, fintanto che la massa è distribuita uniformemente all'interno del suo volume, posso assumere che la massa sia concentrata al centro dell'oggetto.
 
 $\vec{F}=-G{M_Tm\over (R_t+h)^2}=-{GM_T\over R_T^2(1+{h\over R_T})}m$
 
@@ -704,7 +684,7 @@ So che
 
 $-{GM_T\over R_T^2}(1+2{h\over R_T})m=-{GM_T\over R_T^2}$ perchè $(1+2{h\over R_T})$ è dell'ordine di $10^{-5}$
 
-$\vec{F}=G{M_T\over R_T^2}\hat{R_T}$, con una buona approssimazione possiamo quindi ignorare la variazione di forza peso del sasso quando si trova sul terreno rispetto a quando si trova in cima al palazzo (e quindi, tutti i corpi sulla superficie della Terra subiscono accelerazione $\vec g = -G \frac{M_T}{R_T^2} \hat R_T$).
+$\vec{F}=G{M_T\over R_T^2}\hat{R_T}$, con una buona approssimazione possiamo quindi ignorare la variazione di forza peso del sasso quando si trova sul terreno rispetto a quando si trova in cima al palazzo (e quindi, tutti i corpi sulla superficie della Terra o a poca distanza da essa subiscono accelerazione $\vec g = -G \frac{M_T}{R_T^2} \hat R_T$).
 
 
 
@@ -771,7 +751,7 @@ $\vec{F}_a| \vec{F}_t+\vec{F}_A=\vec{0}$
 
 ##### L'attrito statico 
 
-L'attrito statico è proprio di un corpo **fermo** che poggia su un piano. Dipende da quanto un corpo "preme" sul piano su cui poggia. Dipende cioè dalla forza peso, che è uguale e opposta a $N$ reazione vincolare del piano. Quindi uso N
+L'attrito statico è proprio di un corpo **fermo** che poggia su un piano. Dipende da quanto un corpo "preme" sul piano su cui poggia. Dipende cioè dalla forza peso (o nel caso del piano inclinato, dalla componente perpendicolare al piano della forza peso), che è uguale e opposta a $N$ reazione vincolare del piano. Quindi uso N
 
 > **Nota bene che:**
 >
@@ -864,11 +844,9 @@ Se le due masse sono uguali, $m_1-m_2=0$ non si muovono! L'accelerazione è null
 
 Se una delle due masse è zero otteniamo "g", quindi ottengo $\vec{a}=\pm g$ cioè uno dei due corpi cade con accelerazione $\vec g$. Se i due corpi hanno masse diverse fra loro e diverse da zero, uno dei due corpi cade con accelerazione minore di $\vec  g$.
 
-
-
 ### Lavoro
 
-Ad una massa, come un treno che va per dei binari:
+A una massa, come un treno che va per dei binari:
 
 1. applico una forza parallela e **concorde** alla direzione dello spostamento, posso affermare che la forza **avvantaggia il moto**;
 2. applico forza parallela **discorde**(che ha il senso opposto) alla direzione dello spostamento, posso affermare che la forza **svantaggia il moto**;
@@ -989,7 +967,7 @@ $W_{a\to a}=0$
 
 cioè $\oint=\vec{F}\cdot d\vec{s}$
 
-qualunque sia il percorso scelto.
+qualunque sia il circuito scelto.
 
 > **Teorema**: per una forza conservativa,  $\int^B_A\vec{F}\cdot d\vec{s}$ non dipende dal percorso $A\to B$ 
 
@@ -1285,7 +1263,7 @@ Una molla (ideale) se compressa o espansa rispetto alla posizione di riposo prod
 
 > **Forza di richiamo(o Elastica):** $\vec{F}=-k\vec{x}$
 
-#### Esercizio: Calcolo molla con piccole contrazioni
+#### Esercizio: Calcolo molla con piccole oscillazioni
 
 $m=10kg$
 
@@ -1436,18 +1414,17 @@ Stati della materia:
 * **Liquido**: Un liquido ha un volume proprio ma non ha forma: assume quella del recipiente.
 * **Gassoso**: Un gas non ha né un volume né una forma propria, assume volume e forma del recipiente, si espande in tutto lo spazio disponibile.
 
-#### Energia interna
-
-> In un sistema gassoso, le molecole sono in costante movimento, avendo energia cinetica. Grazie a questa presenza di energia cinetica possiamo dire che il sistema ha una **energia interna** $E_{interna}=U$
-
 #### Gas Ideale
 
 Un gas è ideale (o anche "perfetto") se:
 
 * non esistono forze di interazione fra le particelle;
-
 * gli urti fra le particelle e con il recipiente sono perfettamente elastici, cioè l'energia cinetica della particella prima e dopo l'urto è conservata;
 * Il moto delle particelle è assolutamente casuale.
+
+#### Energia interna
+
+> In un sistema gassoso, le molecole sono in costante movimento, avendo energia cinetica. Possiamo dire che il sistema ha un'**energia interna** e se il gas è perfetto (non ci sono altre interazioni), $E_{interna}=E_{cinetica} = U$
 
 **Q:Cosa succede quando una particella tocca la parte del contenitore? **
 
@@ -1612,7 +1589,7 @@ Ora ottengo che
 
 #### Energia interna media in un gas perfetto monoatomico
 
-$U=E_i=^{monoatomico} N<E_k>$ con 
+$U=E_i=^{monoatomico} N<E_k>$ (dove $<E_k>$ è l'energia cinetica media rispetto ad un grado di libertà)
 
 > $u={U\over N}=^{n.a.}<E_k>$
 
@@ -2094,7 +2071,7 @@ ottenendo
 
 $\vec{P}_{tot}^{iniziale}=\vec{P}_{tot}^{finale}$
 Quindi otteniamo che
-> Se niente perturba il moto del sistema, **la quantità di moto totale si conserva**.\
+> Se niente perturba il moto del sistema, **la quantità di moto totale si conserva**.
 > 
 
 In altre parole
@@ -2103,13 +2080,12 @@ $\sum ^N_{i=1}\vec{P}_i(iniziale)=\sum ^M_{j=1}\vec{P}_i(finale)$
 Noto che $N$ e $M$ non sono necessariamente uguali(non necessariamente stesso numero), vale anche per $i$ e $j$(non necessariamente stesso corpo).
 
 ### Centro di massa
->$\vec{x}_{CM}={m_1}\vec{x}_1+m_2 \vec{x}_2\over m_1+m_2$
+>$\vec{x}_{CM}=\frac{{m_1}\vec{x}_1+m_2 \vec{x}_2}{ m_1+m_2}$
 >Punto che **meglio approssima** *l'equilibrio del sistema.*
->
 
 In una dimensione, tolgo semplicemente i vettori.
 
-#### Esempio Sole Terra
+#### Esempio: Calcolo del centro di massa del sistema Sole - Terra
 
 ![1554667622045](assets/1554667622045.png)
 
