@@ -2177,7 +2177,7 @@ Ottenendo
 
 $\begin{cases}E_k=\sum^n_{i=1} {1\over2} m_i \vec{v}_i^2 \\ E_k'=E_k {1\over2}Mv^2_{CM}-\vec{v}_{CM}\cdot\sum m_i\cdot \vec{v}_i\end{cases}$
 
->Cioè che possiamo** cambiare il sistema di riferimento senza variare il risultato**(anche se l'energia cinetica varia!)
+>Cioè che possiamo **cambiare il sistema di riferimento senza variare il risultato**(anche se l'energia cinetica varia!)
 
 #### La quantità di moto si conserva
 $\vec{x}_{CM}=\vec{0}$
@@ -2725,8 +2725,10 @@ $I\int^B_A {d\mathcal{Q}\over T}=II\int^B_A {d\mathcal{Q}\over T}=III\int^B_A {d
 Facciamo finta di avere un ciclo irreversibile per colpa di $A\to B$
 
 ![1555616410243](assets/1555616410243.png)
+
 Ottengo che $\oint dQ<0=I\int^B_A {d\mathcal{Q}\over T}+\int^A_B {d\mathcal{Q}\over T}<0$
 $I\int^B_A {d\mathcal{Q}\over T}-II\int^B_A {d\mathcal{Q}\over T}<0$ cioè $I\int^B_A {d\mathcal{Q}\over T}<II\int^B_A {d\mathcal{Q}\over T}$
+
 * La parte non reversibile è $I\int$;
 * Ciò che varia è che ora ho $<$ al posto di $=$
 
@@ -2819,6 +2821,21 @@ Fornendo una definizione più precisa di disordine:
 > **Disordine**: Possibilità di scelta.
 
 *Ci basta pensare ad una stanza con dei libri impilati uno sopra all'altro al centro della stanza. Successivamente avremo che i libri (usandoli) verranno spostati nei vari punti della stanza, creando disordine dallo stato iniziale i quali erano posizionati.*
+
+#### Varie considerazioni 
+
+ - l'entropia del sistema **è funzione dello stato termodinamico del sistema**; 
+    - non importa nulla se la trasformazione è o non è reversibile. 
+    - L'entropia è definita sul processo **reversibile**. 
+ - Qual è l'entropia della trasformazione irreversibile fra lo stato A e lo stato B? 
+    - Quella di una trasformazione reversibile fra A e B. 
+    - Esempio: **l'espansione libera adiabatica (esperienza di Joule):** non c'è scambio di calore con l'eserno, quindi l'integrale di **Clausius** vale **zero**, quindi non c'è variazione di entropia? 
+       - **No!** Perché la variazione di entropia si calcola su una trasformazione **reversibile** e evidentemente una espansione libera adiabatica non può esserlo .
+ - in conseguenza al punto sopra**, l'entropia del sistema su un ciclo è SEMPRE zero**. A prescindere che il ciclo sia o non sia reversibile.
+ - A variare, eventualmente, è l'entropia **dell'universo**
+    -  se il ciclo è **reversibile** l'entropia dell'universo **non varia;**
+    -  se il ciclo **non è reversibile,** l'entropia dell'universo **aumenta**. 
+    - È importante distinguere: variazione di entropia del **sistema** (il gas che stiamo considerando), **dell'ambiente** (tutto il resto, che ad esempio cede o assorbe calore dal sistema), **dell'universo** (**ambiente + sistema**).
 
 ### Elettromagnetismo
 
@@ -3271,6 +3288,12 @@ Osservazioni:
 
 >I singoli contributi non saranno zero, il campo non è zero sulla superficie! 
 
+##### Osservazioni
+
+il **flusso** del campo $E$ attraverso una superficie **chiusa** vale $q\over \epsilon_0$,  **se la carica è all'interno della superficie chiusa**  .
+
+Se è **all'esterno**, il flusso attraverso la superficie chiusa vale **zero**.
+
 ##### Esercizio
 
 Quanto vale il campo elettrico in funzione della posizione?
@@ -3401,7 +3424,7 @@ Avendo una piana di carica positiva, il campo elettrico infinito sarà così
 
 > $\vec{E}_2-\vec{E}_1={\sigma\over\epsilon_0}\hat{n}_2\\ \vec{E}_2-(-\vec{E}_2)={\sigma\over\epsilon_0}\hat{n}_2\Rightarrow\vec{E}={\sigma\over2\epsilon_0}\hat{n}$
 
-Dato che il piano è infinito, non si ha una dipendenza dalla distazna, infatti ${\infty\over d=1m}=\infty$
+Dato che il piano è infinito, non si ha una dipendenza dalla distanza, infatti ${\infty\over d=1m}=\infty$
 
 come ${\infty\over d=1GPa}=\infty$
 
@@ -3414,7 +3437,7 @@ come ${\infty\over d=1GPa}=\infty$
 2. Se ho un conduttore all'equilibrio allora ho le cariche ferme
 3. Se le cariche sono ferme, nessuna di loro subisce forze, di nessun tipo, nemmeno elettriche.
 
-Se ho o meno le cariche all'interno non mi interessa perchè influiscono solo quelle esterne.
+**Non possono esserci cariche all'interno del conduttore:** se ci fossero ci sarebbe un campo all'interno del conduttore, quindi le cariche si respingerebbero, portandosi sulla superficie.
 
 $\vec{E}_{int}=\vec{0}$
 
@@ -4255,7 +4278,7 @@ noto che, se inizio a **dividere il magnete** in piccoli parti, avrò sempre due
 
 ![Aula di tecnica: ENERGIA ELETTRICA E MAGNETISMO](assets/download-1558688208456.jpg)
 
-*Non abbiamo ancora certezza dell'esistenza di un monopolo magnetico!*
+*Siamo certi della non esistenza del monopolo magnetico; nello stesso modo in cui siamo certi che la gravità attira i corpi con massa, cioè fino a quando qualcuno un giorno non dimostra il contrario.*
 
 
 #### Esperienza di Orsted
@@ -4301,7 +4324,8 @@ Se prendo una zona includendo il magnete, accade la stessa cosa! Tutte le linee 
 
 >$\oint_{\Sigma} \vec{B}\cdot \hat{n}d\Sigma=\Phi_{\Sigma}(\vec{B})=0$
 >
-Questo flusso vale zero indipendentemente dalla superficie in analisi.
+Questo flusso vale zero indipendentemente dalla superficie in analisi **se la superficie è chiusa**.
+
 
 #### Unità di misura alternative
 
