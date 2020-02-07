@@ -4374,7 +4374,7 @@ $|\vec{F}_L|=q v B\sin \theta_{vB}$
 
 Sappiamo che la forza è costante e sempre perpendicolare alla traiettoria
 
-$\theta _{VB}={\pi\\over 2}$  $F_L=qvB\Rightarrow$ Moto circolare uniforme!
+$\theta _{VB}={\pi\over 2}$  $F_L=qvB\Rightarrow$ Moto circolare uniforme!
 
 Riprendendo la formula del MCU
 
